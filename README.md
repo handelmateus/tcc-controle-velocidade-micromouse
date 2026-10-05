@@ -65,48 +65,6 @@ make
 
 O `Makefile` executa `pdflatex`, `bibtex`, `makeglossaries`, `makeindex` e mais duas passadas de `pdflatex`, gerando `documento.pdf`. Também funciona em editores como VS Code (LaTeX Workshop) ou Overleaf.
 
-## Como construir o .gitignore
-
-Crie um arquivo chamado `.gitignore` (sem extensão) na raiz do repositório. Cada linha é um padrão de arquivo ou pasta que o Git deve ignorar. Para este projeto, os arquivos a ignorar são os gerados pela compilação e os relatórios de falha:
-
-```gitignore
-# Arquivos auxiliares do LaTeX
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.glg
-*.glo
-*.gls
-*.idx
-*.ilg
-*.ind
-*.ist
-*.lof
-*.log
-*.lot
-*.out
-*.toc
-*.synctex.gz
-
-# Relatórios de falha da JVM (gerados pelo editor)
-hs_err_pid*.log
-replay_pid*.log
-
-# Arquivos do sistema
-Thumbs.db
-.DS_Store
-```
-
-Dicas:
-
-- **GitHub Desktop:** *Repository → Repository settings → Ignored Files*, cole o conteúdo e salve. Também é possível criar o arquivo manualmente na raiz da pasta.
-- **Ao criar o repositório:** o GitHub Desktop e o site do GitHub têm o campo "Git ignore"; um modelo (por exemplo, `TeX`) cobre boa parte desses padrões.
-- **O PDF final:** `documento.pdf` (cerca de 6 MB) pode ser mantido, para que a monografia fique disponível para leitura. Se preferir não versionar, acrescente `documento.pdf` ao `.gitignore`.
-- **Arquivos já rastreados:** o `.gitignore` não afeta arquivos que o Git já acompanha. Se algum já foi commitado, remova-o do índice com `git rm --cached <arquivo>`.
-- **Antes do primeiro commit:** confira em *Changes* se só aparecem os arquivos desejados.
-
 ## Licença e uso
 
 O modelo ufctex é adaptado do ueceTeX (UECE) e do abnTeX2, distribuídos sob a LaTeX Project Public License. O conteúdo da monografia é de autoria de Händel Mateus Carvalho Sarmento; defina aqui a licença desejada para o texto e o código, se houver.

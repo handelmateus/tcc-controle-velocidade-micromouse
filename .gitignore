@@ -1,0 +1,27 @@
+# Arquivos auxiliares do LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+
+# Relatórios de falha da JVM (gerados pelo editor)
+hs_err_pid*.log
+replay_pid*.log
+
+# Arquivos do sistema
+Thumbs.db
+.DS_Store
