@@ -1,0 +1,822 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 257949696 bytes. Error detail: G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3713), pid=16992, tid=20604
+#
+# JRE version: OpenJDK Runtime Environment Temurin-21.0.8+9 (21.0.8+9) (build 21.0.8+9-LTS)
+# Java VM: OpenJDK 64-Bit Server VM Temurin-21.0.8+9 (21.0.8+9-LTS, mixed mode, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xms64m -Xmx2048m -Dapp.name=ltex-ls-plus -Dapp.repo=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib -Dapp.home=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1 -Dbasedir=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1 org.bsplines.ltexls.LtexLanguageServerLauncher
+
+Host: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz, 8 cores, 15G,  Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+Time: Sun Jun 14 14:32:42 2026 Hora Padrão de Buenos Aires elapsed time: 7.657299 seconds (0d 0h 0m 7s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000189a2e9db20):  VMThread "VM Thread"          [id=20604, stack(0x0000005841800000,0x0000005841900000) (1024K)]
+
+Stack: [0x0000005841800000,0x0000005841900000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6d2449]
+V  [jvm.dll+0x8ae341]
+V  [jvm.dll+0x8b08be]
+V  [jvm.dll+0x8b0fa3]
+V  [jvm.dll+0x280c96]
+V  [jvm.dll+0x6cec15]
+V  [jvm.dll+0x6c2c3a]
+V  [jvm.dll+0x35867a]
+V  [jvm.dll+0x360246]
+V  [jvm.dll+0x3b1f9e]
+V  [jvm.dll+0x3b2248]
+V  [jvm.dll+0x32c8fc]
+V  [jvm.dll+0x32c987]
+V  [jvm.dll+0x3706fc]
+V  [jvm.dll+0x36ef48]
+V  [jvm.dll+0x32c0c1]
+V  [jvm.dll+0x36e5ba]
+V  [jvm.dll+0x8b6cbf]
+V  [jvm.dll+0x8b8044]
+V  [jvm.dll+0x8b8580]
+V  [jvm.dll+0x8b8823]
+V  [jvm.dll+0x857e6b]
+V  [jvm.dll+0x6d0b0d]
+C  [ucrtbase.dll+0x2cd30]
+C  [KERNEL32.DLL+0x2e957]
+C  [ntdll.dll+0x87c1c]
+
+VM_Operation (0x00000058411fe1f0): G1CollectForAllocation, mode: safepoint, requested by thread 0x000001898bf78000
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00000189ab377080, length=13, elements={
+0x000001898bf78000, 0x00000189a70541a0, 0x00000189a7055910, 0x00000189a7062480,
+0x00000189a7034790, 0x00000189a7035b50, 0x00000189a7041e60, 0x00000189a7062ed0,
+0x00000189a70640e0, 0x00000189a71f8cd0, 0x00000189a71bef40, 0x00000189ab369010,
+0x00000189aaf09440
+}
+
+Java Threads: ( => current thread )
+  0x000001898bf78000 JavaThread "main"                              [_thread_blocked, id=13340, stack(0x0000005841100000,0x0000005841200000) (1024K)]
+  0x00000189a70541a0 JavaThread "Reference Handler"          daemon [_thread_blocked, id=27180, stack(0x0000005841900000,0x0000005841a00000) (1024K)]
+  0x00000189a7055910 JavaThread "Finalizer"                  daemon [_thread_blocked, id=10908, stack(0x0000005841a00000,0x0000005841b00000) (1024K)]
+  0x00000189a7062480 JavaThread "Signal Dispatcher"          daemon [_thread_blocked, id=26468, stack(0x0000005841b00000,0x0000005841c00000) (1024K)]
+  0x00000189a7034790 JavaThread "Attach Listener"            daemon [_thread_blocked, id=22324, stack(0x0000005841c00000,0x0000005841d00000) (1024K)]
+  0x00000189a7035b50 JavaThread "Service Thread"             daemon [_thread_blocked, id=22564, stack(0x0000005841d00000,0x0000005841e00000) (1024K)]
+  0x00000189a7041e60 JavaThread "Monitor Deflation Thread"   daemon [_thread_blocked, id=23292, stack(0x0000005841e00000,0x0000005841f00000) (1024K)]
+  0x00000189a7062ed0 JavaThread "C2 CompilerThread0"         daemon [_thread_blocked, id=3588, stack(0x0000005841f00000,0x0000005842000000) (1024K)]
+  0x00000189a70640e0 JavaThread "C1 CompilerThread0"         daemon [_thread_blocked, id=4020, stack(0x0000005842000000,0x0000005842100000) (1024K)]
+  0x00000189a71f8cd0 JavaThread "Notification Thread"        daemon [_thread_blocked, id=17796, stack(0x0000005842100000,0x0000005842200000) (1024K)]
+  0x00000189a71bef40 JavaThread "Common-Cleaner"             daemon [_thread_blocked, id=17928, stack(0x0000005842200000,0x0000005842300000) (1024K)]
+  0x00000189ab369010 JavaThread "C2 CompilerThread1"         daemon [_thread_blocked, id=25556, stack(0x0000005842300000,0x0000005842400000) (1024K)]
+  0x00000189aaf09440 JavaThread "C2 CompilerThread2"         daemon [_thread_blocked, id=15692, stack(0x0000005842a00000,0x0000005842b00000) (1024K)]
+Total: 13
+
+Other Threads:
+=>0x00000189a2e9db20 VMThread "VM Thread"                           [id=20604, stack(0x0000005841800000,0x0000005841900000) (1024K)]
+  0x00000189a2e3d0e0 WatcherThread "VM Periodic Task Thread"        [id=2576, stack(0x0000005841700000,0x0000005841800000) (1024K)]
+  0x000001898bfd0190 WorkerThread "GC Thread#0"                     [id=17072, stack(0x0000005841200000,0x0000005841300000) (1024K)]
+  0x00000189aa90acd0 WorkerThread "GC Thread#1"                     [id=11036, stack(0x0000005842400000,0x0000005842500000) (1024K)]
+  0x00000189aaa5e170 WorkerThread "GC Thread#2"                     [id=24064, stack(0x0000005842500000,0x0000005842600000) (1024K)]
+  0x00000189aaa5e510 WorkerThread "GC Thread#3"                     [id=10660, stack(0x0000005842600000,0x0000005842700000) (1024K)]
+  0x00000189aaa5e8b0 WorkerThread "GC Thread#4"                     [id=6492, stack(0x0000005842700000,0x0000005842800000) (1024K)]
+  0x00000189aaa60c60 WorkerThread "GC Thread#5"                     [id=9616, stack(0x0000005842800000,0x0000005842900000) (1024K)]
+  0x00000189aaa61000 WorkerThread "GC Thread#6"                     [id=8700, stack(0x0000005842900000,0x0000005842a00000) (1024K)]
+  0x00000189ab4296a0 WorkerThread "GC Thread#7"                     [id=25348, stack(0x0000005842b00000,0x0000005842c00000) (1024K)]
+  0x000001898bfe1880 ConcurrentGCThread "G1 Main Marker"            [id=24884, stack(0x0000005841300000,0x0000005841400000) (1024K)]
+  0x000001898bfe2280 WorkerThread "G1 Conc#0"                       [id=25476, stack(0x0000005841400000,0x0000005841500000) (1024K)]
+  0x00000189aac9b640 WorkerThread "G1 Conc#1"                       [id=3672, stack(0x0000005842c00000,0x0000005842d00000) (1024K)]
+  0x00000189a2d114b0 ConcurrentGCThread "G1 Refine#0"               [id=1312, stack(0x0000005841500000,0x0000005841600000) (1024K)]
+  0x00000189a2d11e30 ConcurrentGCThread "G1 Service"                [id=23728, stack(0x0000005841600000,0x0000005841700000) (1024K)]
+Total: 15
+
+Threads with active compile tasks:
+C2 CompilerThread0  7677 3364       4       org.languagetool.rules.spelling.SpellingCheckRule::addIgnoreWords (173 bytes)
+C2 CompilerThread1  7677 3405       4       org.languagetool.rules.patterns.PatternToken::calcStringHints (220 bytes)
+C2 CompilerThread2  7677 3398       4       org.languagetool.rules.patterns.AbstractTokenBasedRule::<init> (289 bytes)
+Total: 3
+
+VM state: at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ffb7a545458] Threads_lock - owner thread: 0x00000189a2e9db20
+[0x00007ffb7a545558] Heap_lock - owner thread: 0x000001898bf78000
+
+Heap address: 0x0000000080000000, size: 2048 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) not mapped
+Compressed class space mapped at: 0x0000000100000000-0x0000000140000000, reserved size: 1073741824
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3, Narrow klass range: 0x140000000
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 5 size 8 Array Of Cards #cards 12 size 40 Howl #buckets 4 coarsen threshold 1843 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 2048
+ CPUs: 8 total, 8 available
+ Memory: 16107M
+ Large Page Support: Disabled
+ NUMA Support: Disabled
+ Compressed Oops: Enabled (32-bit)
+ Heap Region Size: 1M
+ Heap Min Capacity: 64M
+ Heap Initial Capacity: 64M
+ Heap Max Capacity: 2G
+ Pre-touch: Disabled
+ Parallel Workers: 8
+ Concurrent Workers: 2
+ Concurrent Refinement Workers: 8
+ Periodic GC: Disabled
+
+Heap:
+ garbage-first heap   total 132096K, used 92160K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 4 young (4096K), 4 survivors (4096K)
+ Metaspace       used 24313K, committed 24512K, reserved 1114112K
+  class space    used 2362K, committed 2432K, reserved 1048576K
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, TAMS=top-at-mark-start, PB=parsable bottom
+|   0|0x0000000080000000, 0x0000000080100000, 0x0000000080100000|100%| O|  |TAMS 0x0000000080000000| PB 0x0000000080000000| Untracked 
+|   1|0x0000000080100000, 0x0000000080200000, 0x0000000080200000|100%| O|  |TAMS 0x0000000080100000| PB 0x0000000080100000| Untracked 
+|   2|0x0000000080200000, 0x0000000080300000, 0x0000000080300000|100%| O|  |TAMS 0x0000000080200000| PB 0x0000000080200000| Untracked 
+|   3|0x0000000080300000, 0x0000000080400000, 0x0000000080400000|100%| O|  |TAMS 0x0000000080300000| PB 0x0000000080300000| Untracked 
+|   4|0x0000000080400000, 0x0000000080500000, 0x0000000080500000|100%| O|  |TAMS 0x0000000080400000| PB 0x0000000080400000| Untracked 
+|   5|0x0000000080500000, 0x0000000080600000, 0x0000000080600000|100%| O|  |TAMS 0x0000000080500000| PB 0x0000000080500000| Untracked 
+|   6|0x0000000080600000, 0x0000000080700000, 0x0000000080700000|100%| O|  |TAMS 0x0000000080600000| PB 0x0000000080600000| Untracked 
+|   7|0x0000000080700000, 0x0000000080800000, 0x0000000080800000|100%| O|  |TAMS 0x0000000080700000| PB 0x0000000080700000| Untracked 
+|   8|0x0000000080800000, 0x0000000080900000, 0x0000000080900000|100%| O|  |TAMS 0x0000000080800000| PB 0x0000000080800000| Untracked 
+|   9|0x0000000080900000, 0x0000000080a00000, 0x0000000080a00000|100%| O|  |TAMS 0x0000000080900000| PB 0x0000000080900000| Untracked 
+|  10|0x0000000080a00000, 0x0000000080b00000, 0x0000000080b00000|100%| O|  |TAMS 0x0000000080a00000| PB 0x0000000080a00000| Untracked 
+|  11|0x0000000080b00000, 0x0000000080c00000, 0x0000000080c00000|100%| O|  |TAMS 0x0000000080b00000| PB 0x0000000080b00000| Untracked 
+|  12|0x0000000080c00000, 0x0000000080d00000, 0x0000000080d00000|100%| O|  |TAMS 0x0000000080c00000| PB 0x0000000080c00000| Untracked 
+|  13|0x0000000080d00000, 0x0000000080e00000, 0x0000000080e00000|100%| O|  |TAMS 0x0000000080d00000| PB 0x0000000080d00000| Untracked 
+|  14|0x0000000080e00000, 0x0000000080f00000, 0x0000000080f00000|100%| O|  |TAMS 0x0000000080e00000| PB 0x0000000080e00000| Untracked 
+|  15|0x0000000080f00000, 0x0000000081000000, 0x0000000081000000|100%| O|  |TAMS 0x0000000080f00000| PB 0x0000000080f00000| Untracked 
+|  16|0x0000000081000000, 0x0000000081100000, 0x0000000081100000|100%| O|  |TAMS 0x0000000081000000| PB 0x0000000081000000| Untracked 
+|  17|0x0000000081100000, 0x0000000081200000, 0x0000000081200000|100%| O|  |TAMS 0x0000000081100000| PB 0x0000000081100000| Untracked 
+|  18|0x0000000081200000, 0x0000000081300000, 0x0000000081300000|100%| O|  |TAMS 0x0000000081200000| PB 0x0000000081200000| Untracked 
+|  19|0x0000000081300000, 0x0000000081400000, 0x0000000081400000|100%| O|  |TAMS 0x0000000081300000| PB 0x0000000081300000| Untracked 
+|  20|0x0000000081400000, 0x0000000081500000, 0x0000000081500000|100%| O|  |TAMS 0x0000000081400000| PB 0x0000000081400000| Untracked 
+|  21|0x0000000081500000, 0x0000000081600000, 0x0000000081600000|100%| O|  |TAMS 0x0000000081500000| PB 0x0000000081500000| Untracked 
+|  22|0x0000000081600000, 0x0000000081700000, 0x0000000081700000|100%| O|  |TAMS 0x0000000081600000| PB 0x0000000081600000| Untracked 
+|  23|0x0000000081700000, 0x0000000081800000, 0x0000000081800000|100%| O|  |TAMS 0x0000000081700000| PB 0x0000000081700000| Untracked 
+|  24|0x0000000081800000, 0x0000000081900000, 0x0000000081900000|100%| O|  |TAMS 0x0000000081800000| PB 0x0000000081800000| Untracked 
+|  25|0x0000000081900000, 0x0000000081a00000, 0x0000000081a00000|100%|HS|  |TAMS 0x0000000081900000| PB 0x0000000081900000| Complete 
+|  26|0x0000000081a00000, 0x0000000081b00000, 0x0000000081b00000|100%| O|  |TAMS 0x0000000081a00000| PB 0x0000000081a00000| Untracked 
+|  27|0x0000000081b00000, 0x0000000081c00000, 0x0000000081c00000|100%| O|  |TAMS 0x0000000081b00000| PB 0x0000000081b00000| Untracked 
+|  28|0x0000000081c00000, 0x0000000081c00000, 0x0000000081d00000|  0%| F|  |TAMS 0x0000000081c00000| PB 0x0000000081c00000| Untracked 
+|  29|0x0000000081d00000, 0x0000000081e00000, 0x0000000081e00000|100%| O|  |TAMS 0x0000000081d00000| PB 0x0000000081d00000| Untracked 
+|  30|0x0000000081e00000, 0x0000000081f00000, 0x0000000081f00000|100%| O|  |TAMS 0x0000000081e00000| PB 0x0000000081e00000| Untracked 
+|  31|0x0000000081f00000, 0x0000000082000000, 0x0000000082000000|100%| O|  |TAMS 0x0000000081f00000| PB 0x0000000081f00000| Untracked 
+|  32|0x0000000082000000, 0x0000000082100000, 0x0000000082100000|100%| O|  |TAMS 0x0000000082000000| PB 0x0000000082000000| Untracked 
+|  33|0x0000000082100000, 0x0000000082200000, 0x0000000082200000|100%| O|  |TAMS 0x0000000082100000| PB 0x0000000082100000| Untracked 
+|  34|0x0000000082200000, 0x0000000082300000, 0x0000000082300000|100%| O|  |TAMS 0x0000000082200000| PB 0x0000000082200000| Untracked 
+|  35|0x0000000082300000, 0x0000000082400000, 0x0000000082400000|100%| O|  |TAMS 0x0000000082300000| PB 0x0000000082300000| Untracked 
+|  36|0x0000000082400000, 0x0000000082500000, 0x0000000082500000|100%| O|  |TAMS 0x0000000082400000| PB 0x0000000082400000| Untracked 
+|  37|0x0000000082500000, 0x0000000082600000, 0x0000000082600000|100%| O|  |TAMS 0x0000000082500000| PB 0x0000000082500000| Untracked 
+|  38|0x0000000082600000, 0x0000000082700000, 0x0000000082700000|100%| O|  |TAMS 0x0000000082600000| PB 0x0000000082600000| Untracked 
+|  39|0x0000000082700000, 0x0000000082800000, 0x0000000082800000|100%| O|  |TAMS 0x0000000082700000| PB 0x0000000082700000| Untracked 
+|  40|0x0000000082800000, 0x0000000082900000, 0x0000000082900000|100%| O|  |TAMS 0x0000000082800000| PB 0x0000000082800000| Untracked 
+|  41|0x0000000082900000, 0x0000000082a00000, 0x0000000082a00000|100%| O|  |TAMS 0x0000000082900000| PB 0x0000000082900000| Untracked 
+|  42|0x0000000082a00000, 0x0000000082b00000, 0x0000000082b00000|100%| O|  |TAMS 0x0000000082a00000| PB 0x0000000082a00000| Untracked 
+|  43|0x0000000082b00000, 0x0000000082c00000, 0x0000000082c00000|100%| O|  |TAMS 0x0000000082b00000| PB 0x0000000082b00000| Untracked 
+|  44|0x0000000082c00000, 0x0000000082d00000, 0x0000000082d00000|100%| O|  |TAMS 0x0000000082c00000| PB 0x0000000082c00000| Untracked 
+|  45|0x0000000082d00000, 0x0000000082e00000, 0x0000000082e00000|100%| O|  |TAMS 0x0000000082d00000| PB 0x0000000082d00000| Untracked 
+|  46|0x0000000082e00000, 0x0000000082f00000, 0x0000000082f00000|100%|HS|  |TAMS 0x0000000082e00000| PB 0x0000000082e00000| Complete 
+|  47|0x0000000082f00000, 0x0000000083000000, 0x0000000083000000|100%|HC|  |TAMS 0x0000000082f00000| PB 0x0000000082f00000| Complete 
+|  48|0x0000000083000000, 0x0000000083100000, 0x0000000083100000|100%| O|  |TAMS 0x0000000083000000| PB 0x0000000083000000| Untracked 
+|  49|0x0000000083100000, 0x0000000083200000, 0x0000000083200000|100%| O|  |TAMS 0x0000000083100000| PB 0x0000000083100000| Untracked 
+|  50|0x0000000083200000, 0x0000000083300000, 0x0000000083300000|100%| O|  |TAMS 0x0000000083200000| PB 0x0000000083200000| Untracked 
+|  51|0x0000000083300000, 0x0000000083400000, 0x0000000083400000|100%| O|  |TAMS 0x0000000083300000| PB 0x0000000083300000| Untracked 
+|  52|0x0000000083400000, 0x0000000083500000, 0x0000000083500000|100%| O|  |TAMS 0x0000000083400000| PB 0x0000000083400000| Untracked 
+|  53|0x0000000083500000, 0x0000000083500000, 0x0000000083600000|  0%| F|  |TAMS 0x0000000083500000| PB 0x0000000083500000| Untracked 
+|  54|0x0000000083600000, 0x0000000083700000, 0x0000000083700000|100%| O|  |TAMS 0x0000000083600000| PB 0x0000000083600000| Untracked 
+|  55|0x0000000083700000, 0x0000000083800000, 0x0000000083800000|100%| O|  |TAMS 0x0000000083700000| PB 0x0000000083700000| Untracked 
+|  56|0x0000000083800000, 0x0000000083900000, 0x0000000083900000|100%| O|  |TAMS 0x0000000083800000| PB 0x0000000083800000| Untracked 
+|  57|0x0000000083900000, 0x0000000083a00000, 0x0000000083a00000|100%| O|  |TAMS 0x0000000083900000| PB 0x0000000083900000| Untracked 
+|  58|0x0000000083a00000, 0x0000000083b00000, 0x0000000083b00000|100%| O|  |TAMS 0x0000000083a00000| PB 0x0000000083a00000| Untracked 
+|  59|0x0000000083b00000, 0x0000000083c00000, 0x0000000083c00000|100%| O|  |TAMS 0x0000000083b00000| PB 0x0000000083b00000| Untracked 
+|  60|0x0000000083c00000, 0x0000000083d00000, 0x0000000083d00000|100%| O|  |TAMS 0x0000000083c00000| PB 0x0000000083c00000| Untracked 
+|  61|0x0000000083d00000, 0x0000000083e00000, 0x0000000083e00000|100%| O|  |TAMS 0x0000000083d00000| PB 0x0000000083d00000| Untracked 
+|  62|0x0000000083e00000, 0x0000000083f00000, 0x0000000083f00000|100%| O|  |TAMS 0x0000000083e00000| PB 0x0000000083e00000| Untracked 
+|  63|0x0000000083f00000, 0x0000000084000000, 0x0000000084000000|100%| O|  |TAMS 0x0000000083f00000| PB 0x0000000083f00000| Untracked 
+|  64|0x0000000084000000, 0x0000000084100000, 0x0000000084100000|100%| O|  |TAMS 0x0000000084000000| PB 0x0000000084000000| Untracked 
+|  65|0x0000000084100000, 0x0000000084200000, 0x0000000084200000|100%| O|  |TAMS 0x0000000084100000| PB 0x0000000084100000| Untracked 
+|  66|0x0000000084200000, 0x0000000084300000, 0x0000000084300000|100%| O|  |TAMS 0x0000000084200000| PB 0x0000000084200000| Untracked 
+|  67|0x0000000084300000, 0x0000000084400000, 0x0000000084400000|100%| O|  |TAMS 0x0000000084300000| PB 0x0000000084300000| Untracked 
+|  68|0x0000000084400000, 0x0000000084500000, 0x0000000084500000|100%| O|  |TAMS 0x0000000084400000| PB 0x0000000084400000| Untracked 
+|  69|0x0000000084500000, 0x0000000084600000, 0x0000000084600000|100%| O|  |TAMS 0x0000000084500000| PB 0x0000000084500000| Untracked 
+|  70|0x0000000084600000, 0x0000000084700000, 0x0000000084700000|100%| O|  |TAMS 0x0000000084600000| PB 0x0000000084600000| Untracked 
+|  71|0x0000000084700000, 0x0000000084800000, 0x0000000084800000|100%| O|  |TAMS 0x0000000084700000| PB 0x0000000084700000| Untracked 
+|  72|0x0000000084800000, 0x0000000084900000, 0x0000000084900000|100%| O|  |TAMS 0x0000000084800000| PB 0x0000000084800000| Untracked 
+|  73|0x0000000084900000, 0x0000000084a00000, 0x0000000084a00000|100%| O|  |TAMS 0x0000000084900000| PB 0x0000000084900000| Untracked 
+|  74|0x0000000084a00000, 0x0000000084b00000, 0x0000000084b00000|100%|HS|  |TAMS 0x0000000084a00000| PB 0x0000000084a00000| Complete 
+|  75|0x0000000084b00000, 0x0000000084c00000, 0x0000000084c00000|100%|HC|  |TAMS 0x0000000084b00000| PB 0x0000000084b00000| Complete 
+|  76|0x0000000084c00000, 0x0000000084d00000, 0x0000000084d00000|100%|HC|  |TAMS 0x0000000084c00000| PB 0x0000000084c00000| Complete 
+|  77|0x0000000084d00000, 0x0000000084e00000, 0x0000000084e00000|100%| O|  |TAMS 0x0000000084d00000| PB 0x0000000084d00000| Untracked 
+|  78|0x0000000084e00000, 0x0000000084f00000, 0x0000000084f00000|100%| O|  |TAMS 0x0000000084e00000| PB 0x0000000084e00000| Untracked 
+|  79|0x0000000084f00000, 0x0000000085000000, 0x0000000085000000|100%| O|  |TAMS 0x0000000084f00000| PB 0x0000000084f00000| Untracked 
+|  80|0x0000000085000000, 0x0000000085100000, 0x0000000085100000|100%| O|  |TAMS 0x0000000085000000| PB 0x0000000085000000| Untracked 
+|  81|0x0000000085100000, 0x0000000085200000, 0x0000000085200000|100%| O|  |TAMS 0x0000000085100000| PB 0x0000000085100000| Untracked 
+|  82|0x0000000085200000, 0x0000000085300000, 0x0000000085300000|100%| O|  |TAMS 0x0000000085200000| PB 0x0000000085200000| Untracked 
+|  83|0x0000000085300000, 0x0000000085400000, 0x0000000085400000|100%| O|  |TAMS 0x0000000085300000| PB 0x0000000085300000| Untracked 
+|  84|0x0000000085400000, 0x0000000085500000, 0x0000000085500000|100%| O|  |TAMS 0x0000000085400000| PB 0x0000000085400000| Untracked 
+|  85|0x0000000085500000, 0x0000000085600000, 0x0000000085600000|100%| O|  |TAMS 0x0000000085500000| PB 0x0000000085500000| Untracked 
+|  86|0x0000000085600000, 0x0000000085700000, 0x0000000085700000|100%| O|  |TAMS 0x0000000085600000| PB 0x0000000085600000| Untracked 
+|  87|0x0000000085700000, 0x0000000085800000, 0x0000000085800000|100%| O|  |TAMS 0x0000000085700000| PB 0x0000000085700000| Untracked 
+|  88|0x0000000085800000, 0x0000000085800000, 0x0000000085900000|  0%| F|  |TAMS 0x0000000085800000| PB 0x0000000085800000| Untracked 
+|  89|0x0000000085900000, 0x0000000085900000, 0x0000000085a00000|  0%| F|  |TAMS 0x0000000085900000| PB 0x0000000085900000| Untracked 
+|  90|0x0000000085a00000, 0x0000000085a00000, 0x0000000085b00000|  0%| F|  |TAMS 0x0000000085a00000| PB 0x0000000085a00000| Untracked 
+|  91|0x0000000085b00000, 0x0000000085b00000, 0x0000000085c00000|  0%| F|  |TAMS 0x0000000085b00000| PB 0x0000000085b00000| Untracked 
+|  92|0x0000000085c00000, 0x0000000085c00000, 0x0000000085d00000|  0%| F|  |TAMS 0x0000000085c00000| PB 0x0000000085c00000| Untracked 
+|  93|0x0000000085d00000, 0x0000000085e00000, 0x0000000085e00000|100%| S|CS|TAMS 0x0000000085d00000| PB 0x0000000085d00000| Complete 
+|  94|0x0000000085e00000, 0x0000000085f00000, 0x0000000085f00000|100%| S|CS|TAMS 0x0000000085e00000| PB 0x0000000085e00000| Complete 
+|  95|0x0000000085f00000, 0x0000000086000000, 0x0000000086000000|100%| S|CS|TAMS 0x0000000085f00000| PB 0x0000000085f00000| Complete 
+|  96|0x0000000086000000, 0x0000000086100000, 0x0000000086100000|100%| S|CS|TAMS 0x0000000086000000| PB 0x0000000086000000| Complete 
+|  97|0x0000000086100000, 0x0000000086100000, 0x0000000086200000|  0%| F|  |TAMS 0x0000000086100000| PB 0x0000000086100000| Untracked 
+|  98|0x0000000086200000, 0x0000000086200000, 0x0000000086300000|  0%| F|  |TAMS 0x0000000086200000| PB 0x0000000086200000| Untracked 
+|  99|0x0000000086300000, 0x0000000086300000, 0x0000000086400000|  0%| F|  |TAMS 0x0000000086300000| PB 0x0000000086300000| Untracked 
+| 100|0x0000000086400000, 0x0000000086400000, 0x0000000086500000|  0%| F|  |TAMS 0x0000000086400000| PB 0x0000000086400000| Untracked 
+| 101|0x0000000086500000, 0x0000000086500000, 0x0000000086600000|  0%| F|  |TAMS 0x0000000086500000| PB 0x0000000086500000| Untracked 
+| 102|0x0000000086600000, 0x0000000086600000, 0x0000000086700000|  0%| F|  |TAMS 0x0000000086600000| PB 0x0000000086600000| Untracked 
+| 103|0x0000000086700000, 0x0000000086700000, 0x0000000086800000|  0%| F|  |TAMS 0x0000000086700000| PB 0x0000000086700000| Untracked 
+| 104|0x0000000086800000, 0x0000000086800000, 0x0000000086900000|  0%| F|  |TAMS 0x0000000086800000| PB 0x0000000086800000| Untracked 
+| 105|0x0000000086900000, 0x0000000086900000, 0x0000000086a00000|  0%| F|  |TAMS 0x0000000086900000| PB 0x0000000086900000| Untracked 
+| 106|0x0000000086a00000, 0x0000000086a00000, 0x0000000086b00000|  0%| F|  |TAMS 0x0000000086a00000| PB 0x0000000086a00000| Untracked 
+| 107|0x0000000086b00000, 0x0000000086b00000, 0x0000000086c00000|  0%| F|  |TAMS 0x0000000086b00000| PB 0x0000000086b00000| Untracked 
+| 108|0x0000000086c00000, 0x0000000086c00000, 0x0000000086d00000|  0%| F|  |TAMS 0x0000000086c00000| PB 0x0000000086c00000| Untracked 
+| 109|0x0000000086d00000, 0x0000000086d00000, 0x0000000086e00000|  0%| F|  |TAMS 0x0000000086d00000| PB 0x0000000086d00000| Untracked 
+| 110|0x0000000086e00000, 0x0000000086e00000, 0x0000000086f00000|  0%| F|  |TAMS 0x0000000086e00000| PB 0x0000000086e00000| Untracked 
+| 111|0x0000000086f00000, 0x0000000086f00000, 0x0000000087000000|  0%| F|  |TAMS 0x0000000086f00000| PB 0x0000000086f00000| Untracked 
+| 112|0x0000000087000000, 0x0000000087000000, 0x0000000087100000|  0%| F|  |TAMS 0x0000000087000000| PB 0x0000000087000000| Untracked 
+| 113|0x0000000087100000, 0x0000000087100000, 0x0000000087200000|  0%| F|  |TAMS 0x0000000087100000| PB 0x0000000087100000| Untracked 
+| 114|0x0000000087200000, 0x0000000087200000, 0x0000000087300000|  0%| F|  |TAMS 0x0000000087200000| PB 0x0000000087200000| Untracked 
+| 115|0x0000000087300000, 0x0000000087300000, 0x0000000087400000|  0%| F|  |TAMS 0x0000000087300000| PB 0x0000000087300000| Untracked 
+| 116|0x0000000087400000, 0x0000000087400000, 0x0000000087500000|  0%| F|  |TAMS 0x0000000087400000| PB 0x0000000087400000| Untracked 
+| 117|0x0000000087500000, 0x0000000087500000, 0x0000000087600000|  0%| F|  |TAMS 0x0000000087500000| PB 0x0000000087500000| Untracked 
+| 118|0x0000000087600000, 0x0000000087600000, 0x0000000087700000|  0%| F|  |TAMS 0x0000000087600000| PB 0x0000000087600000| Untracked 
+| 119|0x0000000087700000, 0x0000000087700000, 0x0000000087800000|  0%| F|  |TAMS 0x0000000087700000| PB 0x0000000087700000| Untracked 
+| 120|0x0000000087800000, 0x0000000087800000, 0x0000000087900000|  0%| F|  |TAMS 0x0000000087800000| PB 0x0000000087800000| Untracked 
+| 121|0x0000000087900000, 0x0000000087900000, 0x0000000087a00000|  0%| F|  |TAMS 0x0000000087900000| PB 0x0000000087900000| Untracked 
+| 122|0x0000000087a00000, 0x0000000087a00000, 0x0000000087b00000|  0%| F|  |TAMS 0x0000000087a00000| PB 0x0000000087a00000| Untracked 
+| 123|0x0000000087b00000, 0x0000000087b00000, 0x0000000087c00000|  0%| F|  |TAMS 0x0000000087b00000| PB 0x0000000087b00000| Untracked 
+| 124|0x0000000087c00000, 0x0000000087c00000, 0x0000000087d00000|  0%| F|  |TAMS 0x0000000087c00000| PB 0x0000000087c00000| Untracked 
+| 125|0x0000000087d00000, 0x0000000087d00000, 0x0000000087e00000|  0%| F|  |TAMS 0x0000000087d00000| PB 0x0000000087d00000| Untracked 
+| 126|0x0000000087e00000, 0x0000000087e00000, 0x0000000087f00000|  0%| F|  |TAMS 0x0000000087e00000| PB 0x0000000087e00000| Untracked 
+| 127|0x0000000087f00000, 0x0000000087f00000, 0x0000000088000000|  0%| F|  |TAMS 0x0000000087f00000| PB 0x0000000087f00000| Untracked 
+| 128|0x0000000088000000, 0x0000000088000000, 0x0000000088100000|  0%| F|  |TAMS 0x0000000088000000| PB 0x0000000088000000| Untracked 
+
+Card table byte_map: [0x000001899e070000,0x000001899e470000] _byte_map_base: 0x000001899dc70000
+
+Marking Bits: (CMBitMap*) 0x000001898bfd0fa0
+ Bits: [0x000001899e470000, 0x00000189a0470000)
+
+Polling page: 0x0000018989df0000
+
+Metaspace:
+
+Usage:
+  Non-class:     21.44 MB used.
+      Class:      2.31 MB used.
+       Both:     23.74 MB used.
+
+Virtual space:
+  Non-class space:       64.00 MB reserved,      21.56 MB ( 34%) committed,  1 nodes.
+      Class space:        1.00 GB reserved,       2.38 MB ( <1%) committed,  1 nodes.
+             Both:        1.06 GB reserved,      23.94 MB (  2%) committed. 
+
+Chunk freelists:
+   Non-Class:  10.00 MB
+       Class:  13.56 MB
+        Both:  23.56 MB
+
+MaxMetaspaceSize: unlimited
+CompressedClassSpaceSize: 1.00 GB
+Initial GC threshold: 21.00 MB
+Current GC threshold: 39.62 MB
+CDS: off
+ - commit_granule_bytes: 65536.
+ - commit_granule_words: 8192.
+ - virtual_space_node_default_size: 8388608.
+ - enlarge_chunks_in_place: 1.
+ - use_allocation_guard: 0.
+
+
+Internal statistics:
+
+num_allocs_failed_limit: 3.
+num_arena_births: 200.
+num_arena_deaths: 0.
+num_vsnodes_births: 2.
+num_vsnodes_deaths: 0.
+num_space_committed: 382.
+num_space_uncommitted: 0.
+num_chunks_returned_to_freelist: 3.
+num_chunks_taken_from_freelist: 567.
+num_chunk_merges: 3.
+num_chunk_splits: 359.
+num_chunks_enlarged: 258.
+num_inconsistent_stats: 0.
+
+CodeHeap 'non-profiled nmethods': size=120000Kb used=2221Kb max_used=3076Kb free=117778Kb
+ bounds [0x0000018996410000, 0x0000018996720000, 0x000001899d940000]
+CodeHeap 'profiled nmethods': size=120000Kb used=4492Kb max_used=6774Kb free=115507Kb
+ bounds [0x000001898e940000, 0x000001898f000000, 0x0000018995e70000]
+CodeHeap 'non-nmethods': size=5760Kb used=1651Kb max_used=1719Kb free=4108Kb
+ bounds [0x0000018995e70000, 0x00000189960e0000, 0x0000018996410000]
+CodeCache: size=245760Kb, used=8364Kb, max_used=11569Kb, free=237393Kb
+ total_blobs=3172, nmethods=2603, adapters=473, full_count=0
+Compilation: enabled, stopped_count=0, restarted_count=0
+
+Compilation events (20 events):
+Event: 7.523 Thread 0x00000189ab369010 nmethod 3389 0x00000189964c5110 code [0x00000189964c52a0, 0x00000189964c56f8]
+Event: 7.523 Thread 0x00000189ab369010 3360       4       org.languagetool.rules.patterns.PatternToken::<init> (32 bytes)
+Event: 7.526 Thread 0x00000189ab369010 nmethod 3360 0x0000018996499a90 code [0x0000018996499c20, 0x0000018996499e28]
+Event: 7.526 Thread 0x00000189ab369010 3371       4       org.languagetool.rules.patterns.PatternToken::normalizeTextPattern (14 bytes)
+Event: 7.541 Thread 0x00000189a70640e0 3392       3       java.lang.StringUTF16::toLowerCase (299 bytes)
+Event: 7.542 Thread 0x00000189a70640e0 nmethod 3392 0x000001898ec80710 code [0x000001898ec80a40, 0x000001898ec81be8]
+Event: 7.550 Thread 0x00000189ab369010 nmethod 3371 0x000001899651e910 code [0x000001899651eba0, 0x000001899651fac8]
+Event: 7.550 Thread 0x00000189aaf09440 nmethod 3348% 0x000001899656de90 code [0x000001899656e400, 0x0000018996571950]
+Event: 7.550 Thread 0x00000189ab369010 3391       4       java.util.StringTokenizer::scanToken (179 bytes)
+Event: 7.550 Thread 0x00000189aaf09440 3388       4       java.lang.StringUTF16::indexOf (44 bytes)
+Event: 7.551 Thread 0x00000189aaf09440 nmethod 3388 0x00000189964af610 code [0x00000189964af7a0, 0x00000189964af9e8]
+Event: 7.551 Thread 0x00000189aaf09440 3338       4       java.util.Objects::hash (5 bytes)
+Event: 7.556 Thread 0x00000189aaf09440 nmethod 3338 0x0000018996525790 code [0x0000018996525920, 0x0000018996525aa8]
+Event: 7.557 Thread 0x00000189aaf09440 3395       4       org.languagetool.tools.StringTools::trimWhitespace (137 bytes)
+Event: 7.559 Thread 0x00000189ab369010 nmethod 3391 0x000001899667c990 code [0x000001899667cba0, 0x000001899667d380]
+Event: 7.559 Thread 0x00000189ab369010 3396       4       com.google.common.collect.Interners$InternerImpl::intern (54 bytes)
+Event: 7.581 Thread 0x00000189aaf09440 nmethod 3395 0x00000189965b3890 code [0x00000189965b3b20, 0x00000189965b4a48]
+Event: 7.581 Thread 0x00000189aaf09440 3398       4       org.languagetool.rules.patterns.AbstractTokenBasedRule::<init> (289 bytes)
+Event: 7.623 Thread 0x00000189ab369010 nmethod 3396 0x0000018996587c90 code [0x0000018996588160, 0x000001899658a928]
+Event: 7.623 Thread 0x00000189ab369010 3405       4       org.languagetool.rules.patterns.PatternToken::calcStringHints (220 bytes)
+
+GC Heap History (20 events):
+Event: 4.776 GC heap after
+{Heap after GC invocations=7 (full 0):
+ garbage-first heap   total 81920K, used 29874K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 3 young (3072K), 3 survivors (3072K)
+ Metaspace       used 23687K, committed 23936K, reserved 1114112K
+  class space    used 2302K, committed 2432K, reserved 1048576K
+}
+Event: 5.231 GC heap before
+{Heap before GC invocations=7 (full 0):
+ garbage-first heap   total 81920K, used 64690K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 37 young (37888K), 3 survivors (3072K)
+ Metaspace       used 23721K, committed 24000K, reserved 1114112K
+  class space    used 2303K, committed 2432K, reserved 1048576K
+}
+Event: 5.250 GC heap after
+{Heap after GC invocations=8 (full 0):
+ garbage-first heap   total 81920K, used 33792K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 5 young (5120K), 5 survivors (5120K)
+ Metaspace       used 23721K, committed 24000K, reserved 1114112K
+  class space    used 2303K, committed 2432K, reserved 1048576K
+}
+Event: 5.692 GC heap before
+{Heap before GC invocations=8 (full 0):
+ garbage-first heap   total 81920K, used 65536K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 36 young (36864K), 5 survivors (5120K)
+ Metaspace       used 23733K, committed 24000K, reserved 1114112K
+  class space    used 2306K, committed 2432K, reserved 1048576K
+}
+Event: 5.714 GC heap after
+{Heap after GC invocations=9 (full 0):
+ garbage-first heap   total 81920K, used 38786K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 5 young (5120K), 5 survivors (5120K)
+ Metaspace       used 23733K, committed 24000K, reserved 1114112K
+  class space    used 2306K, committed 2432K, reserved 1048576K
+}
+Event: 6.004 GC heap before
+{Heap before GC invocations=9 (full 0):
+ garbage-first heap   total 81920K, used 67458K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 33 young (33792K), 5 survivors (5120K)
+ Metaspace       used 23780K, committed 24000K, reserved 1114112K
+  class space    used 2313K, committed 2432K, reserved 1048576K
+}
+Event: 6.021 GC heap after
+{Heap after GC invocations=10 (full 0):
+ garbage-first heap   total 81920K, used 42308K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 4 young (4096K), 4 survivors (4096K)
+ Metaspace       used 23780K, committed 24000K, reserved 1114112K
+  class space    used 2313K, committed 2432K, reserved 1048576K
+}
+Event: 6.551 GC heap before
+{Heap before GC invocations=10 (full 0):
+ garbage-first heap   total 81920K, used 69956K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 31 young (31744K), 4 survivors (4096K)
+ Metaspace       used 24134K, committed 24320K, reserved 1114112K
+  class space    used 2348K, committed 2432K, reserved 1048576K
+}
+Event: 6.568 GC heap after
+{Heap after GC invocations=11 (full 0):
+ garbage-first heap   total 115712K, used 46080K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 4 young (4096K), 4 survivors (4096K)
+ Metaspace       used 24134K, committed 24320K, reserved 1114112K
+  class space    used 2348K, committed 2432K, reserved 1048576K
+}
+Event: 6.910 GC heap before
+{Heap before GC invocations=12 (full 0):
+ garbage-first heap   total 115712K, used 97280K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 53 young (54272K), 4 survivors (4096K)
+ Metaspace       used 24247K, committed 24448K, reserved 1114112K
+  class space    used 2359K, committed 2432K, reserved 1048576K
+}
+Event: 6.944 GC heap after
+{Heap after GC invocations=13 (full 0):
+ garbage-first heap   total 115712K, used 58368K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 7 young (7168K), 7 survivors (7168K)
+ Metaspace       used 24247K, committed 24448K, reserved 1114112K
+  class space    used 2359K, committed 2432K, reserved 1048576K
+}
+Event: 7.045 GC heap before
+{Heap before GC invocations=13 (full 0):
+ garbage-first heap   total 115712K, used 98304K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 44 young (45056K), 7 survivors (7168K)
+ Metaspace       used 24255K, committed 24448K, reserved 1114112K
+  class space    used 2359K, committed 2432K, reserved 1048576K
+}
+Event: 7.080 GC heap after
+{Heap after GC invocations=14 (full 0):
+ garbage-first heap   total 115712K, used 67072K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 6 young (6144K), 6 survivors (6144K)
+ Metaspace       used 24255K, committed 24448K, reserved 1114112K
+  class space    used 2359K, committed 2432K, reserved 1048576K
+}
+Event: 7.151 GC heap before
+{Heap before GC invocations=14 (full 0):
+ garbage-first heap   total 115712K, used 98816K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 37 young (37888K), 6 survivors (6144K)
+ Metaspace       used 24265K, committed 24448K, reserved 1114112K
+  class space    used 2359K, committed 2432K, reserved 1048576K
+}
+Event: 7.183 GC heap after
+{Heap after GC invocations=15 (full 0):
+ garbage-first heap   total 115712K, used 74240K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 5 young (5120K), 5 survivors (5120K)
+ Metaspace       used 24265K, committed 24448K, reserved 1114112K
+  class space    used 2359K, committed 2432K, reserved 1048576K
+}
+Event: 7.253 GC heap before
+{Heap before GC invocations=15 (full 0):
+ garbage-first heap   total 115712K, used 100864K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 31 young (31744K), 5 survivors (5120K)
+ Metaspace       used 24266K, committed 24448K, reserved 1114112K
+  class space    used 2359K, committed 2432K, reserved 1048576K
+}
+Event: 7.283 GC heap after
+{Heap after GC invocations=16 (full 0):
+ garbage-first heap   total 115712K, used 79872K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 4 young (4096K), 4 survivors (4096K)
+ Metaspace       used 24266K, committed 24448K, reserved 1114112K
+  class space    used 2359K, committed 2432K, reserved 1048576K
+}
+Event: 7.361 GC heap before
+{Heap before GC invocations=17 (full 0):
+ garbage-first heap   total 132096K, used 105472K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 27 young (27648K), 4 survivors (4096K)
+ Metaspace       used 24270K, committed 24448K, reserved 1114112K
+  class space    used 2359K, committed 2432K, reserved 1048576K
+}
+Event: 7.382 GC heap after
+{Heap after GC invocations=18 (full 0):
+ garbage-first heap   total 132096K, used 87935K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 4 young (4096K), 4 survivors (4096K)
+ Metaspace       used 24270K, committed 24448K, reserved 1114112K
+  class space    used 2359K, committed 2432K, reserved 1048576K
+}
+Event: 7.634 GC heap before
+{Heap before GC invocations=18 (full 0):
+ garbage-first heap   total 132096K, used 115583K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 32 young (32768K), 4 survivors (4096K)
+ Metaspace       used 24313K, committed 24512K, reserved 1114112K
+  class space    used 2362K, committed 2432K, reserved 1048576K
+}
+
+Dll operation events (9 events):
+Event: 0.013 Loaded shared library c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\java.dll
+Event: 0.053 Loaded shared library c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\zip.dll
+Event: 0.130 Loaded shared library c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\jsvml.dll
+Event: 0.335 Loaded shared library C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\net.dll
+Event: 0.339 Loaded shared library C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\nio.dll
+Event: 0.351 Loaded shared library C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\zip.dll
+Event: 0.577 Loaded shared library C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\jimage.dll
+Event: 0.655 Loaded shared library C:\Users\Händel\AppData\Local\Temp\jansi-2.4.2-9058d2c7495a84fb-jansi.dll
+Event: 0.674 Loaded shared library c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\verify.dll
+
+Deoptimization events (20 events):
+Event: 7.551 Thread 0x000001898bf78000 DEOPT PACKING pc=0x000001898eed841e sp=0x00000058411fe340
+Event: 7.551 Thread 0x000001898bf78000 DEOPT UNPACKING pc=0x0000018995ec88e2 sp=0x00000058411fd780 mode 0
+Event: 7.551 Thread 0x000001898bf78000 DEOPT PACKING pc=0x000001898eed841e sp=0x00000058411fe340
+Event: 7.551 Thread 0x000001898bf78000 DEOPT UNPACKING pc=0x0000018995ec88e2 sp=0x00000058411fd780 mode 0
+Event: 7.551 Thread 0x000001898bf78000 DEOPT PACKING pc=0x000001898eed841e sp=0x00000058411fe340
+Event: 7.551 Thread 0x000001898bf78000 DEOPT UNPACKING pc=0x0000018995ec88e2 sp=0x00000058411fd780 mode 0
+Event: 7.578 Thread 0x000001898bf78000 DEOPT PACKING pc=0x000001898ef613c7 sp=0x00000058411fe6e0
+Event: 7.578 Thread 0x000001898bf78000 DEOPT UNPACKING pc=0x0000018995ec88e2 sp=0x00000058411fde08 mode 0
+Event: 7.590 Thread 0x000001898bf78000 Uncommon trap: trap_request=0xffffff66 fr.pc=0x0000018996570780 relative=0x0000000000002380
+Event: 7.590 Thread 0x000001898bf78000 Uncommon trap: reason=speculate_class_check action=maybe_recompile pc=0x0000018996570780 method=org.languagetool.rules.spelling.SpellingCheckRule.addIgnoreWords(Ljava/lang/String;)V @ 1 c2
+Event: 7.590 Thread 0x000001898bf78000 DEOPT PACKING pc=0x0000018996570780 sp=0x00000058411fe930
+Event: 7.590 Thread 0x000001898bf78000 DEOPT UNPACKING pc=0x0000018995ec7da2 sp=0x00000058411fe888 mode 2
+Event: 7.609 Thread 0x000001898bf78000 Uncommon trap: trap_request=0xffffff66 fr.pc=0x0000018996570780 relative=0x0000000000002380
+Event: 7.609 Thread 0x000001898bf78000 Uncommon trap: reason=speculate_class_check action=maybe_recompile pc=0x0000018996570780 method=org.languagetool.rules.spelling.SpellingCheckRule.addIgnoreWords(Ljava/lang/String;)V @ 1 c2
+Event: 7.609 Thread 0x000001898bf78000 DEOPT PACKING pc=0x0000018996570780 sp=0x00000058411fe930
+Event: 7.609 Thread 0x000001898bf78000 DEOPT UNPACKING pc=0x0000018995ec7da2 sp=0x00000058411fe888 mode 2
+Event: 7.625 Thread 0x000001898bf78000 Uncommon trap: trap_request=0xffffff66 fr.pc=0x0000018996570780 relative=0x0000000000002380
+Event: 7.625 Thread 0x000001898bf78000 Uncommon trap: reason=speculate_class_check action=maybe_recompile pc=0x0000018996570780 method=org.languagetool.rules.spelling.SpellingCheckRule.addIgnoreWords(Ljava/lang/String;)V @ 1 c2
+Event: 7.625 Thread 0x000001898bf78000 DEOPT PACKING pc=0x0000018996570780 sp=0x00000058411fe930
+Event: 7.625 Thread 0x000001898bf78000 DEOPT UNPACKING pc=0x0000018995ec7da2 sp=0x00000058411fe888 mode 2
+
+Classes loaded (20 events):
+Event: 6.903 Loading class sun/text/resources/BreakIteratorInfo
+Event: 6.903 Loading class sun/text/resources/BreakIteratorInfo done
+Event: 6.904 Loading class sun/text/resources/BreakIteratorResources
+Event: 6.904 Loading class sun/util/resources/BreakIteratorResourceBundle
+Event: 6.904 Loading class sun/util/resources/BreakIteratorResourceBundle done
+Event: 6.904 Loading class sun/text/resources/BreakIteratorResources done
+Event: 6.906 Loading class sun/text/RuleBasedBreakIterator
+Event: 6.906 Loading class sun/text/RuleBasedBreakIterator done
+Event: 6.907 Loading class sun/text/CompactByteArray
+Event: 6.907 Loading class sun/text/CompactByteArray done
+Event: 6.907 Loading class sun/text/SupplementaryCharacterData
+Event: 6.907 Loading class sun/text/SupplementaryCharacterData done
+Event: 6.907 Loading class java/text/BreakIterator$BreakIteratorCache
+Event: 6.907 Loading class java/text/BreakIterator$BreakIteratorCache done
+Event: 6.907 Loading class java/text/StringCharacterIterator
+Event: 6.907 Loading class java/text/CharacterIterator
+Event: 6.908 Loading class java/text/CharacterIterator done
+Event: 6.908 Loading class java/text/StringCharacterIterator done
+Event: 7.393 Loading class java/net/URISyntaxException
+Event: 7.393 Loading class java/net/URISyntaxException done
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (20 events):
+Event: 0.657 Thread 0x000001898bf78000 Exception <a 'java/lang/NullPointerException'{0x0000000083792420}> (0x0000000083792420) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.658 Thread 0x000001898bf78000 Exception <a 'java/lang/NullPointerException'{0x0000000083798a28}> (0x0000000083798a28) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.660 Thread 0x000001898bf78000 Exception <a 'java/lang/NullPointerException'{0x00000000837ace80}> (0x00000000837ace80) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.660 Thread 0x000001898bf78000 Exception <a 'java/lang/NullPointerException'{0x00000000837ad160}> (0x00000000837ad160) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.660 Thread 0x000001898bf78000 Exception <a 'java/lang/NullPointerException'{0x00000000837ad440}> (0x00000000837ad440) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.660 Thread 0x000001898bf78000 Exception <a 'java/lang/NullPointerException'{0x00000000837ad720}> (0x00000000837ad720) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.973 Thread 0x000001898bf78000 Exception <a 'java/lang/NoSuchMethodError'{0x00000000830add10}: 'void java.lang.invoke.DelegatingMethodHandle$Holder.reinvoke_L(java.lang.Object, java.lang.Object, int)'> (0x00000000830add10) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.973 Thread 0x000001898bf78000 Exception <a 'java/lang/NoSuchMethodError'{0x00000000830b4600}: 'int java.lang.invoke.Invokers$Holder.invokeExact_MT(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x00000000830b4600) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.974 Thread 0x000001898bf78000 Exception <a 'java/lang/NoSuchMethodError'{0x00000000830b7fa0}: 'void java.lang.invoke.Invokers$Holder.invokeExact_MT(java.lang.Object, java.lang.Object, int, java.lang.Object)'> (0x00000000830b7fa0) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.976 Thread 0x000001898bf78000 Exception <a 'java/lang/NoSuchMethodError'{0x00000000830c38e0}: 'void java.lang.invoke.Invokers$Holder.invokeExact_MT(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'> (0x00000000830c38e0) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 1.382 Thread 0x000001898bf78000 Exception <a 'java/lang/NoSuchMethodError'{0x0000000083e10108}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.invokeStaticInit(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x0000000083e10108) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 1.391 Thread 0x000001898bf78000 Exception <a 'java/lang/NoClassDefFoundError'{0x0000000083e353a0}: org/apache/logging/log4j/spi/LoggerAdapter> (0x0000000083e353a0) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 301]
+Event: 1.537 Thread 0x000001898bf78000 Exception <a 'java/lang/ClassNotFoundException'{0x0000000083ef82e0}: com/sun/org/apache/xerces/internal/impl/xpath/regex/spi/messageProvider> (0x0000000083ef82e0) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 312]
+Event: 1.952 Thread 0x000001898bf78000 Exception <a 'java/lang/NoSuchMethodError'{0x0000000083623978}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.invokeInterface(java.lang.Object, java.lang.Object)'> (0x0000000083623978) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 1.953 Thread 0x000001898bf78000 Exception <a 'java/lang/IncompatibleClassChangeError'{0x0000000083626f50}: Found class java.lang.Object, but interface was expected> (0x0000000083626f50) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 840]
+Event: 2.328 Thread 0x000001898bf78000 Exception <a 'java/lang/NoSuchMethodError'{0x0000000083e30570}: 'java.lang.Object java.lang.invoke.Invokers$Holder.invokeExact_MT(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'> (0x0000000083e30570) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 2.389 Thread 0x000001898bf78000 Exception <a 'java/lang/NoSuchMethodError'{0x0000000083d15ea0}: 'int java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x0000000083d15ea0) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 2.501 Thread 0x000001898bf78000 Exception <a 'java/lang/NoSuchMethodError'{0x0000000083bf6530}: 'void java.lang.invoke.DirectMethodHandle$Holder.invokeInterface(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x0000000083bf6530) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 2.650 Thread 0x000001898bf78000 Exception <a 'java/lang/NoSuchMethodError'{0x0000000083adeb78}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x0000000083adeb78) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 6.388 Thread 0x000001898bf78000 Implicit null exception at 0x00000189965e6f01 to 0x00000189965e6f34
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (20 events):
+Event: 6.635 Executing VM operation: G1PauseRemark done
+Event: 6.665 Executing VM operation: G1PauseCleanup
+Event: 6.666 Executing VM operation: G1PauseCleanup done
+Event: 6.910 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 6.944 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 7.045 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 7.080 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 7.151 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 7.184 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 7.253 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 7.283 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 7.288 Executing VM operation: G1PauseRemark
+Event: 7.293 Executing VM operation: G1PauseRemark done
+Event: 7.326 Executing VM operation: G1PauseCleanup
+Event: 7.326 Executing VM operation: G1PauseCleanup done
+Event: 7.361 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 7.382 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 7.395 Executing VM operation: HandshakeAllThreads (Deoptimize)
+Event: 7.395 Executing VM operation: HandshakeAllThreads (Deoptimize) done
+Event: 7.634 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (20 events):
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ee47410
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ee4ba10
+Event: 7.293 Thread 0x00000189a2e9db20 flushing osr nmethod 0x000001898ee55a10
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ee68510
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ee98690
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ee99290
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ee9b090
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ee9b590
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ee9c090
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898eebac10
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898eebf490
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898eed9110
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898eedf490
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898eef9990
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ef0b390
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ef45510
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ef48310
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ef4ab10
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898ef6b710
+Event: 7.293 Thread 0x00000189a2e9db20 flushing  nmethod 0x000001898efad910
+
+Events (20 events):
+Event: 0.127 Thread 0x000001898bf78000 Thread added: 0x00000189a7035b50
+Event: 0.127 Thread 0x000001898bf78000 Thread added: 0x00000189a7041e60
+Event: 0.127 Thread 0x000001898bf78000 Thread added: 0x00000189a7062ed0
+Event: 0.127 Thread 0x000001898bf78000 Thread added: 0x00000189a70640e0
+Event: 0.312 Thread 0x000001898bf78000 Thread added: 0x00000189a71f8cd0
+Event: 0.322 Thread 0x000001898bf78000 Thread added: 0x00000189a71bef40
+Event: 0.567 Thread 0x000001898bf78000 Thread added: 0x00000189a7773fe0
+Event: 0.650 Thread 0x00000189a7773fe0 Thread exited: 0x00000189a7773fe0
+Event: 0.722 Thread 0x00000189a70640e0 Thread added: 0x00000189a7bedf00
+Event: 0.987 Thread 0x00000189a7bedf00 Thread exited: 0x00000189a7bedf00
+Event: 1.096 Thread 0x00000189a70640e0 Thread added: 0x00000189a7bd4350
+Event: 2.030 Thread 0x00000189a7bd4350 Thread exited: 0x00000189a7bd4350
+Event: 2.122 Thread 0x00000189a70640e0 Thread added: 0x00000189aaf09440
+Event: 2.124 Thread 0x00000189a70640e0 Thread added: 0x00000189aaf09ae0
+Event: 2.667 Thread 0x00000189aaf09ae0 Thread exited: 0x00000189aaf09ae0
+Event: 2.897 Thread 0x00000189a70640e0 Thread added: 0x00000189aac96290
+Event: 7.312 Thread 0x00000189aac96290 Thread exited: 0x00000189aac96290
+Event: 7.350 Thread 0x00000189aaf09440 Thread exited: 0x00000189aaf09440
+Event: 7.398 Thread 0x00000189a70640e0 Thread added: 0x00000189ab369010
+Event: 7.446 Thread 0x00000189ab369010 Thread added: 0x00000189aaf09440
+
+
+Dynamic libraries:
+0x00007ff678ac0000 - 0x00007ff678ace000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\java.exe
+0x00007ffc4b1a0000 - 0x00007ffc4b406000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc495f0000 - 0x00007ffc496b9000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffc48810000 - 0x00007ffc48c0a000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffc484e0000 - 0x00007ffc4862c000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffc17e30000 - 0x00007ffc17e4e000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\VCRUNTIME140.dll
+0x00007ffc17e50000 - 0x00007ffc17e68000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\jli.dll
+0x00007ffc4a470000 - 0x00007ffc4a637000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffc48ca0000 - 0x00007ffc48cc7000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffc49c60000 - 0x00007ffc49c8b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffc486e0000 - 0x00007ffc4880b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffc48430000 - 0x00007ffc484d3000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffc2ae30000 - 0x00007ffc2b0c2000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.8521_none_3e08b75ce33403b3\COMCTL32.dll
+0x00007ffc4a3b0000 - 0x00007ffc4a459000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffc49fe0000 - 0x00007ffc4a012000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffc3e110000 - 0x00007ffc3e11c000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\vcruntime140_1.dll
+0x00007ffc16cb0000 - 0x00007ffc16d3d000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\msvcp140.dll
+0x00007ffb79890000 - 0x00007ffb7a627000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\server\jvm.dll
+0x00007ffc49530000 - 0x00007ffc495e6000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffc49400000 - 0x00007ffc494aa000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffc4a070000 - 0x00007ffc4a188000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffc4afb0000 - 0x00007ffc4b030000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffc48290000 - 0x00007ffc482ee000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ffc3c380000 - 0x00007ffc3c3b6000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffc3db30000 - 0x00007ffc3db3b000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffc48270000 - 0x00007ffc48284000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ffc471c0000 - 0x00007ffc471db000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffc3b5d0000 - 0x00007ffc3b5da000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\jimage.dll
+0x00007ffc45b20000 - 0x00007ffc45d62000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffc49040000 - 0x00007ffc493c3000 	C:\WINDOWS\System32\combase.dll
+0x00007ffc49c90000 - 0x00007ffc49d69000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffc234d0000 - 0x00007ffc2350b000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffc48630000 - 0x00007ffc486d8000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffc178f0000 - 0x00007ffc1790f000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\java.dll
+0x00007ffc178d0000 - 0x00007ffc178e8000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\zip.dll
+0x00007ffc4a820000 - 0x00007ffc4afa4000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffc46010000 - 0x00007ffc46890000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x00007ffc49d70000 - 0x00007ffc49e66000 	C:\WINDOWS\System32\SHCORE.dll
+0x00007ffc48f10000 - 0x00007ffc48f77000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffc48350000 - 0x00007ffc48379000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007ffc14090000 - 0x00007ffc14167000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\jsvml.dll
+0x00007ffc2ab60000 - 0x00007ffc2ab70000 	C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\net.dll
+0x00007ffc3e580000 - 0x00007ffc3e6a9000 	C:\WINDOWS\SYSTEM32\WINHTTP.dll
+0x00007ffc47730000 - 0x00007ffc4779c000 	C:\WINDOWS\system32\mswsock.dll
+0x00007ffc178b0000 - 0x00007ffc178c6000 	C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\nio.dll
+0x00007ffc08cb0000 - 0x00007ffc08cd4000 	C:\Users\Händel\AppData\Local\Temp\jansi-2.4.2-9058d2c7495a84fb-jansi.dll
+0x00007ffc2a850000 - 0x00007ffc2a860000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\verify.dll
+
+JVMTI agents: none
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.8521_none_3e08b75ce33403b3;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\server;C:\Users\Händel\AppData\Local\Temp
+
+VM Arguments:
+jvm_args: -Xms64m -Xmx2048m -Dapp.name=ltex-ls-plus -Dapp.repo=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib -Dapp.home=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1 -Dbasedir=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1 
+java_command: org.bsplines.ltexls.LtexLanguageServerLauncher
+java_class_path (initial): c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\etc;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\aho-corasick-double-array-trie-1.2.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\angus-activation-2.0.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\animal-sniffer-annotations-1.24.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\annotations-12.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\annotations-13.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\annotations-4.1.1.4.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\asturian-pos-dict-0.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\catalan-pos-dict-2.27.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\checker-qual-3.43.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-digester-2.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-lang3-3.18.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-logging-1.3.4.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-pool2-2.12.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-text-1.12.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-validator-1.9.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\dutch-pos-dict-0.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\english-pos-dict-0.6.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\error_prone_annotations-2.38.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\error_prone_annotations-2.41.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\failureaccess-1.0.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\fastutil-core-8.5.14.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-ext-definition-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-ext-gfm-strikethrough-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-ext-gitlab-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-ext-tables-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-ext-yaml-front-matter-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-test-util-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-ast-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-builder-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-collection-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-data-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-dependency-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-format-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-html-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-misc-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-options-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-sequence-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-visitor-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\french-pos-dict-0.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\german-pos-dict-1.2.4.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-api-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-context-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-core-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-netty-shaded-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-protobuf-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-protobuf-lite-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-stub-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-util-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\gson-2.13.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\gson-2.13.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\guava-33.3.1-jre.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\hamcrest-core-1.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\hanlp-portable-1.8.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\HdrHistogram-2.1.12.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\hppc-0.8.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\hunspell-2.1.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\icu4j-77.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\indriya-1.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\istack-commons-runtime-4.1.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\j2objc-annotations-3.0.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jackson-annotations-2.18.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jackson-core-2.18.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jackson-databind-2.18.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jakarta.activation-1.2.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jakarta.activation-api-2.1.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jakarta.xml.bind-api-2.3.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jansi-2.4.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\java-diff-utils-4.12.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\javax.activation-api-1.2.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\javax.annotation-api-1.3.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jaxb-api-2.3.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jaxb-core-2.3.0.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jaxb-core-4.0.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jaxb-impl-2.3.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jaxb-runtime-4.0.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jna-5.12.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jna-platform-5.12.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\json-20240303.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jsonic-1.2.11.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jsr305-3.0.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\junit-4.13.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jwordsplitter-4.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\kotlin-stdlib-2.2.10.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\kotlin-stdlib-2.2.20.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-all-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ar-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ast-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-be-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-br-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ca-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-crh-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-da-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-de-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-de-DE-x-simple-language-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-detector-0.6.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-el-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-en-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-eo-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-es-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-fa-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-fr-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ga-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-gl-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-it-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ja-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-km-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-nl-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-pl-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-pt-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ro-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ru-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-sk-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-sl-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-sv-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ta-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-tl-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-uk-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-zh-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\languagetool-core-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\languagetool-ga-dicts-0.02.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\LatencyUtils-2.0.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\linguistics.grammardb.spell.languagetool-1.0.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\lspcli-2.2.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\ltexls-plus-18.6.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\lucene-backward-codecs-5.5.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\lucene-core-5.5.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\lucene-gosen-6.2.1-ipadic.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\micrometer-core-1.7.12.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\micrometer-registry-prometheus-1.7.12.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-crh-lt-1.0.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-fsa-2.1.9.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-fsa-builders-2.1.9.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-speller-2.1.9.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-stemming-2.1.9.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-ukrainian-lt-6.7.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morphology-el-1.0.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opennlp-chunk-models-1.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opennlp-postag-models-1.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opennlp-tokenize-models-1.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opennlp-tools-1.9.4.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\openregex-1.1.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opentelemetry-api-1.42.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opentelemetry-context-1.42.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opentelemetry-semconv-1.30.1-alpha.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\org.eclipse.lsp4j-0.24.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\org.eclipse.lsp4j.jsonrpc-0.24.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\perfmark-api-0.27.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\picocli-4.7.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\portuguese-pos-dict-1.2.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\proto-google-common-protos-2.59.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\protobuf-java-3.25.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\resilience4j-circuitbreaker-1.7.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\resilience4j-core-1.7.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\resilience4j-micrometer-1.7.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\segment-2.0.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient-0.16.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient_common-0.10.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient_guava-0.16.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient_tracer_common-0.16.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient_tracer_otel-0.16.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient_tracer_otel_agent-0.16.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\slf4j-api-2.0.16.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\slf4j-nop-2.0.17.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\spanish-pos-dict-2.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\stax2-api-4.2.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\txw2-4.0.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\unit-api-1.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\uom-lib-common-1.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\vavr-0.10.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\vavr-match-0.10.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\woodstox-core-7.1.1.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 67108864                                  {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2147483648                                {product} {command line}
+   size_t MaxNewSize                               = 1287651328                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 67108864                                  {product} {command line}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 2147483648                             {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+JAVA_HOME=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9
+CLASSPATH="c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1"\etc;"c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib"\*
+PATH=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Quarto\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Falcon\MinGW\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;H:\Program Files\MATLAB\R2023b\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;H:\Polyspace\R2021a\runtime\win64;H:\Polyspace\R2021a\bin;C:\Program Files\Pandoc\;C:\texlive\2026\bin\windows;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Users\Händel\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Händel\AppData\Local\Programs\Python\Python312\;C:\Users\Händel\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\Händel\AppData\Local\Programs\Python\Python313;C:\Users\Händel\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\Händel\AppData\Local\Programs\Python\Python312;C:\Users\HÃ¤ndel\AppData\Local\Programs\Python\Launcher\;C:\Users\HÃ¤ndel\AppData\Local\Microsoft\WindowsApps;C:\Users\HÃ¤ndel\AppData\Local\Programs\Microsoft VS Code\bin;C:\php-8.2.7-nts-Win32-vs16-x64;C:\Users\HÃ¤ndel\AppData\Local\spicetify;C:\Program Files (x86)\GNU Tools ARM Embedded\dfu-util.exe;C:\Users\HÃ¤ndel\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\GNU ARM Eclipse\Build Tools\2.6-201507152002\bin;C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2014q4\bin;C:\Program Files (x86)\GNU ARM Eclipse\Build Tools\2.4-201503242026\bin;C:\Users\Händel\AppData\Local\Microsoft\WindowsApps;C:\Users\HÃ¤ndel\AppData\Local\Programs\Ollama;C:\texlive\2026\b;C:\Users\Händel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Händel\AppData\Roaming\npm
+USERNAME=Händel Teste
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+TMP=C:\Users\HNDEL~1\AppData\Local\Temp
+TEMP=C:\Users\HNDEL~1\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+OS uptime: 1 days 18:01 hours
+
+CPU: total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 140 stepping 1 microcode 0x8a, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, avx512f, avx512dq, avx512cd, avx512bw, avx512vl, sha, fma, vzeroupper, avx512_vpopcntdq, avx512_vpclmulqdq, avx512_vaes, avx512_vnni, clflush, clflushopt, clwb, avx512_vbmi2, avx512_vbmi, rdtscp, rdpid, fsrm, gfni, avx512_bitalg, f16c, pku, cet_ibt, cet_ss, avx512_ifma
+Processor Information for processor 0
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 1
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 2
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 3
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 4
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 5
+  Max Mhz: 2419, Current Mhz: 1209, Mhz Limit: 2419
+Processor Information for processor 6
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 7
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+
+Memory: 4k page, system-wide physical 16107M (1806M free)
+TotalPageFile size 31460M (AvailPageFile size 51M)
+current process WorkingSet (physical memory assigned to process): 263M, peak: 263M
+current process commit charge ("private bytes"): 297M, peak: 542M
+
+vm_info: OpenJDK 64-Bit Server VM (21.0.8+9-LTS) for windows-amd64 JRE (21.0.8+9-LTS), built on 2025-07-15T00:00:00Z by "admin" with MS VC++ 17.7 (VS2022)
+
+END.

@@ -1,0 +1,53 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{15}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivação}{17}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos}{18}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{18}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Objetivos Específicos}{19}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Organização do Trabalho}{19}{section.1.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Identificação e Controle}}{20}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Identificação de Sistemas Dinâmicos}{20}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Modelagem em domínio contínuo}{21}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Modelagem em domínio discreto}{21}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Estimador dos Mínimos Quadrados Não-Recursivo}{22}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Controle de Sistemas Dinâmicos}{25}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Controlador Proporcional-Integral-Derivativo}{25}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Sintonia pelo Método do Relé}{27}{subsection.2.2.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{O Micromouse}}{31}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Características Construtivas}{31}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Programação e Bootloader}{32}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Cinemática}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Posicionamento e Orientação}{33}{section.3.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Metodologia}}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Preparação inicial}{35}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Manipulação mecânica}{35}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Manipulação de software}{35}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Coleta de Dados}{36}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Comunicação e Telemetria}{37}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Comunicação Serial}{38}{subsubsection.4.2.1.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Comunicação ESP-NOW}{38}{subsubsection.4.2.1.2}%
+\contentsline {section}{\numberline {4.3}Identificação e Controle}{39}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Identificação e Controle dos motores}{40}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Identificação e Controle das variáveis globais}{41}{subsection.4.3.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Resultados}}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Testes realizados nos motores}{43}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Identificação dos motores}{44}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Controle aplicado nos motores}{46}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Testes realizados para as variáveis globais}{50}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Identificação das variáveis globais}{51}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Controle aplicado nas variáveis globais}{53}{subsection.5.2.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Conclusões e Trabalhos Futuros}}{58}{chapter.6}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase []{REFER\^ENCIAS}}{60}{section*.66}%

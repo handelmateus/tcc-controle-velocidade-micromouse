@@ -1,0 +1,44 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Formato da célula do labirinto}}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Labirinto do \textit {All Japan Micromouse Robot Competition}}}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Kit utilizado pelos autores}}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de um sistema genérico}}{20}{figure.caption.16}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Amostragem de um sinal contínuo}}{22}{figure.caption.17}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Sistema em Malha Fechada}}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Sistema em Malha Fechada com Controlador}}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de Blocos com o Relé}}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Resposta desejada com o uso do Relé}}{28}{figure.caption.21}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Estrutura e composição do \textit {micromouse}}}{31}{figure.caption.23}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Comportamento diferencial do \textit {micromouse}}}{32}{figure.caption.24}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de blocos da cinemática do \textit {micromouse}}}{33}{figure.caption.25}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Deslocamento no plano cartesiano do \textit {micromouse}}}{34}{figure.caption.26}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Modelo 3D}}{36}{figure.caption.27}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Roda Impressa}}{36}{figure.caption.27}%
+\contentsline {figure}{\numberline {16}{\ignorespaces ESP-WROOM-32}}{37}{figure.caption.28}%
+\contentsline {figure}{\numberline {17}{\ignorespaces ESP8266}}{37}{figure.caption.28}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Arquitetura de rede de comunicação desenvolvida para envio de informações}}{37}{figure.caption.29}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Conexão de pinos entre o STM32F405RGT6 e o ESP8266}}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Esquemático da \gls {PCI}}}{39}{figure.caption.31}%
+\contentsline {figure}{\numberline {21}{\ignorespaces \gls {PCI} finalizada}}{39}{figure.caption.31}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Controle dos Motores Individuais}}{41}{figure.caption.32}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Controle Supervisório Incluso}}{42}{figure.caption.33}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Resposta do motor direito}}{44}{figure.caption.34}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Resposta do motor esquerdo}}{45}{figure.caption.35}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Identificação do motor direito}}{45}{figure.caption.36}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Identificação do motor esquerdo}}{46}{figure.caption.37}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Relé no modelo do motor direito}}{47}{figure.caption.39}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Relé no modelo do motor esquerdo}}{47}{figure.caption.40}%
+\contentsline {figure}{\numberline {30}{\ignorespaces PID no motor direito para 1 patamar}}{48}{figure.caption.43}%
+\contentsline {figure}{\numberline {31}{\ignorespaces PID no motor esquerdo para 1 patamar}}{49}{figure.caption.44}%
+\contentsline {figure}{\numberline {32}{\ignorespaces PID no motor direito para 3 patamares}}{49}{figure.caption.45}%
+\contentsline {figure}{\numberline {33}{\ignorespaces PID no motor esquerdo para 3 patamares}}{50}{figure.caption.46}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Resposta a entrada PRBS de $V$}}{51}{figure.caption.49}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Resposta a entrada PRBS de $\omega $}}{52}{figure.caption.50}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Resultado da identificação da malha $V$ pelo MQNR}}{52}{figure.caption.51}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Resultado da identificação da malha $\omega $ pelo MQNR}}{53}{figure.caption.52}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Aplicação do relé na malha $V$}}{53}{figure.caption.54}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Aplicação do relé na malha $\omega $}}{54}{figure.caption.55}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Controle de $V$ para 1 patamar}}{55}{figure.caption.58}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Controle de $\omega $ para 1 patamar}}{56}{figure.caption.59}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Controle de $V$ para 3 patamares}}{56}{figure.caption.61}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Controle de $\omega $ para 3 patamares}}{57}{figure.caption.62}%

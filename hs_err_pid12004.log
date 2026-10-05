@@ -1,0 +1,620 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 65536 bytes. Error detail: Failed to commit metaspace.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (virtualSpaceNode.cpp:113), pid=12004, tid=10596
+#
+# JRE version: OpenJDK Runtime Environment Temurin-21.0.8+9 (21.0.8+9) (build 21.0.8+9-LTS)
+# Java VM: OpenJDK 64-Bit Server VM Temurin-21.0.8+9 (21.0.8+9-LTS, mixed mode, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xms64m -Xmx2048m -Dapp.name=ltex-ls-plus -Dapp.repo=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib -Dapp.home=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1 -Dbasedir=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1 org.bsplines.ltexls.LtexLanguageServerLauncher
+
+Host: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz, 8 cores, 15G,  Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+Time: Sun Jun 14 14:32:47 2026 Hora Padrão de Buenos Aires elapsed time: 1.120437 seconds (0d 0h 0m 1s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000015e2f140f30):  JavaThread "main"             [_thread_in_vm, id=10596, stack(0x000000309f600000,0x000000309f700000) (1024K)]
+
+Stack: [0x000000309f600000,0x000000309f700000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6d2449]
+V  [jvm.dll+0x8ae341]
+V  [jvm.dll+0x8b08be]
+V  [jvm.dll+0x8b0fa3]
+V  [jvm.dll+0x280c96]
+V  [jvm.dll+0x8aa07e]
+V  [jvm.dll+0x6745b5]
+V  [jvm.dll+0x1e5b2c]
+V  [jvm.dll+0x1e58fe]
+V  [jvm.dll+0x676eb2]
+V  [jvm.dll+0x676cd2]
+V  [jvm.dll+0x674f8e]
+V  [jvm.dll+0x26a9af]
+V  [jvm.dll+0x67f1f5]
+V  [jvm.dll+0x21695d]
+V  [jvm.dll+0x216eda]
+V  [jvm.dll+0x217905]
+V  [jvm.dll+0x20cece]
+V  [jvm.dll+0x5b19dc]
+V  [jvm.dll+0x21e5ba]
+V  [jvm.dll+0x826c6c]
+V  [jvm.dll+0x827c94]
+V  [jvm.dll+0x828262]
+V  [jvm.dll+0x827ee8]
+V  [jvm.dll+0x26e30b]
+V  [jvm.dll+0x3d725e]
+C  0x0000015e3904b116
+
+The last pc belongs to new (printed below).
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  java.util.logging.LogManager$LoggerContext.addLocalLogger(Ljava/util/logging/Logger;Z)Z+75 java.logging@21.0.8
+j  java.util.logging.LogManager$LoggerContext.ensureDefaultLogger(Ljava/util/logging/Logger;)V+66 java.logging@21.0.8
+j  java.util.logging.LogManager$LoggerContext.ensureInitialized()V+12 java.logging@21.0.8
+j  java.util.logging.LogManager$LoggerContext.getLoggerNames()Ljava/util/Enumeration;+1 java.logging@21.0.8
+j  java.util.logging.LogManager.resetLoggerContext(Ljava/util/logging/LogManager$LoggerContext;)V+1 java.logging@21.0.8
+j  java.util.logging.LogManager.reset()V+93 java.logging@21.0.8
+j  java.util.logging.LogManager.readConfiguration(Ljava/io/InputStream;)V+33 java.logging@21.0.8
+j  java.util.logging.LogManager.readConfiguration()V+92 java.logging@21.0.8
+j  java.util.logging.LogManager.readPrimordialConfiguration()V+20 java.logging@21.0.8
+j  java.util.logging.LogManager$2.run()Ljava/lang/Object;+87 java.logging@21.0.8
+j  java.security.AccessController.executePrivileged(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;Ljava/lang/Class;)Ljava/lang/Object;+29 java.base@21.0.8
+j  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedAction;)Ljava/lang/Object;+5 java.base@21.0.8
+j  java.util.logging.LogManager.ensureLogManagerInitialized()V+101 java.logging@21.0.8
+j  java.util.logging.LogManager.getLogManager()Ljava/util/logging/LogManager;+9 java.logging@21.0.8
+j  java.util.logging.Logger.demandLogger(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)Ljava/util/logging/Logger;+0 java.logging@21.0.8
+j  java.util.logging.Logger.getLogger(Ljava/lang/String;Ljava/lang/Class;)Ljava/util/logging/Logger;+3 java.logging@21.0.8
+j  java.util.logging.Logger.getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;+4 java.logging@21.0.8
+j  com.google.common.cache.LocalCache.<clinit>()V+5
+v  ~StubRoutines::call_stub 0x0000015e390310e7
+j  com.google.common.cache.LocalCache$LocalManualCache.<init>(Lcom/google/common/cache/CacheBuilder;)V+1
+j  com.google.common.cache.CacheBuilder.build()Lcom/google/common/cache/Cache;+13
+j  org.languagetool.ResultCache.<init>(JJLjava/util/concurrent/TimeUnit;)V+55
+j  org.bsplines.ltexls.languagetool.LanguageToolJavaInterface.<init>(Ljava/lang/String;Ljava/lang/String;JLjava/util/Set;)V+35
+j  org.bsplines.ltexls.settings.SettingsManager.reinitializeLanguageToolInterface()V+58
+j  org.bsplines.ltexls.settings.SettingsManager.initialize()V+1
+j  org.bsplines.ltexls.settings.SettingsManager.<init>()V+69
+j  org.bsplines.ltexls.server.LtexLanguageServer.<init>()V+25
+j  org.bsplines.ltexls.LtexLanguageServerLauncher$Companion.launch(Ljava/io/InputStream;Ljava/io/OutputStream;)V+16
+j  org.bsplines.ltexls.LtexLanguageServerLauncher.launchServer(Ljava/net/ServerSocket;Ljava/io/OutputStream;I)Ljava/lang/Integer;+281
+j  org.bsplines.ltexls.LtexLanguageServerLauncher.call()Ljava/lang/Integer;+64
+j  org.bsplines.ltexls.LtexLanguageServerLauncher.call()Ljava/lang/Object;+1
+j  picocli.CommandLine.executeUserObject(Lpicocli/CommandLine;Ljava/util/List;)Ljava/util/List;+54
+j  picocli.CommandLine.access$1500(Lpicocli/CommandLine;Ljava/util/List;)Ljava/util/List;+2
+j  picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(Ljava/util/List;)Ljava/util/List;+73
+j  picocli.CommandLine$RunLast.handle(Lpicocli/CommandLine$ParseResult;)Ljava/util/List;+4
+j  picocli.CommandLine$RunLast.handle(Lpicocli/CommandLine$ParseResult;)Ljava/lang/Object;+2
+j  picocli.CommandLine$AbstractParseResultHandler.execute(Lpicocli/CommandLine$ParseResult;)I+40
+j  picocli.CommandLine$RunLast.execute(Lpicocli/CommandLine$ParseResult;)I+2
+j  picocli.CommandLine.execute([Ljava/lang/String;)I+31
+j  org.bsplines.ltexls.LtexLanguageServerLauncher$Companion.main([Ljava/lang/String;)V+38
+j  org.bsplines.ltexls.LtexLanguageServerLauncher.main([Ljava/lang/String;)V+4
+v  ~StubRoutines::call_stub 0x0000015e390310e7
+new  187 new  [0x0000015e3904afa0, 0x0000015e3904b1a0]  512 bytes
+[MachCode]
+  0x0000015e3904afa0: 4883 ec08 | c5fa 1104 | 24eb 1f48 | 83ec 10c5 | fb11 0424 | eb14 4883 | ec10 4889 | 0424 48c7 
+  0x0000015e3904afc0: 4424 0800 | 0000 00eb | 0150 410f | b755 010f | cac1 ea10 | 488b 4de8 | 488b 4908 | 488b 4908 
+  0x0000015e3904afe0: 488b 4108 | 807c 1004 | 070f 85ca | 0000 0066 | 8b54 d148 | 488b 4928 | 488b 4cd1 | 0851 80b9 
+  0x0000015e3904b000: 3101 0000 | 040f 85ad | 0000 008b | 5108 f6c2 | 010f 85a1 | 0000 0049 | 8b87 b801 | 0000 488d 
+  0x0000015e3904b020: 1c10 493b | 9fc8 0100 | 000f 8789 | 0000 0049 | 899f b801 | 0000 4883 | ea10 0f84 | 0f00 0000 
+  0x0000015e3904b040: 33c9 c1ea | 0348 894c | d008 48ff | ca75 f648 | c700 0100 | 0000 5933 | f689 700c | 48c1 e903 
+  0x0000015e3904b060: 8948 0849 | ba57 cc52 | 7afb 7f00 | 0041 803a | 000f 843c | 0000 0050 | 488b c848 | 83ec 2040 
+  0x0000015e3904b080: f6c4 0f0f | 8419 0000 | 0048 83ec | 0848 b8d0 | 8dfc 79fb | 7f00 00ff | d048 83c4 | 08e9 0c00 
+  0x0000015e3904b0a0: 0000 48b8 | d08d fc79 | fb7f 0000 | ffd0 4883 | c420 58e9 | cb00 0000 | 5948 8b55 | e848 8b52 
+  0x0000015e3904b0c0: 0848 8b52 | 0845 0fb7 | 4501 410f | c841 c1e8 | 10e8 0500 | 0000 e9a8 | 0000 0048 | 8d44 2408 
+  0x0000015e3904b0e0: 4c89 6dc0 | 498b cfc5 | f877 4989 | afa8 0300 | 0049 8987 | 9803 0000 | 4883 ec20 | 40f6 c40f 
+  0x0000015e3904b100: 0f84 1900 | 0000 4883 | ec08 48b8 | 1072 c679 | fb7f 0000 | ffd0 4883 | c408 e90c | 0000 0048 
+  0x0000015e3904b120: b810 72c6 | 79fb 7f00 | 00ff d048 | 83c4 2049 | c787 9803 | 0000 0000 | 0000 49c7 | 87a8 0300 
+  0x0000015e3904b140: 0000 0000 | 0049 c787 | a003 0000 | 0000 0000 | c5f8 7749 | 837f 0800 | 0f84 0500 | 0000 e99d 
+  0x0000015e3904b160: 5dfe ff49 | 8b87 f003 | 0000 49c7 | 87f0 0300 | 0000 0000 | 004c 8b6d | c04c 8b75 | c84e 8d74 
+  0x0000015e3904b180: f500 c341 | 0fb6 5d03 | 4983 c503 | 49ba 3094 | 557a fb7f | 0000 41ff | 24da 660f | 1f44 0000 
+[/MachCode]
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000015e46411210, length=12, elements={
+0x0000015e2f140f30, 0x0000015e46120650, 0x0000015e46123c90, 0x0000015e46109ce0,
+0x0000015e4610a730, 0x0000015e4610b180, 0x0000015e4610bbd0, 0x0000015e4610c950,
+0x0000015e4610f630, 0x0000015e463f0840, 0x0000015e463b5ae0, 0x0000015e46a4db90
+}
+
+Java Threads: ( => current thread )
+=>0x0000015e2f140f30 JavaThread "main"                              [_thread_in_vm, id=10596, stack(0x000000309f600000,0x000000309f700000) (1024K)]
+  0x0000015e46120650 JavaThread "Reference Handler"          daemon [_thread_blocked, id=26472, stack(0x000000309fe00000,0x000000309ff00000) (1024K)]
+  0x0000015e46123c90 JavaThread "Finalizer"                  daemon [_thread_blocked, id=26156, stack(0x000000309ff00000,0x00000030a0000000) (1024K)]
+  0x0000015e46109ce0 JavaThread "Signal Dispatcher"          daemon [_thread_blocked, id=14800, stack(0x00000030a0000000,0x00000030a0100000) (1024K)]
+  0x0000015e4610a730 JavaThread "Attach Listener"            daemon [_thread_blocked, id=20580, stack(0x00000030a0100000,0x00000030a0200000) (1024K)]
+  0x0000015e4610b180 JavaThread "Service Thread"             daemon [_thread_blocked, id=9832, stack(0x00000030a0200000,0x00000030a0300000) (1024K)]
+  0x0000015e4610bbd0 JavaThread "Monitor Deflation Thread"   daemon [_thread_blocked, id=27316, stack(0x00000030a0300000,0x00000030a0400000) (1024K)]
+  0x0000015e4610c950 JavaThread "C2 CompilerThread0"         daemon [_thread_blocked, id=19700, stack(0x00000030a0400000,0x00000030a0500000) (1024K)]
+  0x0000015e4610f630 JavaThread "C1 CompilerThread0"         daemon [_thread_blocked, id=21352, stack(0x00000030a0500000,0x00000030a0600000) (1024K)]
+  0x0000015e463f0840 JavaThread "Notification Thread"        daemon [_thread_blocked, id=12216, stack(0x00000030a0600000,0x00000030a0700000) (1024K)]
+  0x0000015e463b5ae0 JavaThread "Common-Cleaner"             daemon [_thread_blocked, id=26000, stack(0x00000030a0700000,0x00000030a0800000) (1024K)]
+  0x0000015e46a4db90 JavaThread "C2 CompilerThread1"         daemon [_thread_blocked, id=23868, stack(0x00000030a0800000,0x00000030a0900000) (1024K)]
+Total: 12
+
+Other Threads:
+  0x0000015e4607d9f0 VMThread "VM Thread"                           [id=4812, stack(0x000000309fd00000,0x000000309fe00000) (1024K)]
+  0x0000015e4601bf10 WatcherThread "VM Periodic Task Thread"        [id=10016, stack(0x000000309fc00000,0x000000309fd00000) (1024K)]
+  0x0000015e2f1975b0 WorkerThread "GC Thread#0"                     [id=17296, stack(0x000000309f700000,0x000000309f800000) (1024K)]
+  0x0000015e2f1a8ca0 ConcurrentGCThread "G1 Main Marker"            [id=26060, stack(0x000000309f800000,0x000000309f900000) (1024K)]
+  0x0000015e2f1a96a0 WorkerThread "G1 Conc#0"                       [id=4252, stack(0x000000309f900000,0x000000309fa00000) (1024K)]
+  0x0000015e2f1ee960 ConcurrentGCThread "G1 Refine#0"               [id=21840, stack(0x000000309fa00000,0x000000309fb00000) (1024K)]
+  0x0000015e45ee7a50 ConcurrentGCThread "G1 Service"                [id=9668, stack(0x000000309fb00000,0x000000309fc00000) (1024K)]
+Total: 7
+
+Threads with active compile tasks:
+Total: 0
+
+VM state: not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ffb7a543458] Metaspace_lock - owner thread: 0x0000015e2f140f30
+
+Heap address: 0x0000000080000000, size: 2048 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) not mapped
+Compressed class space mapped at: 0x0000000100000000-0x0000000140000000, reserved size: 1073741824
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3, Narrow klass range: 0x140000000
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 5 size 8 Array Of Cards #cards 12 size 40 Howl #buckets 4 coarsen threshold 1843 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 2048
+ CPUs: 8 total, 8 available
+ Memory: 16107M
+ Large Page Support: Disabled
+ NUMA Support: Disabled
+ Compressed Oops: Enabled (32-bit)
+ Heap Region Size: 1M
+ Heap Min Capacity: 64M
+ Heap Initial Capacity: 64M
+ Heap Max Capacity: 2G
+ Pre-touch: Disabled
+ Parallel Workers: 8
+ Concurrent Workers: 2
+ Concurrent Refinement Workers: 8
+ Periodic GC: Disabled
+
+Heap:
+ garbage-first heap   total 65536K, used 21504K [0x0000000080000000, 0x0000000100000000)
+  region size 1024K, 22 young (22528K), 0 survivors (0K)
+ Metaspace       used 13978K, committed 14144K, reserved 1114112K
+  class space    used 1261K, committed 1344K, reserved 1048576K
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, TAMS=top-at-mark-start, PB=parsable bottom
+|   0|0x0000000080000000, 0x0000000080100000, 0x0000000080100000|100%|HS|  |TAMS 0x0000000080000000| PB 0x0000000080000000| Complete 
+|   1|0x0000000080100000, 0x0000000080100000, 0x0000000080200000|  0%| F|  |TAMS 0x0000000080100000| PB 0x0000000080100000| Untracked 
+|   2|0x0000000080200000, 0x0000000080200000, 0x0000000080300000|  0%| F|  |TAMS 0x0000000080200000| PB 0x0000000080200000| Untracked 
+|   3|0x0000000080300000, 0x0000000080300000, 0x0000000080400000|  0%| F|  |TAMS 0x0000000080300000| PB 0x0000000080300000| Untracked 
+|   4|0x0000000080400000, 0x0000000080400000, 0x0000000080500000|  0%| F|  |TAMS 0x0000000080400000| PB 0x0000000080400000| Untracked 
+|   5|0x0000000080500000, 0x0000000080500000, 0x0000000080600000|  0%| F|  |TAMS 0x0000000080500000| PB 0x0000000080500000| Untracked 
+|   6|0x0000000080600000, 0x0000000080600000, 0x0000000080700000|  0%| F|  |TAMS 0x0000000080600000| PB 0x0000000080600000| Untracked 
+|   7|0x0000000080700000, 0x0000000080700000, 0x0000000080800000|  0%| F|  |TAMS 0x0000000080700000| PB 0x0000000080700000| Untracked 
+|   8|0x0000000080800000, 0x0000000080800000, 0x0000000080900000|  0%| F|  |TAMS 0x0000000080800000| PB 0x0000000080800000| Untracked 
+|   9|0x0000000080900000, 0x0000000080900000, 0x0000000080a00000|  0%| F|  |TAMS 0x0000000080900000| PB 0x0000000080900000| Untracked 
+|  10|0x0000000080a00000, 0x0000000080a00000, 0x0000000080b00000|  0%| F|  |TAMS 0x0000000080a00000| PB 0x0000000080a00000| Untracked 
+|  11|0x0000000080b00000, 0x0000000080b00000, 0x0000000080c00000|  0%| F|  |TAMS 0x0000000080b00000| PB 0x0000000080b00000| Untracked 
+|  12|0x0000000080c00000, 0x0000000080c00000, 0x0000000080d00000|  0%| F|  |TAMS 0x0000000080c00000| PB 0x0000000080c00000| Untracked 
+|  13|0x0000000080d00000, 0x0000000080d00000, 0x0000000080e00000|  0%| F|  |TAMS 0x0000000080d00000| PB 0x0000000080d00000| Untracked 
+|  14|0x0000000080e00000, 0x0000000080e00000, 0x0000000080f00000|  0%| F|  |TAMS 0x0000000080e00000| PB 0x0000000080e00000| Untracked 
+|  15|0x0000000080f00000, 0x0000000080f00000, 0x0000000081000000|  0%| F|  |TAMS 0x0000000080f00000| PB 0x0000000080f00000| Untracked 
+|  16|0x0000000081000000, 0x0000000081000000, 0x0000000081100000|  0%| F|  |TAMS 0x0000000081000000| PB 0x0000000081000000| Untracked 
+|  17|0x0000000081100000, 0x0000000081100000, 0x0000000081200000|  0%| F|  |TAMS 0x0000000081100000| PB 0x0000000081100000| Untracked 
+|  18|0x0000000081200000, 0x0000000081200000, 0x0000000081300000|  0%| F|  |TAMS 0x0000000081200000| PB 0x0000000081200000| Untracked 
+|  19|0x0000000081300000, 0x0000000081300000, 0x0000000081400000|  0%| F|  |TAMS 0x0000000081300000| PB 0x0000000081300000| Untracked 
+|  20|0x0000000081400000, 0x0000000081400000, 0x0000000081500000|  0%| F|  |TAMS 0x0000000081400000| PB 0x0000000081400000| Untracked 
+|  21|0x0000000081500000, 0x0000000081500000, 0x0000000081600000|  0%| F|  |TAMS 0x0000000081500000| PB 0x0000000081500000| Untracked 
+|  22|0x0000000081600000, 0x0000000081600000, 0x0000000081700000|  0%| F|  |TAMS 0x0000000081600000| PB 0x0000000081600000| Untracked 
+|  23|0x0000000081700000, 0x0000000081700000, 0x0000000081800000|  0%| F|  |TAMS 0x0000000081700000| PB 0x0000000081700000| Untracked 
+|  24|0x0000000081800000, 0x0000000081800000, 0x0000000081900000|  0%| F|  |TAMS 0x0000000081800000| PB 0x0000000081800000| Untracked 
+|  25|0x0000000081900000, 0x0000000081900000, 0x0000000081a00000|  0%| F|  |TAMS 0x0000000081900000| PB 0x0000000081900000| Untracked 
+|  26|0x0000000081a00000, 0x0000000081a00000, 0x0000000081b00000|  0%| F|  |TAMS 0x0000000081a00000| PB 0x0000000081a00000| Untracked 
+|  27|0x0000000081b00000, 0x0000000081b00000, 0x0000000081c00000|  0%| F|  |TAMS 0x0000000081b00000| PB 0x0000000081b00000| Untracked 
+|  28|0x0000000081c00000, 0x0000000081c00000, 0x0000000081d00000|  0%| F|  |TAMS 0x0000000081c00000| PB 0x0000000081c00000| Untracked 
+|  29|0x0000000081d00000, 0x0000000081d00000, 0x0000000081e00000|  0%| F|  |TAMS 0x0000000081d00000| PB 0x0000000081d00000| Untracked 
+|  30|0x0000000081e00000, 0x0000000081e00000, 0x0000000081f00000|  0%| F|  |TAMS 0x0000000081e00000| PB 0x0000000081e00000| Untracked 
+|  31|0x0000000081f00000, 0x0000000081f00000, 0x0000000082000000|  0%| F|  |TAMS 0x0000000081f00000| PB 0x0000000081f00000| Untracked 
+|  32|0x0000000082000000, 0x0000000082000000, 0x0000000082100000|  0%| F|  |TAMS 0x0000000082000000| PB 0x0000000082000000| Untracked 
+|  33|0x0000000082100000, 0x0000000082100000, 0x0000000082200000|  0%| F|  |TAMS 0x0000000082100000| PB 0x0000000082100000| Untracked 
+|  34|0x0000000082200000, 0x0000000082200000, 0x0000000082300000|  0%| F|  |TAMS 0x0000000082200000| PB 0x0000000082200000| Untracked 
+|  35|0x0000000082300000, 0x0000000082300000, 0x0000000082400000|  0%| F|  |TAMS 0x0000000082300000| PB 0x0000000082300000| Untracked 
+|  36|0x0000000082400000, 0x0000000082400000, 0x0000000082500000|  0%| F|  |TAMS 0x0000000082400000| PB 0x0000000082400000| Untracked 
+|  37|0x0000000082500000, 0x0000000082500000, 0x0000000082600000|  0%| F|  |TAMS 0x0000000082500000| PB 0x0000000082500000| Untracked 
+|  38|0x0000000082600000, 0x0000000082600000, 0x0000000082700000|  0%| F|  |TAMS 0x0000000082600000| PB 0x0000000082600000| Untracked 
+|  39|0x0000000082700000, 0x0000000082700000, 0x0000000082800000|  0%| F|  |TAMS 0x0000000082700000| PB 0x0000000082700000| Untracked 
+|  40|0x0000000082800000, 0x0000000082800000, 0x0000000082900000|  0%| F|  |TAMS 0x0000000082800000| PB 0x0000000082800000| Untracked 
+|  41|0x0000000082900000, 0x0000000082900000, 0x0000000082a00000|  0%| F|  |TAMS 0x0000000082900000| PB 0x0000000082900000| Untracked 
+|  42|0x0000000082a00000, 0x0000000082af49f8, 0x0000000082b00000| 95%| E|  |TAMS 0x0000000082a00000| PB 0x0000000082a00000| Complete 
+|  43|0x0000000082b00000, 0x0000000082c00000, 0x0000000082c00000|100%| E|CS|TAMS 0x0000000082b00000| PB 0x0000000082b00000| Complete 
+|  44|0x0000000082c00000, 0x0000000082d00000, 0x0000000082d00000|100%| E|  |TAMS 0x0000000082c00000| PB 0x0000000082c00000| Complete 
+|  45|0x0000000082d00000, 0x0000000082e00000, 0x0000000082e00000|100%| E|CS|TAMS 0x0000000082d00000| PB 0x0000000082d00000| Complete 
+|  46|0x0000000082e00000, 0x0000000082f00000, 0x0000000082f00000|100%| E|CS|TAMS 0x0000000082e00000| PB 0x0000000082e00000| Complete 
+|  47|0x0000000082f00000, 0x0000000083000000, 0x0000000083000000|100%| E|CS|TAMS 0x0000000082f00000| PB 0x0000000082f00000| Complete 
+|  48|0x0000000083000000, 0x0000000083100000, 0x0000000083100000|100%| E|CS|TAMS 0x0000000083000000| PB 0x0000000083000000| Complete 
+|  49|0x0000000083100000, 0x0000000083200000, 0x0000000083200000|100%| E|CS|TAMS 0x0000000083100000| PB 0x0000000083100000| Complete 
+|  50|0x0000000083200000, 0x0000000083300000, 0x0000000083300000|100%| E|CS|TAMS 0x0000000083200000| PB 0x0000000083200000| Complete 
+|  51|0x0000000083300000, 0x0000000083400000, 0x0000000083400000|100%| E|CS|TAMS 0x0000000083300000| PB 0x0000000083300000| Complete 
+|  52|0x0000000083400000, 0x0000000083500000, 0x0000000083500000|100%| E|CS|TAMS 0x0000000083400000| PB 0x0000000083400000| Complete 
+|  53|0x0000000083500000, 0x0000000083600000, 0x0000000083600000|100%| E|CS|TAMS 0x0000000083500000| PB 0x0000000083500000| Complete 
+|  54|0x0000000083600000, 0x0000000083700000, 0x0000000083700000|100%| E|CS|TAMS 0x0000000083600000| PB 0x0000000083600000| Complete 
+|  55|0x0000000083700000, 0x0000000083800000, 0x0000000083800000|100%| E|CS|TAMS 0x0000000083700000| PB 0x0000000083700000| Complete 
+|  56|0x0000000083800000, 0x0000000083900000, 0x0000000083900000|100%| E|CS|TAMS 0x0000000083800000| PB 0x0000000083800000| Complete 
+|  57|0x0000000083900000, 0x0000000083a00000, 0x0000000083a00000|100%| E|CS|TAMS 0x0000000083900000| PB 0x0000000083900000| Complete 
+|  58|0x0000000083a00000, 0x0000000083b00000, 0x0000000083b00000|100%| E|CS|TAMS 0x0000000083a00000| PB 0x0000000083a00000| Complete 
+|  59|0x0000000083b00000, 0x0000000083c00000, 0x0000000083c00000|100%| E|CS|TAMS 0x0000000083b00000| PB 0x0000000083b00000| Complete 
+|  60|0x0000000083c00000, 0x0000000083d00000, 0x0000000083d00000|100%| E|CS|TAMS 0x0000000083c00000| PB 0x0000000083c00000| Complete 
+|  61|0x0000000083d00000, 0x0000000083e00000, 0x0000000083e00000|100%| E|CS|TAMS 0x0000000083d00000| PB 0x0000000083d00000| Complete 
+|  62|0x0000000083e00000, 0x0000000083f00000, 0x0000000083f00000|100%| E|CS|TAMS 0x0000000083e00000| PB 0x0000000083e00000| Complete 
+|  63|0x0000000083f00000, 0x0000000084000000, 0x0000000084000000|100%| E|CS|TAMS 0x0000000083f00000| PB 0x0000000083f00000| Complete 
+
+Card table byte_map: [0x0000015e41240000,0x0000015e41640000] _byte_map_base: 0x0000015e40e40000
+
+Marking Bits: (CMBitMap*) 0x0000015e2f1983c0
+ Bits: [0x0000015e41640000, 0x0000015e43640000)
+
+Polling page: 0x0000015e2ceb0000
+
+Metaspace:
+
+Usage:
+  Non-class:     12.42 MB used.
+      Class:      1.23 MB used.
+       Both:     13.65 MB used.
+
+Virtual space:
+  Non-class space:       64.00 MB reserved,      12.50 MB ( 20%) committed,  1 nodes.
+      Class space:        1.00 GB reserved,       1.31 MB ( <1%) committed,  1 nodes.
+             Both:        1.06 GB reserved,      13.81 MB (  1%) committed. 
+
+Chunk freelists:
+   Non-Class:  2.53 MB
+       Class:  14.67 MB
+        Both:  17.20 MB
+
+MaxMetaspaceSize: unlimited
+CompressedClassSpaceSize: 1.00 GB
+Initial GC threshold: 21.00 MB
+Current GC threshold: 21.00 MB
+CDS: off
+ - commit_granule_bytes: 65536.
+ - commit_granule_words: 8192.
+ - virtual_space_node_default_size: 8388608.
+ - enlarge_chunks_in_place: 1.
+ - use_allocation_guard: 0.
+
+
+Internal statistics:
+
+num_allocs_failed_limit: 0.
+num_arena_births: 88.
+num_arena_deaths: 0.
+num_vsnodes_births: 2.
+num_vsnodes_deaths: 0.
+num_space_committed: 221.
+num_space_uncommitted: 0.
+num_chunks_returned_to_freelist: 0.
+num_chunks_taken_from_freelist: 213.
+num_chunk_merges: 0.
+num_chunk_splits: 144.
+num_chunks_enlarged: 115.
+num_inconsistent_stats: 0.
+
+CodeHeap 'non-profiled nmethods': size=120000Kb used=363Kb max_used=363Kb free=119636Kb
+ bounds [0x0000015e395d0000, 0x0000015e39840000, 0x0000015e40b00000]
+CodeHeap 'profiled nmethods': size=120000Kb used=1814Kb max_used=1814Kb free=118185Kb
+ bounds [0x0000015e31b00000, 0x0000015e31d70000, 0x0000015e39030000]
+CodeHeap 'non-nmethods': size=5760Kb used=1537Kb max_used=1537Kb free=4222Kb
+ bounds [0x0000015e39030000, 0x0000015e392a0000, 0x0000015e395d0000]
+CodeCache: size=245760Kb, used=3714Kb, max_used=3714Kb, free=242043Kb
+ total_blobs=1530, nmethods=1033, adapters=402, full_count=0
+Compilation: enabled, stopped_count=0, restarted_count=0
+
+Compilation events (20 events):
+Event: 1.094 Thread 0x0000015e4610f630 1024       3       java.lang.Record::<init> (5 bytes)
+Event: 1.094 Thread 0x0000015e4610f630 nmethod 1024 0x0000015e31cbaa10 code [0x0000015e31cbabc0, 0x0000015e31cbad28]
+Event: 1.103 Thread 0x0000015e4610f630 1025   !   3       java.lang.ClassLoader::addClass (27 bytes)
+Event: 1.103 Thread 0x0000015e4610f630 nmethod 1025 0x0000015e31cbae10 code [0x0000015e31cbb000, 0x0000015e31cbb5a8]
+Event: 1.104 Thread 0x0000015e4610f630 1026       3       java.net.URL::<init> (8 bytes)
+Event: 1.104 Thread 0x0000015e4610f630 nmethod 1026 0x0000015e31cbb910 code [0x0000015e31cbbac0, 0x0000015e31cbbc08]
+Event: 1.104 Thread 0x0000015e4610f630 1027   !   3       java.net.URL::<init> (543 bytes)
+Event: 1.107 Thread 0x0000015e4610f630 nmethod 1027 0x0000015e31cbbc90 code [0x0000015e31cbc2a0, 0x0000015e31cbf420]
+Event: 1.108 Thread 0x0000015e4610f630 1028       3       java.net.URLStreamHandler::setURL (156 bytes)
+Event: 1.109 Thread 0x0000015e4610f630 nmethod 1028 0x0000015e31cc1190 code [0x0000015e31cc14a0, 0x0000015e31cc24b8]
+Event: 1.109 Thread 0x0000015e4610f630 1029       3       java.lang.ClassLoader::postDefineClass (39 bytes)
+Event: 1.109 Thread 0x0000015e4610f630 nmethod 1029 0x0000015e31cc2a90 code [0x0000015e31cc2c80, 0x0000015e31cc2fa8]
+Event: 1.109 Thread 0x0000015e4610f630 1030       3       java.security.SecureClassLoader$CodeSourceKey::equals (60 bytes)
+Event: 1.109 Thread 0x0000015e4610f630 nmethod 1030 0x0000015e31cc3190 code [0x0000015e31cc33a0, 0x0000015e31cc39b8]
+Event: 1.110 Thread 0x0000015e4610f630 1031   !   3       jdk.internal.loader.URLClassPath$JarLoader::checkResource (73 bytes)
+Event: 1.110 Thread 0x0000015e4610f630 nmethod 1031 0x0000015e31cc3b90 code [0x0000015e31cc3de0, 0x0000015e31cc46b8]
+Event: 1.110 Thread 0x0000015e4610f630 1033  s    3       java.util.jar.JarFile::getInputStream (88 bytes)
+Event: 1.111 Thread 0x0000015e4610f630 nmethod 1033 0x0000015e31cc4a90 code [0x0000015e31cc4d00, 0x0000015e31cc54f0]
+Event: 1.111 Thread 0x0000015e4610f630 1032       3       jdk.internal.loader.URLClassPath$JarLoader$2::getCodeSourceURL (8 bytes)
+Event: 1.111 Thread 0x0000015e4610f630 nmethod 1032 0x0000015e31cc5710 code [0x0000015e31cc58a0, 0x0000015e31cc59b8]
+
+GC Heap History (0 events):
+No events
+
+Dll operation events (9 events):
+Event: 0.013 Loaded shared library c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\java.dll
+Event: 0.021 Loaded shared library c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\zip.dll
+Event: 0.111 Loaded shared library c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\jsvml.dll
+Event: 0.353 Loaded shared library C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\net.dll
+Event: 0.357 Loaded shared library C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\nio.dll
+Event: 0.369 Loaded shared library C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\zip.dll
+Event: 0.565 Loaded shared library C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\jimage.dll
+Event: 0.631 Loaded shared library C:\Users\Händel\AppData\Local\Temp\jansi-2.4.2-41981889e89bf5d9-jansi.dll
+Event: 0.655 Loaded shared library c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\verify.dll
+
+Deoptimization events (20 events):
+Event: 1.034 Thread 0x0000015e2f140f30 DEOPT PACKING pc=0x0000015e31c9d384 sp=0x000000309f6fba60
+Event: 1.034 Thread 0x0000015e2f140f30 DEOPT UNPACKING pc=0x0000015e390888e2 sp=0x000000309f6faeb8 mode 0
+Event: 1.034 Thread 0x0000015e2f140f30 DEOPT PACKING pc=0x0000015e31c9d384 sp=0x000000309f6fb9e0
+Event: 1.034 Thread 0x0000015e2f140f30 DEOPT UNPACKING pc=0x0000015e390888e2 sp=0x000000309f6fae38 mode 0
+Event: 1.034 Thread 0x0000015e2f140f30 DEOPT PACKING pc=0x0000015e31c9d384 sp=0x000000309f6fba60
+Event: 1.034 Thread 0x0000015e2f140f30 DEOPT UNPACKING pc=0x0000015e390888e2 sp=0x000000309f6faeb8 mode 0
+Event: 1.034 Thread 0x0000015e2f140f30 DEOPT PACKING pc=0x0000015e31c9d384 sp=0x000000309f6fba60
+Event: 1.034 Thread 0x0000015e2f140f30 DEOPT UNPACKING pc=0x0000015e390888e2 sp=0x000000309f6faeb8 mode 0
+Event: 1.035 Thread 0x0000015e2f140f30 DEOPT PACKING pc=0x0000015e31c9d384 sp=0x000000309f6fba50
+Event: 1.035 Thread 0x0000015e2f140f30 DEOPT UNPACKING pc=0x0000015e390888e2 sp=0x000000309f6faea8 mode 0
+Event: 1.035 Thread 0x0000015e2f140f30 DEOPT PACKING pc=0x0000015e31c9d384 sp=0x000000309f6fba50
+Event: 1.035 Thread 0x0000015e2f140f30 DEOPT UNPACKING pc=0x0000015e390888e2 sp=0x000000309f6faea8 mode 0
+Event: 1.035 Thread 0x0000015e2f140f30 DEOPT PACKING pc=0x0000015e31c9d384 sp=0x000000309f6fbb70
+Event: 1.035 Thread 0x0000015e2f140f30 DEOPT UNPACKING pc=0x0000015e390888e2 sp=0x000000309f6fafc8 mode 0
+Event: 1.035 Thread 0x0000015e2f140f30 DEOPT PACKING pc=0x0000015e31c9d384 sp=0x000000309f6fbb70
+Event: 1.035 Thread 0x0000015e2f140f30 DEOPT UNPACKING pc=0x0000015e390888e2 sp=0x000000309f6fafc8 mode 0
+Event: 1.046 Thread 0x0000015e2f140f30 Uncommon trap: trap_request=0xffffff6e fr.pc=0x0000015e396243bc relative=0x000000000000039c
+Event: 1.046 Thread 0x0000015e2f140f30 Uncommon trap: reason=loop_limit_check action=maybe_recompile pc=0x0000015e396243bc method=java.math.BigInteger.implMulAdd([I[IIII)I @ 26 c2
+Event: 1.046 Thread 0x0000015e2f140f30 DEOPT PACKING pc=0x0000015e396243bc sp=0x000000309f6fbc40
+Event: 1.046 Thread 0x0000015e2f140f30 DEOPT UNPACKING pc=0x0000015e39087da2 sp=0x000000309f6fbb90 mode 2
+
+Classes loaded (20 events):
+Event: 1.117 Loading class sun/util/logging/internal/LoggingProviderImpl$LogManagerAccess
+Event: 1.117 Loading class sun/util/logging/internal/LoggingProviderImpl$LogManagerAccess done
+Event: 1.117 Loading class java/util/logging/LogManager$LoggingProviderAccess done
+Event: 1.117 Loading class sun/security/util/FilePermCompat
+Event: 1.117 Loading class sun/security/util/FilePermCompat done
+Event: 1.117 Loading class sun/security/util/SecurityProperties
+Event: 1.117 Loading class sun/security/util/SecurityProperties done
+Event: 1.117 Loading class java/io/FilePermission
+Event: 1.117 Loading class java/io/FilePermission done
+Event: 1.117 Loading class sun/util/logging/internal/LoggingProviderImpl
+Event: 1.118 Loading class jdk/internal/logger/DefaultLoggerFinder
+Event: 1.118 Loading class java/lang/System$LoggerFinder
+Event: 1.118 Loading class java/lang/System$LoggerFinder done
+Event: 1.118 Loading class jdk/internal/logger/DefaultLoggerFinder done
+Event: 1.118 Loading class sun/util/logging/internal/LoggingProviderImpl done
+Event: 1.118 Loading class java/util/logging/LogManager$2
+Event: 1.118 Loading class java/util/logging/LogManager$2 done
+Event: 1.118 Loading class java/util/logging/LogManager$RootLogger
+Event: 1.118 Loading class java/util/logging/LogManager$RootLogger done
+Event: 1.118 Loading class java/util/logging/LogManager$LoggerWeakRef
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (20 events):
+Event: 0.581 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x0000000083710eb8}: 'int java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial(java.lang.Object, java.lang.Object, java.lang.Object, int)'> (0x0000000083710eb8) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.583 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x0000000083723de0}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, int)'> (0x0000000083723de0) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.586 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x000000008372c0e8}: 'long java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(java.lang.Object, java.lang.Object, int)'> (0x000000008372c0e8) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.588 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x00000000837376e0}: 'java.lang.Object java.lang.invoke.DelegatingMethodHandle$Holder.reinvoke_L(java.lang.Object, int, long, java.lang.Object, java.lang.Object, int, java.lang.Object)'> (0x00000000837376e0) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.590 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x0000000083741148}: 'int java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x0000000083741148) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.598 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x0000000083764c48}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(java.lang.Object, java.lang.Object, int)'> (0x0000000083764c48) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.600 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x00000000837703f8}: 'void java.lang.invoke.DelegatingMethodHandle$Holder.delegate(java.lang.Object, java.lang.Object, int, java.lang.Object)'> (0x00000000837703f8) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.619 Thread 0x0000015e2f140f30 Exception <a 'sun/nio/fs/WindowsException'{0x0000000083792408}> (0x0000000083792408) 
+thrown [s\src\hotspot\share\prims\jni.cpp, line 520]
+Event: 0.633 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NullPointerException'{0x00000000837a8c30}> (0x00000000837a8c30) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.633 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NullPointerException'{0x00000000837a8f10}> (0x00000000837a8f10) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.633 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NullPointerException'{0x00000000837a91f0}> (0x00000000837a91f0) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.634 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NullPointerException'{0x00000000837af7f8}> (0x00000000837af7f8) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.637 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NullPointerException'{0x00000000837c3c50}> (0x00000000837c3c50) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.637 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NullPointerException'{0x00000000837c3f30}> (0x00000000837c3f30) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.637 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NullPointerException'{0x00000000837c4210}> (0x00000000837c4210) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.637 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NullPointerException'{0x00000000837c44f0}> (0x00000000837c44f0) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 1372]
+Event: 0.905 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x00000000830c4ff0}: 'void java.lang.invoke.DelegatingMethodHandle$Holder.reinvoke_L(java.lang.Object, java.lang.Object, int)'> (0x00000000830c4ff0) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.906 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x00000000830cb8e0}: 'int java.lang.invoke.Invokers$Holder.invokeExact_MT(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x00000000830cb8e0) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.906 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x00000000830cf280}: 'void java.lang.invoke.Invokers$Holder.invokeExact_MT(java.lang.Object, java.lang.Object, int, java.lang.Object)'> (0x00000000830cf280) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+Event: 0.908 Thread 0x0000015e2f140f30 Exception <a 'java/lang/NoSuchMethodError'{0x00000000830dabc0}: 'void java.lang.invoke.Invokers$Holder.invokeExact_MT(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'> (0x00000000830dabc0) 
+thrown [s\src\hotspot\share\interpreter\linkResolver.cpp, line 773]
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (10 events):
+Event: 0.388 Executing VM operation: HandshakeAllThreads (Deoptimize)
+Event: 0.388 Executing VM operation: HandshakeAllThreads (Deoptimize) done
+Event: 0.510 Executing VM operation: HandshakeAllThreads (Deoptimize)
+Event: 0.510 Executing VM operation: HandshakeAllThreads (Deoptimize) done
+Event: 0.598 Executing VM operation: HandshakeAllThreads (Deoptimize)
+Event: 0.598 Executing VM operation: HandshakeAllThreads (Deoptimize) done
+Event: 0.610 Executing VM operation: HandshakeAllThreads (Deoptimize)
+Event: 0.610 Executing VM operation: HandshakeAllThreads (Deoptimize) done
+Event: 0.966 Executing VM operation: HandshakeAllThreads (Deoptimize)
+Event: 0.966 Executing VM operation: HandshakeAllThreads (Deoptimize) done
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (16 events):
+Event: 0.019 Thread 0x0000015e2f140f30 Thread added: 0x0000015e2f140f30
+Event: 0.103 Thread 0x0000015e2f140f30 Thread added: 0x0000015e46120650
+Event: 0.104 Thread 0x0000015e2f140f30 Thread added: 0x0000015e46123c90
+Event: 0.105 Thread 0x0000015e2f140f30 Thread added: 0x0000015e46109ce0
+Event: 0.105 Thread 0x0000015e2f140f30 Thread added: 0x0000015e4610a730
+Event: 0.105 Thread 0x0000015e2f140f30 Thread added: 0x0000015e4610b180
+Event: 0.105 Thread 0x0000015e2f140f30 Thread added: 0x0000015e4610bbd0
+Event: 0.106 Thread 0x0000015e2f140f30 Thread added: 0x0000015e4610c950
+Event: 0.106 Thread 0x0000015e2f140f30 Thread added: 0x0000015e4610f630
+Event: 0.324 Thread 0x0000015e2f140f30 Thread added: 0x0000015e463f0840
+Event: 0.342 Thread 0x0000015e2f140f30 Thread added: 0x0000015e463b5ae0
+Event: 0.410 Thread 0x0000015e4610c950 Thread added: 0x0000015e4649b2c0
+Event: 0.543 Thread 0x0000015e2f140f30 Thread added: 0x0000015e46857b80
+Event: 0.583 Thread 0x0000015e4649b2c0 Thread exited: 0x0000015e4649b2c0
+Event: 0.629 Thread 0x0000015e46857b80 Thread exited: 0x0000015e46857b80
+Event: 0.708 Thread 0x0000015e4610f630 Thread added: 0x0000015e46a4db90
+
+
+Dynamic libraries:
+0x00007ff678ac0000 - 0x00007ff678ace000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\java.exe
+0x00007ffc4b1a0000 - 0x00007ffc4b406000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc495f0000 - 0x00007ffc496b9000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffc48810000 - 0x00007ffc48c0a000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffc484e0000 - 0x00007ffc4862c000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffc17e30000 - 0x00007ffc17e4e000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\VCRUNTIME140.dll
+0x00007ffc17e50000 - 0x00007ffc17e68000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\jli.dll
+0x00007ffc4a470000 - 0x00007ffc4a637000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffc48ca0000 - 0x00007ffc48cc7000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffc2ae30000 - 0x00007ffc2b0c2000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.8521_none_3e08b75ce33403b3\COMCTL32.dll
+0x00007ffc49c60000 - 0x00007ffc49c8b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffc4a3b0000 - 0x00007ffc4a459000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffc486e0000 - 0x00007ffc4880b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffc48430000 - 0x00007ffc484d3000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffc49fe0000 - 0x00007ffc4a012000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffc3e110000 - 0x00007ffc3e11c000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\vcruntime140_1.dll
+0x00007ffc16cb0000 - 0x00007ffc16d3d000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\msvcp140.dll
+0x00007ffb79890000 - 0x00007ffb7a627000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\server\jvm.dll
+0x00007ffc49530000 - 0x00007ffc495e6000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffc49400000 - 0x00007ffc494aa000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffc4a070000 - 0x00007ffc4a188000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffc4afb0000 - 0x00007ffc4b030000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffc48290000 - 0x00007ffc482ee000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ffc3db30000 - 0x00007ffc3db3b000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffc3c380000 - 0x00007ffc3c3b6000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffc48270000 - 0x00007ffc48284000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ffc471c0000 - 0x00007ffc471db000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffc3b5d0000 - 0x00007ffc3b5da000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\jimage.dll
+0x00007ffc45b20000 - 0x00007ffc45d62000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffc49040000 - 0x00007ffc493c3000 	C:\WINDOWS\System32\combase.dll
+0x00007ffc49c90000 - 0x00007ffc49d69000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffc234d0000 - 0x00007ffc2350b000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffc48630000 - 0x00007ffc486d8000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffc178f0000 - 0x00007ffc1790f000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\java.dll
+0x00007ffc178d0000 - 0x00007ffc178e8000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\zip.dll
+0x00007ffc4a820000 - 0x00007ffc4afa4000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffc46010000 - 0x00007ffc46890000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x00007ffc49d70000 - 0x00007ffc49e66000 	C:\WINDOWS\System32\SHCORE.dll
+0x00007ffc48f10000 - 0x00007ffc48f77000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffc48350000 - 0x00007ffc48379000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007ffc14090000 - 0x00007ffc14167000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\jsvml.dll
+0x00007ffc2ab60000 - 0x00007ffc2ab70000 	C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\net.dll
+0x00007ffc3e580000 - 0x00007ffc3e6a9000 	C:\WINDOWS\SYSTEM32\WINHTTP.dll
+0x00007ffc47730000 - 0x00007ffc4779c000 	C:\WINDOWS\system32\mswsock.dll
+0x00007ffc178b0000 - 0x00007ffc178c6000 	C:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\nio.dll
+0x00007ffbd9260000 - 0x00007ffbd9284000 	C:\Users\Händel\AppData\Local\Temp\jansi-2.4.2-41981889e89bf5d9-jansi.dll
+0x00007ffc2a850000 - 0x00007ffc2a860000 	c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\verify.dll
+
+JVMTI agents: none
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.8521_none_3e08b75ce33403b3;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9\bin\server;C:\Users\Händel\AppData\Local\Temp
+
+VM Arguments:
+jvm_args: -Xms64m -Xmx2048m -Dapp.name=ltex-ls-plus -Dapp.repo=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib -Dapp.home=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1 -Dbasedir=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1 
+java_command: org.bsplines.ltexls.LtexLanguageServerLauncher
+java_class_path (initial): c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\etc;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\aho-corasick-double-array-trie-1.2.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\angus-activation-2.0.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\animal-sniffer-annotations-1.24.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\annotations-12.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\annotations-13.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\annotations-4.1.1.4.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\asturian-pos-dict-0.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\catalan-pos-dict-2.27.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\checker-qual-3.43.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-digester-2.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-lang3-3.18.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-logging-1.3.4.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-pool2-2.12.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-text-1.12.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\commons-validator-1.9.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\dutch-pos-dict-0.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\english-pos-dict-0.6.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\error_prone_annotations-2.38.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\error_prone_annotations-2.41.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\failureaccess-1.0.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\fastutil-core-8.5.14.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-ext-definition-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-ext-gfm-strikethrough-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-ext-gitlab-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-ext-tables-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-ext-yaml-front-matter-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-test-util-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-ast-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-builder-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-collection-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-data-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-dependency-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-format-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-html-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-misc-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-options-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-sequence-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\flexmark-util-visitor-0.64.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\french-pos-dict-0.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\german-pos-dict-1.2.4.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-api-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-context-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-core-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-netty-shaded-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-protobuf-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-protobuf-lite-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-stub-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\grpc-util-1.75.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\gson-2.13.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\gson-2.13.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\guava-33.3.1-jre.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\hamcrest-core-1.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\hanlp-portable-1.8.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\HdrHistogram-2.1.12.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\hppc-0.8.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\hunspell-2.1.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\icu4j-77.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\indriya-1.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\istack-commons-runtime-4.1.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\j2objc-annotations-3.0.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jackson-annotations-2.18.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jackson-core-2.18.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jackson-databind-2.18.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jakarta.activation-1.2.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jakarta.activation-api-2.1.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jakarta.xml.bind-api-2.3.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jansi-2.4.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\java-diff-utils-4.12.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\javax.activation-api-1.2.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\javax.annotation-api-1.3.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jaxb-api-2.3.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jaxb-core-2.3.0.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jaxb-core-4.0.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jaxb-impl-2.3.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jaxb-runtime-4.0.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jna-5.12.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jna-platform-5.12.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\json-20240303.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jsonic-1.2.11.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jsr305-3.0.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\junit-4.13.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\jwordsplitter-4.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\kotlin-stdlib-2.2.10.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\kotlin-stdlib-2.2.20.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-all-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ar-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ast-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-be-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-br-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ca-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-crh-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-da-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-de-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-de-DE-x-simple-language-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-detector-0.6.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-el-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-en-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-eo-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-es-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-fa-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-fr-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ga-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-gl-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-it-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ja-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-km-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-nl-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-pl-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-pt-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ro-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ru-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-sk-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-sl-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-sv-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-ta-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-tl-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-uk-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\language-zh-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\languagetool-core-6.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\languagetool-ga-dicts-0.02.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\LatencyUtils-2.0.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\linguistics.grammardb.spell.languagetool-1.0.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\lspcli-2.2.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\ltexls-plus-18.6.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\lucene-backward-codecs-5.5.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\lucene-core-5.5.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\lucene-gosen-6.2.1-ipadic.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\micrometer-core-1.7.12.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\micrometer-registry-prometheus-1.7.12.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-crh-lt-1.0.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-fsa-2.1.9.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-fsa-builders-2.1.9.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-speller-2.1.9.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-stemming-2.1.9.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morfologik-ukrainian-lt-6.7.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\morphology-el-1.0.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opennlp-chunk-models-1.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opennlp-postag-models-1.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opennlp-tokenize-models-1.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opennlp-tools-1.9.4.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\openregex-1.1.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opentelemetry-api-1.42.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opentelemetry-context-1.42.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\opentelemetry-semconv-1.30.1-alpha.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\org.eclipse.lsp4j-0.24.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\org.eclipse.lsp4j.jsonrpc-0.24.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\perfmark-api-0.27.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\picocli-4.7.7.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\portuguese-pos-dict-1.2.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\proto-google-common-protos-2.59.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\protobuf-java-3.25.8.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\resilience4j-circuitbreaker-1.7.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\resilience4j-core-1.7.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\resilience4j-micrometer-1.7.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\segment-2.0.3.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient-0.16.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient_common-0.10.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient_guava-0.16.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient_tracer_common-0.16.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient_tracer_otel-0.16.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\simpleclient_tracer_otel_agent-0.16.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\slf4j-api-2.0.16.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\slf4j-nop-2.0.17.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\spanish-pos-dict-2.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\stax2-api-4.2.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\txw2-4.0.5.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\unit-api-1.0.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\uom-lib-common-1.1.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\vavr-0.10.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\vavr-match-0.10.2.jar;c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib\woodstox-core-7.1.1.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 67108864                                  {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2147483648                                {product} {command line}
+   size_t MaxNewSize                               = 1287651328                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 67108864                                  {product} {command line}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 2147483648                             {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+JAVA_HOME=c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\jdk-21.0.8+9
+CLASSPATH="c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1"\etc;"c:\Users\Händel\.vscode\extensions\ltex-plus.vscode-ltex-plus-15.6.1\lib\ltex-ls-plus-18.6.1\lib"\*
+PATH=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Quarto\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Falcon\MinGW\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;H:\Program Files\MATLAB\R2023b\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;H:\Polyspace\R2021a\runtime\win64;H:\Polyspace\R2021a\bin;C:\Program Files\Pandoc\;C:\texlive\2026\bin\windows;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Users\Händel\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Händel\AppData\Local\Programs\Python\Python312\;C:\Users\Händel\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\Händel\AppData\Local\Programs\Python\Python313;C:\Users\Händel\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\Händel\AppData\Local\Programs\Python\Python312;C:\Users\HÃ¤ndel\AppData\Local\Programs\Python\Launcher\;C:\Users\HÃ¤ndel\AppData\Local\Microsoft\WindowsApps;C:\Users\HÃ¤ndel\AppData\Local\Programs\Microsoft VS Code\bin;C:\php-8.2.7-nts-Win32-vs16-x64;C:\Users\HÃ¤ndel\AppData\Local\spicetify;C:\Program Files (x86)\GNU Tools ARM Embedded\dfu-util.exe;C:\Users\HÃ¤ndel\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\GNU ARM Eclipse\Build Tools\2.6-201507152002\bin;C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2014q4\bin;C:\Program Files (x86)\GNU ARM Eclipse\Build Tools\2.4-201503242026\bin;C:\Users\Händel\AppData\Local\Microsoft\WindowsApps;C:\Users\HÃ¤ndel\AppData\Local\Programs\Ollama;C:\texlive\2026\b;C:\Users\Händel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Händel\AppData\Roaming\npm
+USERNAME=Händel Teste
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+TMP=C:\Users\HNDEL~1\AppData\Local\Temp
+TEMP=C:\Users\HNDEL~1\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+OS uptime: 1 days 18:02 hours
+
+CPU: total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 140 stepping 1 microcode 0x8a, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, avx512f, avx512dq, avx512cd, avx512bw, avx512vl, sha, fma, vzeroupper, avx512_vpopcntdq, avx512_vpclmulqdq, avx512_vaes, avx512_vnni, clflush, clflushopt, clwb, avx512_vbmi2, avx512_vbmi, rdtscp, rdpid, fsrm, gfni, avx512_bitalg, f16c, pku, cet_ibt, cet_ss, avx512_ifma
+Processor Information for the first 8 processors :
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+
+Memory: 4k page, system-wide physical 16107M (1800M free)
+TotalPageFile size 31460M (AvailPageFile size 1M)
+current process WorkingSet (physical memory assigned to process): 80M, peak: 80M
+current process commit charge ("private bytes"): 160M, peak: 160M
+
+vm_info: OpenJDK 64-Bit Server VM (21.0.8+9-LTS) for windows-amd64 JRE (21.0.8+9-LTS), built on 2025-07-15T00:00:00Z by "admin" with MS VC++ 17.7 (VS2022)
+
+END.

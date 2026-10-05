@@ -1,0 +1,159 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Aguire 2007]{aguirre-identificacao-2007}
+\abntrefinfo{Aguire}{AGUIRE}{2007}
+{AGUIRE, L.~A. \textbf{Introdução à Identificação de Sistemas}: Técnicas lineares e não-lineares aplicadas a sistemas reais. 3. ed. [S.l.]: Editora UFMG, 2007.
+ISBN 9788570415844.}
+
+\bibitem[{\AA}str{\"o}m e H{\"a}gglund 1984]{astrom-1984}
+\abntrefinfo{{\AA}str{\"o}m e H{\"a}gglund}{{\AA}STR{\"O}M; H{\"A}GGLUND}{1984}
+{{\AA}STR{\"O}M, K.~J.; H{\"A}GGLUND, T. Automatic tuning of simple regulators with specifications on phase and amplitude margins.
+\textbf{Automatica}, v.~20, n.~5, p. 645--651, 1984.
+ISSN 0005-1098.}
+
+\bibitem[{\AA}str{\"o}m e H{\"a}gglund 1995]{astrom-1995}
+\abntrefinfo{{\AA}str{\"o}m e H{\"a}gglund}{{\AA}STR{\"O}M; H{\"A}GGLUND}{1995}
+{{\AA}STR{\"O}M, K.~J.; H{\"A}GGLUND, T. \textbf{PID Controllers: Theory, Design and Tuning}. 2. ed. Research Triangle Park, North Carolina: ISA: The Instrumentation, Systems, and Automation Society, 1995.
+ISBN 1-55617-516-7.}
+
+\bibitem[Barros 2024]{tcc-artemio}
+\abntrefinfo{Barros}{BARROS}{2024}
+{BARROS, A.~A.
+\textbf{Estratégias de comunicação sem fio e técnicas de controle aplicadas a uma planta de levitação a ar}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal do Piauí, Teresina, 2024.}
+
+\bibitem[Borges 2013]{borges2013micromouse}
+\abntrefinfo{Borges}{BORGES}{2013}
+{BORGES, D. J.~D.
+\textbf{Desenvolvimento de um robô para o concurso Micromouse}.
+Tese (Tese de Doutorado) --- Universidade de Trás-os-Montes e Alto Douro, Vila Real, Portugal, 2013.}
+
+\bibitem[Coelho e Coelho 2004]{coelho-identificacao}
+\abntrefinfo{Coelho e Coelho}{COELHO; COELHO}{2004}
+{COELHO, A. A.~R.; COELHO, L. dos S. \textbf{Identificação de Sistemas Dinâmicos Lineares}. 1. ed. [S.l.]: UFSC, 2004.
+ISBN 9788532802804.}
+
+\bibitem[Day 1979]{day1979amazing}
+\abntrefinfo{Day}{DAY}{1979}
+{DAY, T. \textbf{Amazing Mouse Maze}. 1979. The Day, v. 98, n. 286, p. 24.
+Acesso em: 09 jun. 2026.
+Dispon{\'\i}vel em: \url{http://news.google.com/newspapers?nid=1915&dat=19790607&id=dixHAAAAIBAJ&sjid=PfgMAAAAIBAJ&pg=2748,1221941}.}
+
+\bibitem[Deshmukh e Hasamnis 2023]{deshmukh-hasamnis-2023}
+\abntrefinfo{Deshmukh e Hasamnis}{DESHMUKH; HASAMNIS}{2023}
+{DESHMUKH, R.; HASAMNIS, A.~M. An improvement to the conventional pd scheme for the speed control of a two-wheeled differential steering mobile robot.
+\textbf{International Journal of Information Technology}, v.~15, p. 3093--3101, 2023.
+Acesso em: 26 março 2026.}
+
+\bibitem[Eclipse{ }Foundation 2025]{eclipse-def}
+\abntrefinfo{Eclipse{ }Foundation}{ECLIPSE{ }FOUNDATION}{2025}
+{ECLIPSE{ }FOUNDATION. \textbf{Eclipse IDE for Embedded C/C++ Developers}. 2025.
+Dispon{\'\i}vel em: \url{https://www.eclipse.org/downloads/packages/release/2025-06/r/eclipse-ide-embedded-cc-developers}. Acesso em: 20 agosto 2025.}
+
+\bibitem[Espressif{ }Systems 2025]{esp-now-definition}
+\abntrefinfo{Espressif{ }Systems}{ESPRESSIF{ }SYSTEMS}{2025}
+{ESPRESSIF{ }SYSTEMS. \textbf{Esp-now: A wireless communication protocol for quick responses and low-power control}. 2025.
+Dispon{\'\i}vel em: \url{https://www.espressif.com/en/solutions/low-power-solutions/esp-now}. Acesso em: 16 março 2025.}
+
+\bibitem[Filho 2017]{tcc-marcolino}
+\abntrefinfo{Filho}{FILHO}{2017}
+{FILHO, F. M.~R.
+\textbf{Estudo e implementação de algorítmo inteligente para resolução de labirinto com robô autônomo diferencial Micromouse}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal do Piauí, Teresina, 2017.}
+
+\bibitem[Ibrahim 2006]{ibrahim-2006}
+\abntrefinfo{Ibrahim}{IBRAHIM}{2006}
+{IBRAHIM, D. \textbf{Microcontroller based applied digital control}. 1st. ed. [S.l.]: John Wiley \& Sons Ltd., 2006.
+ISBN 0470863358.}
+
+\bibitem[Kim e Kim 2020]{kim-byung-2020}
+\abntrefinfo{Kim e Kim}{KIM; KIM}{2020}
+{KIM, J.; KIM, B.~K. Cornering trajectory planning avoiding slip for differential-wheeled mobile robots.
+\textbf{IEEE Transactions on Industrial Electronics}, v.~67, n.~8, p. 6698--6708, 2020.}
+
+\bibitem[MathWorks 2026]{matlab-def}
+\abntrefinfo{MathWorks}{MATHWORKS}{2026}
+{MATHWORKS. \textbf{MATLAB}. 2026.
+Dispon{\'\i}vel em: \url{https://www.mathworks.com/products/matlab.html}. Acesso em: 17 maio 2026.}
+
+\bibitem[{New Technology Foundation} 2023]{micromouse-rules-japan-2023}
+\abntrefinfo{{New Technology Foundation}}{{New Technology Foundation}}{2023}
+{{New Technology Foundation}. \textbf{Rules for Micromouse}. 2023.
+Publicado em 02 de agosto de 2023. Acesso em: 09 jun. 2026.
+Dispon{\'\i}vel em: \url{https://www.ntf.or.jp/?page\_id=927}.}
+
+\bibitem[N{\o}rgaard \textit{et al.} 2000]{norgaard-2000-neural}
+\abntrefinfo{N{\o}rgaard \textit{et al.}}{N{\O}RGAARD \textit{et al.}}{2000}
+{N{\O}RGAARD, M. \textit{et al.} \textbf{Neural Networks for Modelling and Control of Dynamic Systems: A Practitioner's Handbook}. 3. ed. London: Springer-Verlag, 2000.  (Advanced Textbooks in Control and Signal Processing).
+ISBN 1852332271.}
+
+\bibitem[Ogata 2010]{ogata-2010}
+\abntrefinfo{Ogata}{OGATA}{2010}
+{OGATA, K. \textbf{Engenharia de Controle Moderno}. 5th. ed. [S.l.]: Pearson Prentice Hall, 2010.
+ISBN 9788576058106.}
+
+\bibitem[Pereira 2000]{dissetacao-pereira-2000}
+\abntrefinfo{Pereira}{PEREIRA}{2000}
+{PEREIRA, G. A.~S.
+\textbf{Identificação e controle de micro-robôs móveis}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal de Minas Gerais, Belo Horizonte, 2000.}
+
+\bibitem[Roberto, Galvani e Boas 2024]{roberto-et-al-2024}
+\abntrefinfo{Roberto, Galvani e Boas}{ROBERTO; GALVANI; BOAS}{2024}
+{ROBERTO, J.~M.; GALVANI, L.~O.; BOAS, M.~S. V.
+\textbf{Desenvolvimento de robô para resolução otimizada de labirintos}.
+85~p. Disserta\c{c}\~{a}o (Trabalho de Conclusão de Curso (Graduação)) --- Instituto Mauá de Tecnologia, São Caetano do Sul, SP, Brasil, 2024.}
+
+\bibitem[Silva 2015]{manual-config-bootloader}
+\abntrefinfo{Silva}{SILVA}{2015a}
+{SILVA, K.~L. da. \textbf{Automatização da gravação vis Bootloader USB (DFU) no Eclipse}.
+Brasil, 2015. Dispon{\'\i}vel em: \url{https://kleberufu.wixsite.com/micromousebrasil/arquivos}. Acesso em: 20 agosto 2024.}
+
+\bibitem[Silva 2015]{manual-criacao-arm-project}
+\abntrefinfo{Silva}{SILVA}{2015b}
+{SILVA, K.~L. da. \textbf{Criação de um projeto ARM no Eclipse}.
+Brasil, 2015. Dispon{\'\i}vel em: \url{https://kleberufu.wixsite.com/micromousebrasil/arquivos}. Acesso em: 20 agosto 2024.}
+
+\bibitem[Silva 2015]{manual-config-eclipse}
+\abntrefinfo{Silva}{SILVA}{2015c}
+{SILVA, K.~L. da. \textbf{Instalação e configuração do Eclipse com o Cross-compiler ARM}.
+Brasil, 2015. Dispon{\'\i}vel em: \url{https://kleberufu.wixsite.com/micromousebrasil/arquivos}. Acesso em: 20 agosto 2024.}
+
+\bibitem[Silva 2015]{manual-microumouse-2015}
+\abntrefinfo{Silva}{SILVA}{2015d}
+{SILVA, K.~L. da. \textbf{Manual do Usuário Robô $\mu$MaRT Lite Plus V1.1}.
+Brasil, 2015. Dispon{\'\i}vel em: \url{https://kleberufu.wixsite.com/micromousebrasil/arquivos}. Acesso em: 20 agosto 2025.}
+
+\bibitem[Su, Huang e Lee 2013]{su-et-al-2013}
+\abntrefinfo{Su, Huang e Lee}{SU; HUANG; LEE}{2013}
+{SU, J.-H.; HUANG, H.-H.; LEE, C.-S. Behaveior model simulations of micromouse and its application in intelligent mobile robot education.
+p. 511--515, 2013.}
+
+\bibitem[Su \textit{et al.} 2011]{micromouse-kit-educational}
+\abntrefinfo{Su \textit{et al.}}{SU \textit{et al.}}{2011}
+{SU, J.-H. \textit{et al.} A micromouse kit for teaching autonomous mobile robots.
+\textbf{International Journal of Electrical Engineering Education}, v.~48, p. 188--201, 04 2011.}
+
+\bibitem[Vieira 2005]{vieira-2005}
+\abntrefinfo{Vieira}{VIEIRA}{2005}
+{VIEIRA, F.~C.
+\textbf{Controle Dinâmico de Robôs Móveis com Acionamento Diferencial}.
+Disserta\c{c}\~{a}o (Dissertação de Mestrado) --- Universidade Federal do Rio Grande do Norte, Natal,RN, Brasil, fev. 2005.}
+
+\bibitem[Yu 2006]{yu-2006-relay}
+\abntrefinfo{Yu}{YU}{2006}
+{YU, C.-C. \textbf{Autotuning of PID Controllers}: A relay feedback approach. 2. ed. [S.l.]: Springer-Verlag, 2006.
+ISBN 1-84628-036-2.}
+
+\bibitem[Ziegler e Nichols 1942]{ziegler-nichols-1942}
+\abntrefinfo{Ziegler e Nichols}{ZIEGLER; NICHOLS}{1942}
+{ZIEGLER, J.~G.; NICHOLS, N.~B. Optimum settings for automatic controllers.
+\textbf{Journal of Fluids Engineering}, v.~64, p. 759--765, 11 1942.
+ISSN 0097-6822.}
+
+\end{thebibliography}

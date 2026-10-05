@@ -1,0 +1,1935 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.4)  16 JUL 2026 18:16
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/Händel/OneDrive - ufpi.edu.br/UFPI/TCC/TCC_HANDEL_v1/documento.tex"
+(c:/Users/Händel/OneDrive - ufpi.edu.br/UFPI/TCC/TCC_HANDEL_v1/documento.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(c:/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls
+Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
+(c:/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (c:/texlive/2026/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2025/11/04 v3.8.4b configurable book, report, article document class
+(c:/texlive/2026/texmf-dist/tex/latex/xpatch/xpatch.sty (c:/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+ (c:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count275
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+ (c:/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+) (c:/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count276
+))
+\onelineskip=\skip49
+\lxvchars=\skip50
+\xlvchars=\skip51
+\@memcnta=\count277
+\c@@memmarkcntra=\count278
+ (c:/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+\trimtop=\skip52
+\trimedge=\skip53
+ (c:/texlive/2026/texmf-dist/tex/latex/memoir/mem12.clo
+File: mem12.clo 2022/07/29 v0.5 memoir class 12pt size option
+)
+\binding=\skip54
+\spinemargin=\skip55
+\foremargin=\skip56
+\uppermargin=\skip57
+\lowermargin=\skip58
+\headdrop=\skip59
+\normalrulethickness=\skip60
+\mem@maxheadheight=\skip61
+\mem@maxfootheight=\skip62
+\headwidth=\skip63
+\c@storedpagenumber=\count279
+\memPD=\dimen148
+\m@mabparskip=\skip64
+\thanksmarkwidth=\skip65
+\thanksmarksep=\skip66
+\droptitle=\skip67
+\c@book=\count280
+\c@part=\count281
+\c@chapter=\count282
+\c@section=\count283
+\c@subsection=\count284
+\c@subsubsection=\count285
+\c@paragraph=\count286
+\c@subparagraph=\count287
+\beforechapskip=\skip68
+\midchapskip=\skip69
+\afterchapskip=\skip70
+\chapindent=\skip71
+\bottomsectionskip=\skip72
+\secindent=\skip73
+\beforesecskip=\skip74
+\aftersecskip=\skip75
+\subsecindent=\skip76
+\beforesubsecskip=\skip77
+\aftersubsecskip=\skip78
+\subsubsecindent=\skip79
+\beforesubsubsecskip=\skip80
+\aftersubsubsecskip=\skip81
+\paraindent=\skip82
+\beforeparaskip=\skip83
+\afterparaskip=\skip84
+\subparaindent=\skip85
+\beforesubparaskip=\skip86
+\aftersubparaskip=\skip87
+\pfbreakskip=\skip88
+\c@@ppsavesec=\count288
+\c@@ppsaveapp=\count289
+\ragrparindent=\dimen149
+\everylistparindent=\dimen150
+\parsepi=\skip89
+\topsepi=\skip90
+\itemsepi=\skip91
+\parsepii=\skip92
+\topsepii=\skip93
+\topsepiii=\skip94
+\itemsepii=\skip95
+\itemsepiii=\skip96
+\partopsepii=\skip97
+\partopsepiii=\skip98
+\m@msavetopsep=\skip99
+\m@msavepartopsep=\skip100
+\@enLab=\toks17
+\abstitleskip=\skip101
+\absleftindent=\skip102
+\abs@leftindent=\dimen151
+\absrightindent=\skip103
+\absparindent=\skip104
+\absparsep=\skip105
+\c@vslineno=\count290
+\c@poemline=\count291
+\c@modulo@vs=\count292
+\c@memfvsline=\count293
+\vleftskip=\skip106
+\vrightskip=\skip107
+\stanzaskip=\skip108
+\versewidth=\skip109
+\vgap=\skip110
+\vindent=\skip111
+\vleftmargin=\dimen152
+\c@verse=\count294
+\c@chrsinstr=\count295
+\beforepoemtitleskip=\skip112
+\afterpoemtitleskip=\skip113
+\c@poem=\count296
+\beforePoemTitleskip=\skip114
+\midPoemTitleskip=\skip115
+\afterPoemTitleskip=\skip116
+ (c:/texlive/2026/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen153
+\ar@mcellbox=\box53
+\extrarowheight=\dimen154
+\NC@list=\toks18
+\extratabsurround=\skip117
+\backup@length=\skip118
+\ar@cellbox=\box54
+) (c:/texlive/2026/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2025/10/21 v1.06 decimal alignment package (DPC)
+) (c:/texlive/2026/texmf-dist/tex/latex/tools/delarray.sty
+Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
+) (c:/texlive/2026/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen155
+\TX@old@table=\dimen156
+\TX@old@col=\dimen157
+\TX@target=\dimen158
+\TX@delta=\dimen159
+\TX@cols=\count297
+\TX@ftn=\toks19
+) (c:/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen160
+\lightrulewidth=\dimen161
+\cmidrulewidth=\dimen162
+\belowrulesep=\dimen163
+\belowbottomsep=\dimen164
+\aboverulesep=\dimen165
+\abovetopsep=\dimen166
+\cmidrulesep=\dimen167
+\cmidrulekern=\dimen168
+\defaultaddspace=\dimen169
+\@cmidla=\count298
+\@cmidlb=\count299
+\@aboverulesep=\dimen170
+\@belowrulesep=\dimen171
+\@thisruleclass=\count300
+\@lastruleclass=\count301
+\@thisrulewidth=\dimen172
+)
+\ctableftskip=\skip119
+\ctabrightskip=\skip120
+\abovecolumnspenalty=\count302
+\@linestogo=\count303
+\@cellstogo=\count304
+\@cellsincolumn=\count305
+\crtok=\toks20
+\@mincolumnwidth=\dimen173
+\c@newflo@tctr=\count306
+\mem@margin@floatbox=\box55
+\@contcwidth=\skip121
+\@contindw=\skip122
+\abovecaptionskip=\skip123
+\belowcaptionskip=\skip124
+\subfloattopskip=\skip125
+\subfloatcapskip=\skip126
+\subfloatcaptopadj=\skip127
+\subfloatbottomskip=\skip128
+\subfloatlabelskip=\skip129
+\subfloatcapmargin=\dimen174
+\c@@contsubnum=\count307
+\m@mscap@capbox=\box56
+\m@mscap@fbox=\box57
+\sidecapsep=\dimen175
+\sidecapwidth=\dimen176
+\m@m@tempdima=\dimen177
+\m@mscapraise=\dimen178
+\sidecapraise=\dimen179
+\m@mscapmainwidth=\dimen180
+\m@mscaplkern=\dimen181
+\beforeepigraphskip=\skip130
+\afterepigraphskip=\skip131
+\epigraphwidth=\skip132
+\epigraphrule=\skip133
+ (c:/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+ (c:/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+ (c:/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (c:/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)) (c:/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (c:/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (c:/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+) (c:/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)))
+\c@section@level=\count308
+)
+\tocentryskip=\skip134
+\tocbaseline=\skip135
+\cftparskip=\skip136
+\cftbeforebookskip=\skip137
+\cftbookindent=\dimen182
+\cftbooknumwidth=\dimen183
+\cftbeforepartskip=\skip138
+\cftpartindent=\skip139
+\cftpartnumwidth=\skip140
+\cftbeforechapterskip=\skip141
+\cftchapterindent=\skip142
+\cftchapternumwidth=\skip143
+\cftbeforesectionskip=\skip144
+\cftsectionindent=\skip145
+\cftsectionnumwidth=\skip146
+\cftbeforesubsectionskip=\skip147
+\cftsubsectionindent=\skip148
+\cftsubsectionnumwidth=\skip149
+\cftbeforesubsubsectionskip=\skip150
+\cftsubsubsectionindent=\skip151
+\cftsubsubsectionnumwidth=\skip152
+\cftbeforeparagraphskip=\skip153
+\cftparagraphindent=\skip154
+\cftparagraphnumwidth=\skip155
+\cftbeforesubparagraphskip=\skip156
+\cftsubparagraphindent=\skip157
+\cftsubparagraphnumwidth=\skip158
+\prechapterprecisshift=\dimen184
+\c@maxsecnumdepth=\count309
+\bibindent=\dimen185
+\bibitemsep=\skip159
+\indexcolsep=\skip160
+\indexrule=\skip161
+\indexmarkstyle=\toks22
+\@indexbox=\insert252
+LaTeX Info: Redefining \raggedbottom on input line 8095.
+LaTeX Info: Redefining \flushbottom on input line 8099.
+\glossarycolsep=\dimen186
+\glossaryrule=\dimen187
+\sideparvshift=\skip162
+\sideins=\insert251
+\sidebartopsep=\skip163
+\sidebarhsep=\skip164
+\sidebarvsep=\skip165
+\sidebarwidth=\skip166
+\footmarkwidth=\skip167
+\footmarksep=\skip168
+\footparindent=\skip169
+\footinsdim=\skip170
+\footinsv@r=\insert250
+\@mpfootinsv@r=\insert249
+\m@m@k=\count310
+\m@m@h=\dimen188
+\m@mipn@skip=\skip171
+\sidefootins=\insert248
+\sidefootadjust=\skip172
+\sidefootheight=\skip173
+\sidefoothsep=\skip174
+\sidefootvsep=\skip175
+\sidefootwidth=\skip176
+\m@mdownsf=\skip177
+\c@sidefootnote=\count311
+\sidefootmarkwidth=\skip178
+\sidefootmarksep=\skip179
+\sidefootparindent=\skip180
+\c@pagenote=\count312
+\c@pagenoteshadow=\count313
+\mem@pn@lastkern=\skip181
+ (c:/texlive/2026/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks23
+\verbatim@line=\toks24
+\verbatim@in@stream=\read2
+)
+\verbatimindent=\skip182
+\verbatim@out=\write3
+ (c:/texlive/2026/texmf-dist/tex/latex/base/shortvrb.sty
+Package: shortvrb 2024/12/25 v3.0q Standard LaTeX documentation package V3 (FMi)
+)
+\bvboxsep=\skip183
+\c@memfbvline=\count314
+\c@bvlinectr=\count315
+\bvnumlength=\skip184
+\fb@frw=\dimen189
+\fb@frh=\dimen190
+\FrameRule=\dimen191
+\FrameSep=\dimen192
+\c@cp@cntr=\count316
+\c@ism@mctr=\count317
+\c@xsm@mctr=\count318
+\c@csm@mctr=\count319
+\c@ksm@mctr=\count320
+\c@xksm@mctr=\count321
+\c@cksm@mctr=\count322
+\c@msm@mctr=\count323
+\c@xmsm@mctr=\count324
+\c@cmsm@mctr=\count325
+\c@bsm@mctr=\count326
+\c@workm@mctr=\count327
+\c@sheetsequence=\count328
+\c@lastsheet=\count329
+\c@lastpage=\count330
+\c@figure=\count331
+\c@lofdepth=\count332
+\cftbeforefigureskip=\skip185
+\cftfigureindent=\skip186
+\cftfigurenumwidth=\skip187
+\c@table=\count333
+\c@lotdepth=\count334
+\cftbeforetableskip=\skip188
+\cfttableindent=\skip189
+\cfttablenumwidth=\skip190
+Package abstract [2008/07/23] emulated by memoir.
+Package appendix [2008/07/23] emulated by memoir.
+Package ccaption [2008/07/23] emulated by memoir.
+Package changepage [2008/07/23] emulated by memoir.
+Package chngcntr [2008/07/23] emulated by memoir.
+Package chngpage [2008/07/23] emulated by memoir.
+Package crop emulated by memoir.
+Package enumerate [2008/07/23] emulated by memoir.
+Package epigraph [2008/07/23] emulated by memoir.
+Package ifmtarg [2008/07/23] emulated by memoir.
+Package index [2008/07/23] emulated by memoir.
+Package makeidx [2008/07/23] emulated by memoir.
+Package moreverb [2008/07/23] emulated by memoir.
+Package needspace [2008/07/23] emulated by memoir.
+Package newfile [2008/07/23] emulated by memoir.
+Package nextpage [2008/07/23] emulated by memoir.
+Package pagenote [2008/07/23] emulated by memoir.
+Package parskip [2008/07/23] emulated by memoir.
+Package patchcmd [2008/07/23] emulated by memoir.
+Package setspace [2008/07/23] emulated by memoir.
+Package showidx [2008/07/23] emulated by memoir.
+Package titleref [2008/07/23] emulated by memoir.
+Package titling [2008/07/23] emulated by memoir.
+Package tocbibind [2008/07/23] emulated by memoir.
+Package tocloft [2008/07/23] emulated by memoir.
+Package tocvsec2 [2008/07/23] emulated by memoir.
+Package verse [2008/07/23] emulated by memoir.
+) (c:/texlive/2026/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
+Package textcase Info: Defining Legacy names on input line 20.
+) (c:/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+ (c:/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (c:/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (c:/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen193
+\Hy@linkcounter=\count335
+\Hy@pagecounter=\count336
+ (c:/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (c:/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count337
+ (c:/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count338
+ (c:/texlive/2026/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen194
+ (c:/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (c:/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count339
+\Field@Width=\dimen195
+\Fld@charsize=\dimen196
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count340
+\c@Item=\count341
+\c@Hfootnote=\count342
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (c:/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count343
+\c@bookmark@seq@number=\count344
+ (c:/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+ (c:/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+)
+\Hy@SectionHShift=\skip191
+) (c:/texlive/2026/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2025/09/16 v1.24 hyperref package fixes for memoir class
+\c@memhycontfloat=\count345
+\c@mem@Hpagenote=\count346
+) (c:/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+ (c:/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
+\BKM@id=\count347
+)) (c:/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count348
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
+\U@D=\dimen197
+\l@unhyphenated=\language9
+ (c:/texlive/2026/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count349
+ (c:/texlive/2026/texmf-dist/tex/generic/babel/locale/en/babel-english.tex) (c:/texlive/2026/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex) (c:/texlive/2026/texmf-dist/tex/generic/babel/locale/invalid/babel-brazil.tex)
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4330.
+ (c:/texlive/2026/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language4). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language4). Reported on input line 108.
+)
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 4330.
+ (c:/texlive/2026/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks25
+\es@quotdepth=\count350
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+)
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 4330.
+
+Package babel Info: Importing font and identification data for brazil
+(babel)             from babel-pt-BR.ini. Reported on input line 4330.
+(c:/texlive/2026/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
+Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+(babel)             (\language7). Reported on input line 100.
+)) (c:/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip192
+\enit@outerparindent=\dimen198
+\enit@toks=\toks26
+\enit@inbox=\box58
+\enit@count@id=\count351
+\enitdp@description=\count352
+) (c:/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count353
+\calc@Bcount=\count354
+\calc@Adimen=\dimen199
+\calc@Bdimen=\dimen256
+\calc@Askip=\skip193
+\calc@Bskip=\skip194
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count355
+\calc@Cskip=\skip195
+)
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 708pt by 455pt
+Spine and edge margins: 85.35826pt and 56.9055pt
+Upper and lower margins: 85.35826pt and 51.68858pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 42.9055pt
+Sidecapsep and sidecapwidth: 7pt and 42pt
+Sidebarhsep and sidebarwidth: 7pt and 42pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 42pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+\c@abntex@bookmarkcounter=\count356
+\cftlastnumwidth=\skip196
+
+Class memoir Warning: \settocpreprocessor is marked deprecated and will be
+(memoir)              removed in 2026, the problem it tried to solve 
+(memoir)              (see manual, section 9.2.3),
+(memoir)              has been fixed in the kernel, and the feature is
+(memoir)              no longer needed. on input line 483.
+
+\chapternamenumlength=\skip197
+\ABNTEXcitacaorecuo=\skip198
+\c@alineasi=\count357
+\c@alineasii=\count358
+\enitdp@alineas=\count359
+\c@subalineasi=\count360
+\enitdp@subalineas=\count361
+\c@incisosi=\count362
+\enitdp@incisos=\count363
+\ABNTEXsignwidth=\skip199
+\ABNTEXsignthickness=\skip256
+\ABNTEXsignskip=\skip257
+) (./lib/preambulo.tex (c:/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
+) (c:/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (c:/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (c:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (c:/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen257
+\Gin@req@width=\dimen258
+) (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks29
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (c:/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip258
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (c:/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks30
+\ex@=\dimen259
+)) (c:/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen260
+) (c:/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count364
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count365
+\leftroot@=\count366
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count367
+\DOTSCASE@=\count368
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen261
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count369
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count370
+\dotsspace@=\muskip18
+\c@parentequation=\count371
+\dspbrk@lvl=\count372
+\tag@help=\toks31
+\row@=\count373
+\column@=\count374
+\maxfields@=\count375
+\andhelp@=\toks32
+\eqnshift@=\dimen262
+\alignsep@=\dimen263
+\tagshift@=\dimen264
+\tagwidth@=\dimen265
+\totwidth@=\dimen266
+\lineht@=\dimen267
+\@envbody=\toks33
+\multlinegap=\skip259
+\multlinetaggap=\skip260
+\mathdisplay@stack=\toks34
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (c:/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip261
+\multirow@cntb=\count376
+\multirow@dima=\skip262
+\bigstrutjot=\dimen268
+) (c:/texlive/2026/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+) (c:/texlive/2026/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count377
+\lst@gtempboxa=\box61
+\lst@token=\toks35
+\lst@length=\count378
+\lst@currlwidth=\dimen269
+\lst@column=\count379
+\lst@pos=\count380
+\lst@lostspace=\dimen270
+\lst@width=\dimen271
+\lst@newlines=\count381
+\lst@lineno=\count382
+\lst@maxwidth=\dimen272
+ (c:/texlive/2026/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+) (c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count383
+\lst@skipnumbers=\count384
+\lst@framebox=\box62
+) (c:/texlive/2026/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(c:/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (c:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (c:/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (c:/texlive/2026/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+\MT@toks=\toks36
+\MT@tempbox=\box63
+\MT@count=\count385
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks37
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen273
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count386
+ (c:/texlive/2026/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip263
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (c:/texlive/2026/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (c:/texlive/2026/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count387
+\algocf@hangindent=\skip264
+ (c:/texlive/2026/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count388
+LaTeX Info: Redefining \checkoddpage on input line 45.
+) (c:/texlive/2026/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (c:/texlive/2026/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip265
+\skiplinenumber=\skip266
+\skiprule=\skip267
+\skiphlne=\skip268
+\skiptext=\skip269
+\skiplength=\skip270
+\algomargin=\skip271
+\skipalgocfslide=\skip272
+\algowidth=\dimen274
+\inoutsize=\dimen275
+\inoutindent=\dimen276
+\interspacetitleruled=\dimen277
+\interspacealgoruled=\dimen278
+\interspacetitleboxruled=\dimen279
+\algocf@ruledwidth=\skip273
+\algocf@inoutbox=\box64
+\algocf@inputbox=\box65
+\AlCapSkip=\skip274
+\AlCapHSkip=\skip275
+\algoskipindent=\skip276
+\algocf@nlbox=\box66
+\algocf@hangingbox=\box67
+\algocf@untilbox=\box68
+\algocf@skipuntil=\skip277
+\algocf@capbox=\box69
+\algocf@lcaptionbox=\skip278
+\algoheightruledefault=\skip279
+\algoheightrule=\skip280
+\algotitleheightruledefault=\skip281
+\algotitleheightrule=\skip282
+\c@algocfline=\count389
+\c@algocfproc=\count390
+\c@algocf=\count391
+\algocf@algoframe=\box70
+\algocf@algobox=\box71
+) (c:/texlive/2026/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count392
+\c@ALC@line=\count393
+\c@ALC@rem=\count394
+\c@ALC@depth=\count395
+\ALC@tlm=\skip283
+\algorithmicindent=\skip284
+) (c:/texlive/2026/texmf-dist/tex/latex/lipsum/lipsum.sty (c:/texlive/2026/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count396
+\l__lipsum_a_int=\count397
+\l__lipsum_b_int=\count398
+ (c:/texlive/2026/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (c:/texlive/2026/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2025/11/09 v4.9 (NLCT)
+ (c:/texlive/2026/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
+ (c:/texlive/2026/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2026/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks38
+\XKV@tempa@toks=\toks39
+\XKV@tempb@toks=\toks40
+)
+\XKV@depth=\count399
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/texlive/2026/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2025/04/03 v2.09 (NLCT)
+\@glsmfirst=\toks41
+\@glsmrest=\toks42
+) (c:/texlive/2026/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (c:/texlive/2026/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
+ (c:/texlive/2026/texmf-dist/tex/generic/tracklang/tracklang.tex)
+Package tracklang Info: Tracking dialect `english' (language `english') on input line 53.
+Package tracklang Info: Tracking dialect `spanish' (language `spanish') on input line 53.
+Package tracklang Info: Tracking dialect `brazil' (language `portuges') on input line 53.
+) (c:/texlive/2026/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
+)
+
+Package glossaries Warning: No language module detected for `english'.
+(glossaries)                Language modules need to be installed separately.
+(glossaries)                Please check on CTAN for a bundle called
+(glossaries)                `glossaries-english' or similar.
+
+
+Package glossaries Warning: No language module detected for `spanish'.
+(glossaries)                Language modules need to be installed separately.
+(glossaries)                Please check on CTAN for a bundle called
+(glossaries)                `glossaries-spanish' or similar.
+
+
+Package glossaries Warning: No language module detected for `brazil'.
+(glossaries)                Language modules need to be installed separately.
+(glossaries)                Please check on CTAN for a bundle called
+(glossaries)                `glossaries-portuges' or similar.
+
+(c:/texlive/2026/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2025/12/04 v3.4.3 (NLCT)
+\l__datatool_tmpa_int=\count400
+\l__datatool_tmpb_int=\count401
+\l__datatool_tmpc_int=\count402
+\l__datatool_tmpd_int=\count403
+\l__datatool_count_int=\count404
+\l__datatool_tmp_datatype_int=\count405
+\l__datatool_tmpa_dim=\dimen280
+\l__datatool_tmpb_dim=\dimen281
+ (c:/texlive/2026/texmf-dist/tex/latex/datatool/datatool-l3fp.def
+File: datatool-l3fp.def 2025/12/04 v3.4.3 (NLCT)
+)
+\@dtl@toks=\toks43
+\@dtl@tmpcount=\count406
+\dtl@tmplength=\skip285
+\l__datatool_measure_box=\box72
+\dtl@sortresult=\count407
+ (c:/texlive/2026/texmf-dist/tex/latex/datatool/datatool-utf8.ldf
+File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
+)
+\@dtl@datatype=\count408
+\c_datatool_unknown_int=\count409
+\l__datatool_year_int=\count410
+\l__datatool_month_int=\count411
+\l__datatool_day_int=\count412
+\l__datatool_hour_int=\count413
+\l__datatool_minute_int=\count414
+\l__datatool_second_int=\count415
+\l__datatool_tzhour_int=\count416
+\l__datatool_tzminute_int=\count417
+\l__datatool_julian_int=\count418
+\l__datatool_local_julian_int=\count419
+\l__datatool_prefix_int=\count420
+\l__datatool_suffix_int=\count421
+\@dtl@foreach@level=\count422
+
+
+Package tracklang Warning: No `datatool' support for dialect `english'  on input line 9924.
+
+
+Package tracklang Warning: No `datatool' support for dialect `spanish'  on input line 9924.
+
+
+Package tracklang Warning: No `datatool' support for dialect `brazil'  on input line 9924.
+
+
+Package tracklang Warning: No `datatool' support for dialect `brazil'  on input line 9924.
+
+\dtl@codeA=\count423
+\dtl@codeB=\count424
+)
+\gls@level=\count425
+\@gls@tmpb=\toks44
+\gls@tmplen=\skip286
+
+
+Package glossaries Warning: Overriding \printglossary on input line 6495.
+
+\l__glossaries_tmpa_dim=\dimen282
+\l__glossaries_tmpb_dim=\dimen283
+
+Package glossaries Warning: Overriding `theglossary' environment on input line 7694.
+
+\glskeylisttok=\toks45
+\glslabeltok=\toks46
+\glsshorttok=\toks47
+\glslongtok=\toks48
+(c:/texlive/2026/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
+Package: glossary-hypernav 2025/11/09 v4.9 (NLCT)
+) (c:/texlive/2026/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2025/11/09 v4.9 (NLCT)
+\glslistdottedwidth=\skip287
+) (c:/texlive/2026/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2025/11/09 v4.9 (NLCT)
+ (c:/texlive/2026/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip288
+\LTright=\skip289
+\LTpre=\skip290
+\LTpost=\skip291
+\LTchunksize=\count426
+\LTcapwidth=\dimen284
+\LT@head=\box73
+\LT@firsthead=\box74
+\LT@foot=\box75
+\LT@lastfoot=\box76
+\LT@gbox=\box77
+\LT@cols=\count427
+\LT@rows=\count428
+\c@LT@tables=\count429
+\c@LT@chunks=\count430
+\LT@p@ftn=\toks49
+)
+\glsdescwidth=\skip292
+\glspagelistwidth=\skip293
+) (c:/texlive/2026/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2025/11/09 v4.9 (NLCT)
+\l__glossaries_tree_max_known_level_int=\count431
+\l__glossaries_tree_offset_dim=\dimen285
+\l__glossaries_tree_namewidth_dim=\dimen286
+\l__glossaries_tree_symbolwidth_dim=\dimen287
+\l__glossaries_tree_prenamesym_width_dim=\dimen288
+\l__glossaries_tree_presubnamesym_width_dim=\dimen289
+\l__glossaries_tree_namewidth_padding_dim=\dimen290
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen291
+\l__glossaries_tree_namesymbolwidth_dim=\dimen292
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen293
+\l__glossaries_tree_level_int=\count432
+\glstreeindent=\skip294
+)) (c:/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (c:/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen294
+\captionmargin=\dimen295
+\caption@leftmargin=\dimen296
+\caption@rightmargin=\dimen297
+\caption@width=\dimen298
+\caption@indent=\dimen299
+\caption@parindent=\dimen300
+\caption@hangindent=\dimen301
+Package caption Info: memoir document class detected.
+ (c:/texlive/2026/texmf-dist/tex/latex/caption/caption-memoir.sto
+File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to the memoir document class (AR)
+))
+\c@caption@flags=\count433
+\c@continuedfloat=\count434
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen302
+\caption@adjustwidth@linewidth=\dimen303
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+ (c:/texlive/2026/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)) (c:/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
+ (c:/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
+\minimumbiblabelwidth=\skip295
+\ABCIauxlen=\skip296
+\c@ABCIaux=\count435
+\c@ABCImax=\count436
+ (c:/texlive/2026/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (c:/texlive/2026/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+\biblabelsep=\skip297
+LaTeX Info: Redefining \newblock on input line 591.
+LaTeX Info: Redefining \cite on input line 618.
+\ABCItoken=\toks50
+) (c:/texlive/2026/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+) (c:/texlive/2026/texmf-dist/tex/latex/paracol/paracol.sty
+Package: paracol 2025/07/14 1.37 typeset columns in parallel
+\pcol@currcol=\count437
+\pcol@nextcol=\count438
+\pcol@ncol=\count439
+\pcol@ncolleft=\count440
+\pcol@page=\count441
+\pcol@basepage=\count442
+\pcol@toppage=\count443
+\pcol@footnotebase=\count444
+\pcol@nfootnotes=\count445
+\pcol@mcid=\count446
+\pcol@prevdepth=\dimen304
+\pcol@colht=\dimen305
+\pcol@textfloatsep=\dimen306
+\pcol@lrmargin=\dimen307
+\pagerim=\dimen308
+\pcol@topskip=\skip298
+\belowfootnoteskip=\skip299
+\pcol@topfnotes=\box78
+\pcol@prespan=\box79
+\pcol@rightpage=\box80
+\pcol@colorstack@saved=\box81
+\pcol@tempboxa=\box82
+\pcol@tempboxb=\box83
+\pcol@colorins=\insert247
+\pcol@everyvbox=\toks51
+) (./lib/ufctex.sty (./elementos-pos-textuais/glossario.tex) (./elementos-pre-textuais/lista-de-abreviaturas-e-siglas.tex)
+\enitdp@alineascomponto=\count447
+\c@subalineascompontoi=\count448
+\enitdp@subalineascomponto=\count449
+\c@alineascomnumeroi=\count450
+\c@alineascomnumeroii=\count451
+\enitdp@alineascomnumero=\count452
+\c@subalineascomnumeroi=\count453
+\enitdp@subalineascomnumero=\count454
+\c@afirmacao=\count455
+\c@argumento=\count456
+\c@teo=\count457
+\c@lema=\count458
+\c@cor=\count459
+\c@conjec=\count460
+\c@premissa=\count461
+\c@procedimento=\count462
+\c@heuristica=\count463
+\c@axioma=\count464
+\c@exem=\count465
+\c@xdefinicao=\count466
+\c@cdefinicao=\count467
+\c@propriedade=\count468
+\c@quest=\count469
+\c@quadro=\count470
+\c@loqdepth=\count471
+\cftbeforequadroskip=\skip300
+\cftquadroindent=\skip301
+\cftquadronumwidth=\skip302
+\mylen=\skip303
+\cftbeforelstlistingskip=\skip304
+\cftlstlistingindent=\skip305
+\cftlstlistingnumwidth=\skip306
+\myAlgoLen=\skip307
+\cftbeforealgocfskip=\skip308
+\cftalgocfindent=\skip309
+\cftalgocfnumwidth=\skip310
+) (c:/texlive/2026/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+ (c:/texlive/2026/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen309
+\ESO@tempdimb=\dimen310
+)
+\AM@pagewidth=\dimen311
+\AM@pageheight=\dimen312
+\AM@fboxrule=\dimen313
+ (c:/texlive/2026/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count472
+\AM@pagebox=\box84
+\AM@global@opts=\toks52
+\AM@pagecnt=\count473
+\AM@toc@title=\toks53
+\AM@lof@heading=\toks54
+\c@AM@survey=\count474
+\AM@templatesizebox=\box85
+) (c:/texlive/2026/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (c:/texlive/2026/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
+Package bm Info: No bold for \OT1/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OML/ztmcm/m/it, using \pmb.
+Package bm Info: No bold for \OMS/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OMX/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+Package bm Info: No bold for \OT1/ptm/bx/n, using \pmb.
+Package bm Info: No bold for \OT1/ptm/m/it, using \pmb.
+)
+\glswrite=\write4
+\glo@main@file=\write5
+\openout5 = `documento.glo'.
+
+Package glossaries Info: Writing glossary file documento.glo on input line 90.
+)
+\documento@idxfile=\write6
+\openout6 = `documento.idx'.
+
+
+Writing index file documento.idx 
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 180.
+(c:/texlive/2026/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+
+LaTeX Warning: Unused global option(s):
+    [section,subsection].
+
+(./documento.aux
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 26.
+)
+\openout1 = `documento.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+Package hyperref Info: Link coloring OFF on input line 180.
+\myptabbox=\box86
+\myptabboxwidth=\skip311
+ (c:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count475
+\scratchdimen=\dimen314
+\scratchbox=\box87
+\nofMPsegments=\count476
+\nofMParguments=\count477
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count478
+\MPscratchDim=\dimen315
+\MPnumerator=\count479
+\makeMPintoPDFobject=\count480
+\everyMPtoPDFconversion=\toks56
+) (c:/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\c@lstlisting=\count481
+LaTeX Info: Redefining \microtypecontext on input line 180.
+Package microtype Info: Applying patch `item' on input line 180.
+Package microtype Info: Applying patch `toc' on input line 180.
+Package microtype Info: Applying patch `eqnum' on input line 180.
+Package microtype Info: Applying patch `footnote' on input line 180.
+Package microtype Info: Applying patch `verbatim' on input line 180.
+LaTeX Info: Redefining \microtypesetup on input line 180.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (c:/texlive/2026/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (c:/texlive/2026/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+ (c:/texlive/2026/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
+ (c:/texlive/2026/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+<lib/logo-ufc.jpg, id=4, 711.65875pt x 602.25pt>
+File: lib/logo-ufc.jpg Graphic file (type jpg)
+<use lib/logo-ufc.jpg>
+Package pdftex.def Info: lib/logo-ufc.jpg  used on input line 183.
+(pdftex.def)             Requested size: 71.17004pt x 60.22852pt.
+ [1
+
+\openout4 = `documento.ist'.
+
+{c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc} <./lib/logo-ufc.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 184.
+(c:/texlive/2026/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 184.
+ (c:/texlive/2026/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 184.
+ (c:/texlive/2026/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 184.
+ (c:/texlive/2026/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+) (c:/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (c:/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 184.
+ (c:/texlive/2026/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 184.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 184.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 184.
+
+Overfull \hbox (4.56003pt too wide) in paragraph at lines 184--184
+[]|  |  $[]$ 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.184 	\imprimirfolhaderosto{}
+                               [1
+
+
+
+]
+<elementos-pre-textuais/ficha-catalografica.pdf, id=17, 597.432pt x 844.95674pt>
+File: elementos-pre-textuais/ficha-catalografica.pdf Graphic file (type pdf)
+<use elementos-pre-textuais/ficha-catalografica.pdf>
+Package pdftex.def Info: elementos-pre-textuais/ficha-catalografica.pdf  used on input line 185.
+(pdftex.def)             Requested size: 597.43054pt x 844.95468pt.
+<elementos-pre-textuais/ficha-catalografica.pdf, id=19, page=1, 597.432pt x 844.95674pt>
+File: elementos-pre-textuais/ficha-catalografica.pdf Graphic file (type pdf)
+<use elementos-pre-textuais/ficha-catalografica.pdf, page 1>
+Package pdftex.def Info: elementos-pre-textuais/ficha-catalografica.pdf , page1 used on input line 185.
+(pdftex.def)             Requested size: 597.43054pt x 844.95468pt.
+File: elementos-pre-textuais/ficha-catalografica.pdf Graphic file (type pdf)
+<use elementos-pre-textuais/ficha-catalografica.pdf, page 1>
+Package pdftex.def Info: elementos-pre-textuais/ficha-catalografica.pdf , page1 used on input line 185.
+(pdftex.def)             Requested size: 597.93192pt x 845.66379pt.
+File: elementos-pre-textuais/ficha-catalografica.pdf Graphic file (type pdf)
+<use elementos-pre-textuais/ficha-catalografica.pdf, page 1>
+Package pdftex.def Info: elementos-pre-textuais/ficha-catalografica.pdf , page1 used on input line 185.
+(pdftex.def)             Requested size: 597.93192pt x 845.66379pt.
+File: elementos-pre-textuais/ficha-catalografica.pdf Graphic file (type pdf)
+<use elementos-pre-textuais/ficha-catalografica.pdf, page 1>
+Package pdftex.def Info: elementos-pre-textuais/ficha-catalografica.pdf , page1 used on input line 185.
+(pdftex.def)             Requested size: 597.93192pt x 845.66379pt.
+File: elementos-pre-textuais/ficha-catalografica.pdf Graphic file (type pdf)
+<use elementos-pre-textuais/ficha-catalografica.pdf, page 1>
+Package pdftex.def Info: elementos-pre-textuais/ficha-catalografica.pdf , page1 used on input line 185.
+(pdftex.def)             Requested size: 597.93192pt x 845.66379pt.
+ [2
+
+
+ <./elementos-pre-textuais/ficha-catalografica.pdf>] (./elementos-pre-textuais/dedicatoria.tex)
+Overfull \hbox (4.56003pt too wide) in paragraph at lines 188--189
+[]|  |  $[]$
+ []
+
+[3] (./elementos-pre-textuais/agradecimentos.tex) [4
+
+] [5] (./elementos-pre-textuais/epigrafe.tex)
+Overfull \hbox (4.56003pt too wide) in paragraph at lines 190--191
+[]|  |  $[]$
+ []
+
+[6
+
+] (./elementos-pre-textuais/resumo.tex) [7] (./elementos-pre-textuais/abstract.tex) [8
+
+] (./documento.lof [9
+
+]) [10] (./documento.lot) [11] (./documento.gls) [12
+
+
+] (./documento.toc [13]) [14] (./elementos-textuais/introducao.tex
+Cap\'{\i }tulo 1.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 12.
+(c:/texlive/2026/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [15
+
+
+]
+<figuras/introducao/celula-labirinto-japao.png, id=340, 1445.4pt x 467.49657pt>
+File: figuras/introducao/celula-labirinto-japao.png Graphic file (type png)
+<use figuras/introducao/celula-labirinto-japao.png>
+Package pdftex.def Info: figuras/introducao/celula-labirinto-japao.png  used on input line 28.
+(pdftex.def)             Requested size: 341.43306pt x 110.43237pt.
+File: figuras/introducao/celula-labirinto-japao.png Graphic file (type png)
+<use figuras/introducao/celula-labirinto-japao.png>
+Package pdftex.def Info: figuras/introducao/celula-labirinto-japao.png  used on input line 28.
+(pdftex.def)             Requested size: 341.43306pt x 110.43237pt.
+<figuras/introducao/labirinto-japao.png, id=344, 629.35126pt x 813.0375pt>
+File: figuras/introducao/labirinto-japao.png Graphic file (type png)
+<use figuras/introducao/labirinto-japao.png>
+Package pdftex.def Info: figuras/introducao/labirinto-japao.png  used on input line 38.
+(pdftex.def)             Requested size: 199.16928pt x 257.29913pt.
+File: figuras/introducao/labirinto-japao.png Graphic file (type png)
+<use figuras/introducao/labirinto-japao.png>
+Package pdftex.def Info: figuras/introducao/labirinto-japao.png  used on input line 38.
+(pdftex.def)             Requested size: 199.16928pt x 257.29913pt.
+ [16 <./figuras/introducao/celula-labirinto-japao.png> <./figuras/introducao/labirinto-japao.png>]
+<figuras/introducao/kit-micromouse-su-et-al.png, id=359, 575.14874pt x 560.8453pt>
+File: figuras/introducao/kit-micromouse-su-et-al.png Graphic file (type png)
+<use figuras/introducao/kit-micromouse-su-et-al.png>
+Package pdftex.def Info: figuras/introducao/kit-micromouse-su-et-al.png  used on input line 54.
+(pdftex.def)             Requested size: 199.16928pt x 194.2107pt.
+File: figuras/introducao/kit-micromouse-su-et-al.png Graphic file (type png)
+<use figuras/introducao/kit-micromouse-su-et-al.png>
+Package pdftex.def Info: figuras/introducao/kit-micromouse-su-et-al.png  used on input line 54.
+(pdftex.def)             Requested size: 199.16928pt x 194.2107pt.
+ [17 <./figuras/introducao/kit-micromouse-su-et-al.png>] [18]) (./elementos-textuais/fundamentacao-teorica.tex [19]
+Cap\'{\i }tulo 2.
+<figuras/fundamentação-teorica/exemplo-sistema.png, id=408, 762.59906pt x 213.79875pt>
+File: figuras/fundamentação-teorica/exemplo-sistema.png Graphic file (type png)
+<use figuras/fundamentação-teorica/exemplo-sistema.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/exemplo-sistema.png  used on input line 20.
+(pdftex.def)             Requested size: 227.62204pt x 63.81387pt.
+File: figuras/fundamentação-teorica/exemplo-sistema.png Graphic file (type png)
+<use figuras/fundamentação-teorica/exemplo-sistema.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/exemplo-sistema.png  used on input line 20.
+(pdftex.def)             Requested size: 227.62204pt x 63.81387pt.
+[20
+
+ <./figuras/fundamentação-teorica/exemplo-sistema.png>]
+<figuras/fundamentação-teorica/amostragem-ibrahim.png, id=438, 871.00406pt x 292.09125pt>
+File: figuras/fundamentação-teorica/amostragem-ibrahim.png Graphic file (type png)
+<use figuras/fundamentação-teorica/amostragem-ibrahim.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/amostragem-ibrahim.png  used on input line 63.
+(pdftex.def)             Requested size: 256.0748pt x 85.872pt.
+File: figuras/fundamentação-teorica/amostragem-ibrahim.png Graphic file (type png)
+<use figuras/fundamentação-teorica/amostragem-ibrahim.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/amostragem-ibrahim.png  used on input line 63.
+(pdftex.def)             Requested size: 256.0748pt x 85.872pt.
+ [21] [22 <./figuras/fundamentação-teorica/amostragem-ibrahim.png>] [23] [24]
+<figuras/fundamentação-teorica/sistema-mf-simples.png, id=531, 1001.24063pt x 355.3275pt>
+File: figuras/fundamentação-teorica/sistema-mf-simples.png Graphic file (type png)
+<use figuras/fundamentação-teorica/sistema-mf-simples.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/sistema-mf-simples.png  used on input line 217.
+(pdftex.def)             Requested size: 341.43306pt x 121.16759pt.
+File: figuras/fundamentação-teorica/sistema-mf-simples.png Graphic file (type png)
+<use figuras/fundamentação-teorica/sistema-mf-simples.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/sistema-mf-simples.png  used on input line 217.
+(pdftex.def)             Requested size: 341.43306pt x 121.16759pt.
+<figuras/fundamentação-teorica/sistema-mf-controlado.png, id=532, 1445.4pt x 339.51843pt>
+File: figuras/fundamentação-teorica/sistema-mf-controlado.png Graphic file (type png)
+<use figuras/fundamentação-teorica/sistema-mf-controlado.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/sistema-mf-controlado.png  used on input line 227.
+(pdftex.def)             Requested size: 341.43306pt x 80.20128pt.
+File: figuras/fundamentação-teorica/sistema-mf-controlado.png Graphic file (type png)
+<use figuras/fundamentação-teorica/sistema-mf-controlado.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/sistema-mf-controlado.png  used on input line 227.
+(pdftex.def)             Requested size: 341.43306pt x 80.20128pt.
+ [25] [26 <./figuras/fundamentação-teorica/sistema-mf-simples.png> <./figuras/fundamentação-teorica/sistema-mf-controlado.png>]
+<figuras/fundamentação-teorica/block-diagram-relay.png, id=572, 933.4875pt x 362.10281pt>
+File: figuras/fundamentação-teorica/block-diagram-relay.png Graphic file (type png)
+<use figuras/fundamentação-teorica/block-diagram-relay.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/block-diagram-relay.png  used on input line 289.
+(pdftex.def)             Requested size: 256.0748pt x 99.3327pt.
+File: figuras/fundamentação-teorica/block-diagram-relay.png Graphic file (type png)
+<use figuras/fundamentação-teorica/block-diagram-relay.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/block-diagram-relay.png  used on input line 289.
+(pdftex.def)             Requested size: 256.0748pt x 99.3327pt.
+<figuras/fundamentação-teorica/output-relay.png, id=573, 815.29594pt x 480.29437pt>
+File: figuras/fundamentação-teorica/output-relay.png Graphic file (type png)
+<use figuras/fundamentação-teorica/output-relay.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/output-relay.png  used on input line 299.
+(pdftex.def)             Requested size: 256.0748pt x 150.85379pt.
+File: figuras/fundamentação-teorica/output-relay.png Graphic file (type png)
+<use figuras/fundamentação-teorica/output-relay.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/output-relay.png  used on input line 299.
+(pdftex.def)             Requested size: 256.0748pt x 150.85379pt.
+ [27]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 321.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 321.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 321.
+ [28 <./figuras/fundamentação-teorica/block-diagram-relay.png> <./figuras/fundamentação-teorica/output-relay.png>] [29] [30]
+Cap\'{\i }tulo 3.
+<figuras/fundamentação-teorica/composicao_micromouse.jpg, id=641, 347.79938pt x 194.97844pt>
+File: figuras/fundamentação-teorica/composicao_micromouse.jpg Graphic file (type jpg)
+<use figuras/fundamentação-teorica/composicao_micromouse.jpg>
+Package pdftex.def Info: figuras/fundamentação-teorica/composicao_micromouse.jpg  used on input line 423.
+(pdftex.def)             Requested size: 398.33858pt x 223.32198pt.
+File: figuras/fundamentação-teorica/composicao_micromouse.jpg Graphic file (type jpg)
+<use figuras/fundamentação-teorica/composicao_micromouse.jpg>
+Package pdftex.def Info: figuras/fundamentação-teorica/composicao_micromouse.jpg  used on input line 423.
+(pdftex.def)             Requested size: 398.33858pt x 223.32198pt.
+[31
+
+ <./figuras/fundamentação-teorica/composicao_micromouse.jpg>]
+<figuras/fundamentação-teorica/mov-diferencial-micromouse-puro.png, id=658, 520.94624pt x 682.04813pt>
+File: figuras/fundamentação-teorica/mov-diferencial-micromouse-puro.png Graphic file (type png)
+<use figuras/fundamentação-teorica/mov-diferencial-micromouse-puro.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/mov-diferencial-micromouse-puro.png  used on input line 439.
+(pdftex.def)             Requested size: 142.26378pt x 186.2577pt.
+File: figuras/fundamentação-teorica/mov-diferencial-micromouse-puro.png Graphic file (type png)
+<use figuras/fundamentação-teorica/mov-diferencial-micromouse-puro.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/mov-diferencial-micromouse-puro.png  used on input line 439.
+(pdftex.def)             Requested size: 142.26378pt x 186.2577pt.
+ [32 <./figuras/fundamentação-teorica/mov-diferencial-micromouse-puro.png>]
+<figuras/fundamentação-teorica/diagrama-bloco-micromouse.png, id=678, 1129.97156pt x 467.49657pt>
+File: figuras/fundamentação-teorica/diagrama-bloco-micromouse.png Graphic file (type png)
+<use figuras/fundamentação-teorica/diagrama-bloco-micromouse.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/diagrama-bloco-micromouse.png  used on input line 481.
+(pdftex.def)             Requested size: 341.43306pt x 141.25586pt.
+File: figuras/fundamentação-teorica/diagrama-bloco-micromouse.png Graphic file (type png)
+<use figuras/fundamentação-teorica/diagrama-bloco-micromouse.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/diagrama-bloco-micromouse.png  used on input line 481.
+(pdftex.def)             Requested size: 341.43306pt x 141.25586pt.
+ [33 <./figuras/fundamentação-teorica/diagrama-bloco-micromouse.png>]
+<figuras/fundamentação-teorica/micromouse-no-plano.png, id=693, 697.10437pt x 654.19406pt>
+File: figuras/fundamentação-teorica/micromouse-no-plano.png Graphic file (type png)
+<use figuras/fundamentação-teorica/micromouse-no-plano.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/micromouse-no-plano.png  used on input line 516.
+(pdftex.def)             Requested size: 113.81102pt x 106.7994pt.
+File: figuras/fundamentação-teorica/micromouse-no-plano.png Graphic file (type png)
+<use figuras/fundamentação-teorica/micromouse-no-plano.png>
+Package pdftex.def Info: figuras/fundamentação-teorica/micromouse-no-plano.png  used on input line 516.
+(pdftex.def)             Requested size: 113.81102pt x 106.7994pt.
+) (./elementos-textuais/metodologia.tex [34 <./figuras/fundamentação-teorica/micromouse-no-plano.png>]
+Cap\'{\i }tulo 4.
+<figuras/metodologia/modelo_3d_roda.png, id=709, 513.92pt x 513.92pt>
+File: figuras/metodologia/modelo_3d_roda.png Graphic file (type png)
+<use figuras/metodologia/modelo_3d_roda.png>
+Package pdftex.def Info: figuras/metodologia/modelo_3d_roda.png  used on input line 27.
+(pdftex.def)             Requested size: 113.81102pt x 113.80771pt.
+File: figuras/metodologia/modelo_3d_roda.png Graphic file (type png)
+<use figuras/metodologia/modelo_3d_roda.png>
+Package pdftex.def Info: figuras/metodologia/modelo_3d_roda.png  used on input line 27.
+(pdftex.def)             Requested size: 113.81102pt x 113.80771pt.
+<figuras/metodologia/roda_impressa.jpg, id=710, 963.6pt x 1284.8pt>
+File: figuras/metodologia/roda_impressa.jpg Graphic file (type jpg)
+<use figuras/metodologia/roda_impressa.jpg>
+Package pdftex.def Info: figuras/metodologia/roda_impressa.jpg  used on input line 38.
+(pdftex.def)             Requested size: 113.81102pt x 151.73839pt.
+File: figuras/metodologia/roda_impressa.jpg Graphic file (type jpg)
+<use figuras/metodologia/roda_impressa.jpg>
+Package pdftex.def Info: figuras/metodologia/roda_impressa.jpg  used on input line 38.
+(pdftex.def)             Requested size: 113.81102pt x 151.73839pt.
+[35
+
+] [36 <./figuras/metodologia/modelo_3d_roda.png> <./figuras/metodologia/roda_impressa.jpg>]
+<figuras/metodologia/esp32-wroom-32.jpg, id=740, 963.6pt x 1284.8pt>
+File: figuras/metodologia/esp32-wroom-32.jpg Graphic file (type jpg)
+<use figuras/metodologia/esp32-wroom-32.jpg>
+Package pdftex.def Info: figuras/metodologia/esp32-wroom-32.jpg  used on input line 103.
+(pdftex.def)             Requested size: 85.35826pt x 113.80379pt.
+File: figuras/metodologia/esp32-wroom-32.jpg Graphic file (type jpg)
+<use figuras/metodologia/esp32-wroom-32.jpg>
+Package pdftex.def Info: figuras/metodologia/esp32-wroom-32.jpg  used on input line 103.
+(pdftex.def)             Requested size: 85.35826pt x 113.80379pt.
+<figuras/metodologia/esp8266-d1mini.jpg, id=741, 963.6pt x 1284.8pt>
+File: figuras/metodologia/esp8266-d1mini.jpg Graphic file (type jpg)
+<use figuras/metodologia/esp8266-d1mini.jpg>
+Package pdftex.def Info: figuras/metodologia/esp8266-d1mini.jpg  used on input line 114.
+(pdftex.def)             Requested size: 85.35826pt x 113.80379pt.
+File: figuras/metodologia/esp8266-d1mini.jpg Graphic file (type jpg)
+<use figuras/metodologia/esp8266-d1mini.jpg>
+Package pdftex.def Info: figuras/metodologia/esp8266-d1mini.jpg  used on input line 114.
+(pdftex.def)             Requested size: 85.35826pt x 113.80379pt.
+<figuras/metodologia/rede-comunicacao-cropped.png, id=742, 1445.4pt x 226.59656pt>
+File: figuras/metodologia/rede-comunicacao-cropped.png Graphic file (type png)
+<use figuras/metodologia/rede-comunicacao-cropped.png>
+Package pdftex.def Info: figuras/metodologia/rede-comunicacao-cropped.png  used on input line 125.
+(pdftex.def)             Requested size: 341.43306pt x 53.5268pt.
+File: figuras/metodologia/rede-comunicacao-cropped.png Graphic file (type png)
+<use figuras/metodologia/rede-comunicacao-cropped.png>
+Package pdftex.def Info: figuras/metodologia/rede-comunicacao-cropped.png  used on input line 125.
+(pdftex.def)             Requested size: 341.43306pt x 53.5268pt.
+ [37 <./figuras/metodologia/esp32-wroom-32.jpg> <./figuras/metodologia/esp8266-d1mini.jpg> <./figuras/metodologia/rede-comunicacao-cropped.png>]
+<figuras/metodologia/uart-stm-esp8266-cropped.png, id=761, 1445.4pt x 481.04718pt>
+File: figuras/metodologia/uart-stm-esp8266-cropped.png Graphic file (type png)
+<use figuras/metodologia/uart-stm-esp8266-cropped.png>
+Package pdftex.def Info: figuras/metodologia/uart-stm-esp8266-cropped.png  used on input line 143.
+(pdftex.def)             Requested size: 341.43306pt x 113.63332pt.
+File: figuras/metodologia/uart-stm-esp8266-cropped.png Graphic file (type png)
+<use figuras/metodologia/uart-stm-esp8266-cropped.png>
+Package pdftex.def Info: figuras/metodologia/uart-stm-esp8266-cropped.png  used on input line 143.
+(pdftex.def)             Requested size: 341.43306pt x 113.63332pt.
+<figuras/metodologia/esquematico_placa.png, id=767, 314.3745pt x 293.29575pt>
+File: figuras/metodologia/esquematico_placa.png Graphic file (type png)
+<use figuras/metodologia/esquematico_placa.png>
+Package pdftex.def Info: figuras/metodologia/esquematico_placa.png  used on input line 158.
+(pdftex.def)             Requested size: 113.81102pt x 106.1816pt.
+File: figuras/metodologia/esquematico_placa.png Graphic file (type png)
+<use figuras/metodologia/esquematico_placa.png>
+Package pdftex.def Info: figuras/metodologia/esquematico_placa.png  used on input line 158.
+(pdftex.def)             Requested size: 113.81102pt x 106.1816pt.
+<figuras/metodologia/placa_feita_cobre.png, id=770, 1445.4pt x 813.0375pt>
+File: figuras/metodologia/placa_feita_cobre.png Graphic file (type png)
+<use figuras/metodologia/placa_feita_cobre.png>
+Package pdftex.def Info: figuras/metodologia/placa_feita_cobre.png  used on input line 169.
+(pdftex.def)             Requested size: 113.81102pt x 64.01463pt.
+File: figuras/metodologia/placa_feita_cobre.png Graphic file (type png)
+<use figuras/metodologia/placa_feita_cobre.png>
+Package pdftex.def Info: figuras/metodologia/placa_feita_cobre.png  used on input line 169.
+(pdftex.def)             Requested size: 113.81102pt x 64.01463pt.
+ [38 <./figuras/metodologia/uart-stm-esp8266-cropped.png>] [39 <./figuras/metodologia/esquematico_placa.png> <./figuras/metodologia/placa_feita_cobre.png>] [40]
+<figuras/metodologia/malha-controle-motor-individual.png, id=815, 1152.55594pt x 614.295pt>
+File: figuras/metodologia/malha-controle-motor-individual.png Graphic file (type png)
+<use figuras/metodologia/malha-controle-motor-individual.png>
+Package pdftex.def Info: figuras/metodologia/malha-controle-motor-individual.png  used on input line 235.
+(pdftex.def)             Requested size: 256.0748pt x 136.4857pt.
+File: figuras/metodologia/malha-controle-motor-individual.png Graphic file (type png)
+<use figuras/metodologia/malha-controle-motor-individual.png>
+Package pdftex.def Info: figuras/metodologia/malha-controle-motor-individual.png  used on input line 235.
+(pdftex.def)             Requested size: 256.0748pt x 136.4857pt.
+ [41 <./figuras/metodologia/malha-controle-motor-individual.png>]
+<figuras/metodologia/malha-controle-global.png, id=823, 1317.42188pt x 526.96875pt>
+File: figuras/metodologia/malha-controle-global.png Graphic file (type png)
+<use figuras/metodologia/malha-controle-global.png>
+Package pdftex.def Info: figuras/metodologia/malha-controle-global.png  used on input line 251.
+(pdftex.def)             Requested size: 455.24408pt x 182.09387pt.
+File: figuras/metodologia/malha-controle-global.png Graphic file (type png)
+<use figuras/metodologia/malha-controle-global.png>
+Package pdftex.def Info: figuras/metodologia/malha-controle-global.png  used on input line 251.
+(pdftex.def)             Requested size: 455.24408pt x 182.09387pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 251--252
+ []$[]$ 
+ []
+
+) (./elementos-textuais/resultados.tex [42 <./figuras/metodologia/malha-controle-global.png>]
+Cap\'{\i }tulo 5.
+[43
+
+]
+<figuras/resultados/fig-motores/resp_mot_dir_prbs.png, id=858, 1806.75pt x 900.36375pt>
+File: figuras/resultados/fig-motores/resp_mot_dir_prbs.png Graphic file (type png)
+<use figuras/resultados/fig-motores/resp_mot_dir_prbs.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/resp_mot_dir_prbs.png  used on input line 44.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+File: figuras/resultados/fig-motores/resp_mot_dir_prbs.png Graphic file (type png)
+<use figuras/resultados/fig-motores/resp_mot_dir_prbs.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/resp_mot_dir_prbs.png  used on input line 44.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 44--45
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-motores/resp_mot_esq_prbs.png, id=859, 1806.75pt x 900.36375pt>
+File: figuras/resultados/fig-motores/resp_mot_esq_prbs.png Graphic file (type png)
+<use figuras/resultados/fig-motores/resp_mot_esq_prbs.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/resp_mot_esq_prbs.png  used on input line 54.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+File: figuras/resultados/fig-motores/resp_mot_esq_prbs.png Graphic file (type png)
+<use figuras/resultados/fig-motores/resp_mot_esq_prbs.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/resp_mot_esq_prbs.png  used on input line 54.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 54--55
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-motores/identifica_motor_direito.png, id=864, 1806.75pt x 900.36375pt>
+File: figuras/resultados/fig-motores/identifica_motor_direito.png Graphic file (type png)
+<use figuras/resultados/fig-motores/identifica_motor_direito.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/identifica_motor_direito.png  used on input line 66.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+File: figuras/resultados/fig-motores/identifica_motor_direito.png Graphic file (type png)
+<use figuras/resultados/fig-motores/identifica_motor_direito.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/identifica_motor_direito.png  used on input line 66.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 66--67
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-motores/identifica_motor_esquerdo.png, id=865, 1806.75pt x 900.36375pt>
+File: figuras/resultados/fig-motores/identifica_motor_esquerdo.png Graphic file (type png)
+<use figuras/resultados/fig-motores/identifica_motor_esquerdo.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/identifica_motor_esquerdo.png  used on input line 76.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+File: figuras/resultados/fig-motores/identifica_motor_esquerdo.png Graphic file (type png)
+<use figuras/resultados/fig-motores/identifica_motor_esquerdo.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/identifica_motor_esquerdo.png  used on input line 76.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 76--77
+ []$[]$ 
+ []
+
+[44 <./figuras/resultados/fig-motores/resp_mot_dir_prbs.png (PNG copy)>] [45 <./figuras/resultados/fig-motores/resp_mot_esq_prbs.png (PNG copy)> <./figuras/resultados/fig-motores/identifica_motor_direito.png (PNG copy)>]
+<figuras/resultados/fig-motores/rele_motor_direito.png, id=880, 1806.75pt x 900.36375pt>
+File: figuras/resultados/fig-motores/rele_motor_direito.png Graphic file (type png)
+<use figuras/resultados/fig-motores/rele_motor_direito.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/rele_motor_direito.png  used on input line 111.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+File: figuras/resultados/fig-motores/rele_motor_direito.png Graphic file (type png)
+<use figuras/resultados/fig-motores/rele_motor_direito.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/rele_motor_direito.png  used on input line 111.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 111--112
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-motores/rele_motor_esquerdo.png, id=881, 1806.75pt x 900.36375pt>
+File: figuras/resultados/fig-motores/rele_motor_esquerdo.png Graphic file (type png)
+<use figuras/resultados/fig-motores/rele_motor_esquerdo.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/rele_motor_esquerdo.png  used on input line 121.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+File: figuras/resultados/fig-motores/rele_motor_esquerdo.png Graphic file (type png)
+<use figuras/resultados/fig-motores/rele_motor_esquerdo.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/rele_motor_esquerdo.png  used on input line 121.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 121--122
+ []$[]$ 
+ []
+
+[46 <./figuras/resultados/fig-motores/identifica_motor_esquerdo.png (PNG copy)>]
+<figuras/resultados/fig-motores/PID_direito_1_patamar_sem_ressintonia.png, id=894, 1806.75pt x 900.36375pt>
+File: figuras/resultados/fig-motores/PID_direito_1_patamar_sem_ressintonia.png Graphic file (type png)
+<use figuras/resultados/fig-motores/PID_direito_1_patamar_sem_ressintonia.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/PID_direito_1_patamar_sem_ressintonia.png  used on input line 178.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+File: figuras/resultados/fig-motores/PID_direito_1_patamar_sem_ressintonia.png Graphic file (type png)
+<use figuras/resultados/fig-motores/PID_direito_1_patamar_sem_ressintonia.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/PID_direito_1_patamar_sem_ressintonia.png  used on input line 178.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 178--179
+ []$[]$ 
+ []
+
+[47 <./figuras/resultados/fig-motores/rele_motor_direito.png (PNG copy)> <./figuras/resultados/fig-motores/rele_motor_esquerdo.png (PNG copy)>]
+<figuras/resultados/fig-motores/PID_esquerdo_1_patamar_sem_ressintonia.png, id=900, 1806.75pt x 900.36375pt>
+File: figuras/resultados/fig-motores/PID_esquerdo_1_patamar_sem_ressintonia.png Graphic file (type png)
+<use figuras/resultados/fig-motores/PID_esquerdo_1_patamar_sem_ressintonia.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/PID_esquerdo_1_patamar_sem_ressintonia.png  used on input line 188.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+File: figuras/resultados/fig-motores/PID_esquerdo_1_patamar_sem_ressintonia.png Graphic file (type png)
+<use figuras/resultados/fig-motores/PID_esquerdo_1_patamar_sem_ressintonia.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/PID_esquerdo_1_patamar_sem_ressintonia.png  used on input line 188.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 188--189
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-motores/PID_direito_3_patamar_sem_ressintonia.png, id=901, 1806.75pt x 900.36375pt>
+File: figuras/resultados/fig-motores/PID_direito_3_patamar_sem_ressintonia.png Graphic file (type png)
+<use figuras/resultados/fig-motores/PID_direito_3_patamar_sem_ressintonia.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/PID_direito_3_patamar_sem_ressintonia.png  used on input line 198.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+File: figuras/resultados/fig-motores/PID_direito_3_patamar_sem_ressintonia.png Graphic file (type png)
+<use figuras/resultados/fig-motores/PID_direito_3_patamar_sem_ressintonia.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/PID_direito_3_patamar_sem_ressintonia.png  used on input line 198.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 198--199
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-motores/PID_esquerdo_3_patamar_sem_ressintonia.png, id=902, 1806.75pt x 900.36375pt>
+File: figuras/resultados/fig-motores/PID_esquerdo_3_patamar_sem_ressintonia.png Graphic file (type png)
+<use figuras/resultados/fig-motores/PID_esquerdo_3_patamar_sem_ressintonia.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/PID_esquerdo_3_patamar_sem_ressintonia.png  used on input line 208.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+File: figuras/resultados/fig-motores/PID_esquerdo_3_patamar_sem_ressintonia.png Graphic file (type png)
+<use figuras/resultados/fig-motores/PID_esquerdo_3_patamar_sem_ressintonia.png>
+Package pdftex.def Info: figuras/resultados/fig-motores/PID_esquerdo_3_patamar_sem_ressintonia.png  used on input line 208.
+(pdftex.def)             Requested size: 455.24408pt x 226.86264pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 208--209
+ []$[]$ 
+ []
+
+[48 <./figuras/resultados/fig-motores/PID_direito_1_patamar_sem_ressintonia.png (PNG copy)>] [49 <./figuras/resultados/fig-motores/PID_esquerdo_1_patamar_sem_ressintonia.png (PNG copy)> <./figuras/resultados/fig-motores/PID_direito_3_patamar_sem_ressintonia.png (PNG copy)>] [50 <./figuras/resultados/fig-motores/PID_esquerdo_3_patamar_sem_ressintonia.png (PNG copy)>]
+<figuras/resultados/fig-global/resp-prbs-vel-lin.png, id=922, 1445.4pt x 718.93594pt>
+File: figuras/resultados/fig-global/resp-prbs-vel-lin.png Graphic file (type png)
+<use figuras/resultados/fig-global/resp-prbs-vel-lin.png>
+Package pdftex.def Info: figuras/resultados/fig-global/resp-prbs-vel-lin.png  used on input line 273.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+File: figuras/resultados/fig-global/resp-prbs-vel-lin.png Graphic file (type png)
+<use figuras/resultados/fig-global/resp-prbs-vel-lin.png>
+Package pdftex.def Info: figuras/resultados/fig-global/resp-prbs-vel-lin.png  used on input line 273.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 273--274
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-global/resp-prbs-w-ang.png, id=923, 1445.4pt x 718.93594pt>
+File: figuras/resultados/fig-global/resp-prbs-w-ang.png Graphic file (type png)
+<use figuras/resultados/fig-global/resp-prbs-w-ang.png>
+Package pdftex.def Info: figuras/resultados/fig-global/resp-prbs-w-ang.png  used on input line 283.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+File: figuras/resultados/fig-global/resp-prbs-w-ang.png Graphic file (type png)
+<use figuras/resultados/fig-global/resp-prbs-w-ang.png>
+Package pdftex.def Info: figuras/resultados/fig-global/resp-prbs-w-ang.png  used on input line 283.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 283--284
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-global/identifica-vel-lin.png, id=928, 1445.4pt x 718.93594pt>
+File: figuras/resultados/fig-global/identifica-vel-lin.png Graphic file (type png)
+<use figuras/resultados/fig-global/identifica-vel-lin.png>
+Package pdftex.def Info: figuras/resultados/fig-global/identifica-vel-lin.png  used on input line 295.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+File: figuras/resultados/fig-global/identifica-vel-lin.png Graphic file (type png)
+<use figuras/resultados/fig-global/identifica-vel-lin.png>
+Package pdftex.def Info: figuras/resultados/fig-global/identifica-vel-lin.png  used on input line 295.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 295--296
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-global/identifica-w-ang.png, id=929, 1445.4pt x 718.93594pt>
+File: figuras/resultados/fig-global/identifica-w-ang.png Graphic file (type png)
+<use figuras/resultados/fig-global/identifica-w-ang.png>
+Package pdftex.def Info: figuras/resultados/fig-global/identifica-w-ang.png  used on input line 305.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+File: figuras/resultados/fig-global/identifica-w-ang.png Graphic file (type png)
+<use figuras/resultados/fig-global/identifica-w-ang.png>
+Package pdftex.def Info: figuras/resultados/fig-global/identifica-w-ang.png  used on input line 305.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 305--306
+ []$[]$ 
+ []
+
+[51 <./figuras/resultados/fig-global/resp-prbs-vel-lin.png (PNG copy)>]
+
+LaTeX Warning: Text page 52 contains only floats.
+
+
+Overfull \vbox (3.40047pt too high) has occurred while \output is active []
+
+ [52 <./figuras/resultados/fig-global/resp-prbs-w-ang.png (PNG copy)> <./figuras/resultados/fig-global/identifica-vel-lin.png (PNG copy)>]
+<figuras/resultados/fig-global/rele-vel-lin.png, id=941, 1445.4pt x 718.93594pt>
+File: figuras/resultados/fig-global/rele-vel-lin.png Graphic file (type png)
+<use figuras/resultados/fig-global/rele-vel-lin.png>
+Package pdftex.def Info: figuras/resultados/fig-global/rele-vel-lin.png  used on input line 338.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+File: figuras/resultados/fig-global/rele-vel-lin.png Graphic file (type png)
+<use figuras/resultados/fig-global/rele-vel-lin.png>
+Package pdftex.def Info: figuras/resultados/fig-global/rele-vel-lin.png  used on input line 338.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 338--339
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-global/rele-w-ang.png, id=942, 1445.4pt x 718.93594pt>
+File: figuras/resultados/fig-global/rele-w-ang.png Graphic file (type png)
+<use figuras/resultados/fig-global/rele-w-ang.png>
+Package pdftex.def Info: figuras/resultados/fig-global/rele-w-ang.png  used on input line 348.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+File: figuras/resultados/fig-global/rele-w-ang.png Graphic file (type png)
+<use figuras/resultados/fig-global/rele-w-ang.png>
+Package pdftex.def Info: figuras/resultados/fig-global/rele-w-ang.png  used on input line 348.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 348--349
+ []$[]$ 
+ []
+
+[53 <./figuras/resultados/fig-global/identifica-w-ang.png (PNG copy)> <./figuras/resultados/fig-global/rele-vel-lin.png (PNG copy)>] [54 <./figuras/resultados/fig-global/rele-w-ang.png (PNG copy)>]
+<figuras/resultados/fig-global/contrtole-vel-lin-1-patamar.png, id=959, 1445.4pt x 718.93594pt>
+File: figuras/resultados/fig-global/contrtole-vel-lin-1-patamar.png Graphic file (type png)
+<use figuras/resultados/fig-global/contrtole-vel-lin-1-patamar.png>
+Package pdftex.def Info: figuras/resultados/fig-global/contrtole-vel-lin-1-patamar.png  used on input line 403.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+File: figuras/resultados/fig-global/contrtole-vel-lin-1-patamar.png Graphic file (type png)
+<use figuras/resultados/fig-global/contrtole-vel-lin-1-patamar.png>
+Package pdftex.def Info: figuras/resultados/fig-global/contrtole-vel-lin-1-patamar.png  used on input line 403.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 403--404
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-global/contrtole-w-ang-1-patamar.png, id=960, 1445.4pt x 718.93594pt>
+File: figuras/resultados/fig-global/contrtole-w-ang-1-patamar.png Graphic file (type png)
+<use figuras/resultados/fig-global/contrtole-w-ang-1-patamar.png>
+Package pdftex.def Info: figuras/resultados/fig-global/contrtole-w-ang-1-patamar.png  used on input line 413.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+File: figuras/resultados/fig-global/contrtole-w-ang-1-patamar.png Graphic file (type png)
+<use figuras/resultados/fig-global/contrtole-w-ang-1-patamar.png>
+Package pdftex.def Info: figuras/resultados/fig-global/contrtole-w-ang-1-patamar.png  used on input line 413.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 413--414
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-global/contrtole-vel-lin-3-patamar.png, id=961, 1445.4pt x 718.93594pt>
+File: figuras/resultados/fig-global/contrtole-vel-lin-3-patamar.png Graphic file (type png)
+<use figuras/resultados/fig-global/contrtole-vel-lin-3-patamar.png>
+Package pdftex.def Info: figuras/resultados/fig-global/contrtole-vel-lin-3-patamar.png  used on input line 443.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+File: figuras/resultados/fig-global/contrtole-vel-lin-3-patamar.png Graphic file (type png)
+<use figuras/resultados/fig-global/contrtole-vel-lin-3-patamar.png>
+Package pdftex.def Info: figuras/resultados/fig-global/contrtole-vel-lin-3-patamar.png  used on input line 443.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 443--444
+ []$[]$ 
+ []
+
+<figuras/resultados/fig-global/contrtole-w-ang-3-patamar.png, id=962, 1445.4pt x 718.93594pt>
+File: figuras/resultados/fig-global/contrtole-w-ang-3-patamar.png Graphic file (type png)
+<use figuras/resultados/fig-global/contrtole-w-ang-3-patamar.png>
+Package pdftex.def Info: figuras/resultados/fig-global/contrtole-w-ang-3-patamar.png  used on input line 453.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+File: figuras/resultados/fig-global/contrtole-w-ang-3-patamar.png Graphic file (type png)
+<use figuras/resultados/fig-global/contrtole-w-ang-3-patamar.png>
+Package pdftex.def Info: figuras/resultados/fig-global/contrtole-w-ang-3-patamar.png  used on input line 453.
+(pdftex.def)             Requested size: 455.24408pt x 226.4331pt.
+
+Overfull \hbox (4.99997pt too wide) in paragraph at lines 453--454
+ []$[]$ 
+ []
+
+) (./elementos-textuais/conclusao.tex [55 <./figuras/resultados/fig-global/contrtole-vel-lin-1-patamar.png (PNG copy)>] [56 <./figuras/resultados/fig-global/contrtole-w-ang-1-patamar.png (PNG copy)> <./figuras/resultados/fig-global/contrtole-vel-lin-3-patamar.png (PNG copy)>] [57 <./figuras/resultados/fig-global/contrtole-w-ang-3-patamar.png (PNG copy)>]
+Cap\'{\i }tulo 6.
+[58
+
+]) (./documento.bbl [59]
+bibitemlist
+[60
+
+]) [61] (./documento.ind)
+\tf@lof=\write7
+\openout7 = `documento.lof'.
+
+\tf@lot=\write8
+\openout8 = `documento.lot'.
+
+\tf@toc=\write9
+\openout9 = `documento.toc'.
+
+ (./documento.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2020/03/25>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 35325 strings out of 469398
+ 641957 string characters out of 5466923
+ 1249283 words of memory out of 5000000
+ 62887 multiletter control sequences out of 15000+600000
+ 697985 words of font info for 350 fonts, out of 8000000 for 9000
+ 64 hyphenation exceptions out of 8191
+ 99i,17n,120p,2655b,1178s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on documento.pdf (62 pages, 5970051 bytes).
+PDF statistics:
+ 1255 PDF objects out of 1440 (max. 8388607)
+ 1085 compressed objects within 11 object streams
+ 270 named destinations out of 1000 (max. 500000)
+ 58964 words of extra memory for PDF output out of 61914 (max. 10000000)
+

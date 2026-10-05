@@ -1,0 +1,12 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {table}{\numberline {1}{\ignorespaces Sintonia de controladores \gls {PID} pelo segundo método de \gls {ZN}}}{28}{table.caption.22}%
+\contentsline {table}{\numberline {2}{\ignorespaces Coeficientes dos modelos dos motores}}{46}{table.caption.38}%
+\contentsline {table}{\numberline {3}{\ignorespaces Parâmetros do Relé para os motores}}{48}{table.caption.41}%
+\contentsline {table}{\numberline {4}{\ignorespaces Parâmetros do controlador para os motores}}{48}{table.caption.42}%
+\contentsline {table}{\numberline {5}{\ignorespaces Resultados de controle para 1 patamar}}{50}{table.caption.47}%
+\contentsline {table}{\numberline {6}{\ignorespaces Resultados de controle para 3 patamares}}{50}{table.caption.48}%
+\contentsline {table}{\numberline {7}{\ignorespaces Coeficientes dos modelos das malhas globais}}{52}{table.caption.53}%
+\contentsline {table}{\numberline {8}{\ignorespaces Parâmetros do Relé para as malhas globais}}{54}{table.caption.56}%
+\contentsline {table}{\numberline {9}{\ignorespaces Parâmetros dos Controladores Supervisórios}}{55}{table.caption.57}%
+\contentsline {table}{\numberline {10}{\ignorespaces Resultados de controle para 1 patamar de $V$ e $\omega $}}{55}{table.caption.60}%
+\contentsline {table}{\numberline {11}{\ignorespaces Resultados de controle supervisório para 3 patamares}}{56}{table.caption.63}%

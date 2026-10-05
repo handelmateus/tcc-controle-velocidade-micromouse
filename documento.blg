@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: documento.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: elementos-pos-textuais/referencias.bib
+Warning--entry type for "matlab-def" isn't style-file defined
+--line 2 of file elementos-pos-textuais/referencias.bib
+Warning--entry type for "eclipse-def" isn't style-file defined
+--line 10 of file elementos-pos-textuais/referencias.bib
+Warning--entry type for "esp-now-definition" isn't style-file defined
+--line 36 of file elementos-pos-textuais/referencias.bib
+Warning--I'm ignoring ogata-2010's extra "edition" field
+--line 120 of file elementos-pos-textuais/referencias.bib
+Warning--I'm ignoring ibrahim-2006's extra "edition" field
+--line 130 of file elementos-pos-textuais/referencias.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 33 entries,
+            6714 wiz_defined-function locations,
+            1372 strings with 14141 characters,
+and the built_in function-call counts, 32601 in all, are:
+= -- 3461
+> -- 661
+< -- 603
++ -- 862
+- -- 207
+* -- 2030
+:= -- 4176
+add.period$ -- 122
+call.type$ -- 35
+change.case$ -- 255
+chr.to.int$ -- 74
+cite$ -- 28
+duplicate$ -- 2734
+empty$ -- 1820
+format.name$ -- 958
+if$ -- 6951
+int.to.chr$ -- 7
+int.to.str$ -- 3
+missing$ -- 542
+newline$ -- 159
+num.names$ -- 140
+pop$ -- 592
+preamble$ -- 1
+purify$ -- 113
+quote$ -- 0
+skip$ -- 3026
+stack$ -- 1
+substring$ -- 1296
+swap$ -- 1057
+text.length$ -- 22
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 20
+warning$ -- 0
+while$ -- 188
+width$ -- 0
+write$ -- 457
+(There were 5 warnings)
